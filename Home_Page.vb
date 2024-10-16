@@ -68,8 +68,8 @@ Public Class Home_Page
         btReturn.Hide()
         Timer3.Start()
         plc.SetDevice("M247", 1)
-        FidCamConnect()
-        LiveCamConnect()
+        'FidCamConnect()
+        'LiveCamConnect()
 
 
         Label3.Text = My.Settings.ProgramName
@@ -708,68 +708,68 @@ Public Class Home_Page
         ' Optionally, you could reinitialize the HomeForm or bring it back to its original state
         InitializeComponent()
     End Sub
-    Private Sub SaveAlarmToExcel(alarmName As String, alarmCode As String, time As String, recipe As String, user As String)
-        ' Retrieve the default path from app.config
-        Dim folderPath As String = ConfigurationManager.AppSettings("Warn")
+    'Private Sub SaveAlarmToExcel(alarmName As String, alarmCode As String, time As String, recipe As String, user As String)
+    '    ' Retrieve the default path from app.config
+    '    Dim folderPath As String = ConfigurationManager.AppSettings("Warn")
 
-        ' Ensure folderPath is not null or empty
-        If String.IsNullOrEmpty(folderPath) Then
-            MessageBox.Show("The folder path is not set in the configuration file.")
-            Return
-        End If
+    '    ' Ensure folderPath is not null or empty
+    '    If String.IsNullOrEmpty(folderPath) Then
+    '        MessageBox.Show("The folder path is not set in the configuration file.")
+    '        Return
+    '    End If
 
-        ' Create the directory if it doesn't exist
-        If Not Directory.Exists(folderPath) Then
-            Directory.CreateDirectory(folderPath)
-        End If
+    '    ' Create the directory if it doesn't exist
+    '    If Not Directory.Exists(folderPath) Then
+    '        Directory.CreateDirectory(folderPath)
+    '    End If
 
-        ' Define the Excel file path with the current date as the filename
-        Dim fileName As String = Path.Combine(folderPath, DateTime.Now.ToString("yyyy-MM-dd") & ".xlsx")
-        Dim fileInfo As New FileInfo(fileName)
+    '    ' Define the Excel file path with the current date as the filename
+    '    Dim fileName As String = Path.Combine(folderPath, DateTime.Now.ToString("yyyy-MM-dd") & ".xlsx")
+    '    Dim fileInfo As New FileInfo(fileName)
 
-        ' Create or open the Excel file
-        Using package As New ExcelPackage(fileInfo)
-            Dim worksheet As ExcelWorksheet
+    '    ' Create or open the Excel file
+    '    Using package As New ExcelPackage(fileInfo)
+    '        Dim worksheet As ExcelWorksheet
 
-            ' Check if any worksheets exist
-            If package.Workbook.Worksheets.Count = 0 Then
-                ' Add a new worksheet if none exists
-                worksheet = package.Workbook.Worksheets.Add("Alarms")
-                ' Add headers to the worksheet
-                worksheet.Cells("A1").Value = "S.No"
-                worksheet.Cells("B1").Value = "Alarm Name"
-                worksheet.Cells("C1").Value = "Alarm Code"
-                worksheet.Cells("D1").Value = "Time"
-                worksheet.Cells("E1").Value = "Recipe"
-                worksheet.Cells("F1").Value = "User"
-                'worksheet.Cells("G1").Value = "REMEDY"
-                'worksheet.Cells("H1").Value = "CATEGORY"
-                'worksheet.Cells("I1").Value = "ALARM DURATION"
-            Else
-                ' Access the first worksheet
-                worksheet = package.Workbook.Worksheets(1)
-            End If
+    '        ' Check if any worksheets exist
+    '        If package.Workbook.Worksheets.Count = 0 Then
+    '            ' Add a new worksheet if none exists
+    '            worksheet = package.Workbook.Worksheets.Add("Alarms")
+    '            ' Add headers to the worksheet
+    '            worksheet.Cells("A1").Value = "S.No"
+    '            worksheet.Cells("B1").Value = "Alarm Name"
+    '            worksheet.Cells("C1").Value = "Alarm Code"
+    '            worksheet.Cells("D1").Value = "Time"
+    '            worksheet.Cells("E1").Value = "Recipe"
+    '            worksheet.Cells("F1").Value = "User"
+    '            'worksheet.Cells("G1").Value = "REMEDY"
+    '            'worksheet.Cells("H1").Value = "CATEGORY"
+    '            'worksheet.Cells("I1").Value = "ALARM DURATION"
+    '        Else
+    '            ' Access the first worksheet
+    '            worksheet = package.Workbook.Worksheets(1)
+    '        End If
 
-            ' Find the next available row
-            Dim nextRow As Integer
-            If worksheet.Dimension IsNot Nothing Then
-                nextRow = worksheet.Dimension.End.Row + 1
-            Else
-                nextRow = 2 ' Start from row 2 if no data exists
-            End If
+    '        ' Find the next available row
+    '        Dim nextRow As Integer
+    '        If worksheet.Dimension IsNot Nothing Then
+    '            nextRow = worksheet.Dimension.End.Row + 1
+    '        Else
+    '            nextRow = 2 ' Start from row 2 if no data exists
+    '        End If
 
-            ' Write the data to the worksheet
-            worksheet.Cells(nextRow, 1).Value = nextRow - 1 ' S.No
-            worksheet.Cells(nextRow, 2).Value = alarmName
-            worksheet.Cells(nextRow, 3).Value = alarmCode
-            worksheet.Cells(nextRow, 4).Value = time
-            worksheet.Cells(nextRow, 5).Value = recipe
-            worksheet.Cells(nextRow, 6).Value = user
+    '        ' Write the data to the worksheet
+    '        worksheet.Cells(nextRow, 1).Value = nextRow - 1 ' S.No
+    '        worksheet.Cells(nextRow, 2).Value = alarmName
+    '        worksheet.Cells(nextRow, 3).Value = alarmCode
+    '        worksheet.Cells(nextRow, 4).Value = time
+    '        worksheet.Cells(nextRow, 5).Value = recipe
+    '        worksheet.Cells(nextRow, 6).Value = user
 
-            ' Save the changes to the Excel file
-            package.Save()
-        End Using
-    End Sub
+    '        ' Save the changes to the Excel file
+    '        package.Save()
+    '    End Using
+    'End Sub
     Private Async Sub DisplayAlarmAsync(currentDval As Integer)
         ' Ensure that the alarm form is not already open
         If alarmForm Is Nothing OrElse alarmForm.IsDisposed Then
@@ -797,7 +797,7 @@ Public Class Home_Page
                               alarmForm.TopMost = True
 
                           End If
-                          SaveAlarmToExcel(alarmForm.Label3.Text, alarmForm.Label2.Text, Label2.Text, Label3.Text, "user")
+                          'SaveAlarmToExcel(alarmForm.Label3.Text, alarmForm.Label2.Text, Label2.Text, Label3.Text, "user")
                       End Sub)
         End If
     End Sub

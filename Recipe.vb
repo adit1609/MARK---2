@@ -2030,10 +2030,7 @@ Public Class Recipe
     Private Sub btpanN_MouseUp(sender As Object, e As MouseEventArgs) Handles btpanN.MouseUp
         plc.SetDevice("M201", 0)
     End Sub
-    Private Async Function btxmin_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles btxmin.MouseUp
-        plc.SetDevice("M205", 0)
 
-    End Function
 
     Private Sub btxmin_MouseDown(sender As Object, e As MouseEventArgs) Handles btxmin.MouseDown
         plc.SetDevice("M205", 1)
@@ -4310,7 +4307,7 @@ Public Class Recipe
     End Sub
 
     Private Sub btxmin_MouseUp(sender As Object, e As MouseEventArgs) Handles btxmin.MouseUp
-
+        plc.SetDevice("M205", 0)
     End Sub
 End Class
 
