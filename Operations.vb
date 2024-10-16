@@ -834,7 +834,7 @@ Public Class Operations
         End If
     End Sub
 
-    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs)
         If CheckBox4.Checked Then
             MySettings.Default.FLIP = True
             MySettings.Default.Save()
@@ -1170,5 +1170,33 @@ Public Class Operations
             plc.SetDevice("M244", 0)
             Button4.BackColor = Color.White
         End If
+    End Sub
+
+    Private Async Function Button5_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button5.MouseDown
+        plc.SetDevice("M253", 1)
+    End Function
+
+    Private Function Button5_MouseUp(sender As Object, e As MouseEventArgs) Handles Button5.MouseUp
+        plc.SetDevice("M253", 0)
+    End Function
+
+    Private Async Function Button6_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button6.MouseDown
+        plc.SetDevice("M253", 1)
+        Button6.BackColor = Color.Green
+    End Function
+
+    Private Async Function Button6_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles Button6.MouseUp
+        plc.SetDevice("M253", 0)
+        Button6.BackColor = Color.Transparent
+    End Function
+
+    Private Sub Button7_MouseDown(sender As Object, e As MouseEventArgs) Handles Button7.MouseDown
+        plc.SetDevice("M226", 1)
+        Button6.BackColor = Color.Green
+    End Sub
+
+    Private Sub Button7_MouseUp(sender As Object, e As MouseEventArgs) Handles Button7.MouseUp
+        plc.SetDevice("M226", 0)
+        Button6.BackColor = Color.Transparent
     End Sub
 End Class

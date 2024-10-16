@@ -11,9 +11,9 @@
 
     ' Method to populate the list with alarms
     Public Shared Sub InitializeAlarms()
-        Alarms.Add(New Alarm(1, "EMERGENCY STOP"))
+        Alarms.Add(New Alarm(1, "EMERGENCY PRESSED"))
         Alarms.Add(New Alarm(2, "X AXIS SERVO ALARM"))
-        Alarms.Add(New Alarm(3, "Y AXIS SERVO ALARM"))
+        Alarms.Add(New Alarm(3, "REACHED MAXIMUM OF X"))
         Alarms.Add(New Alarm(4, "Z AXIS SERVO ALARM"))
         Alarms.Add(New Alarm(5, "W AXIS SERVO ALARM"))
         Alarms.Add(New Alarm(6, "SERVO POWER OFF "))
