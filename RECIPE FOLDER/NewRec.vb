@@ -17,6 +17,59 @@ Public Class NewRec
     Private Sub GroupBox8_Enter(sender As Object, e As EventArgs) Handles GroupBox8.Enter
 
     End Sub
+    Private Sub LoadMarkingPositionsToTreeView(recipeName As String)
+        ' Construct the file path based on the recipe name
+        Dim filePath As String = $"C:\Logs\Default\{recipeName}.xml"
+
+        Try
+            ' Log the file path for debugging
+            Debug.WriteLine($"Loading XML from: {filePath}")
+
+            Dim xmlDoc As New XmlDocument()
+            xmlDoc.Load(filePath) ' Load the XML file
+
+            ' Clear existing nodes in the TreeView before loading new data
+            TreeView1.Nodes.Clear()
+
+            ' Get the Marking_Positions node
+            Dim markingPositionsNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Marking_Positions")
+
+            ' Log the found node for debugging
+            If markingPositionsNode IsNot Nothing Then
+                Debug.WriteLine("Marking_Positions node found.")
+            Else
+                Debug.WriteLine("Marking_Positions node NOT found.")
+            End If
+
+            If markingPositionsNode IsNot Nothing Then
+                ' Create a parent node for Marking Positions
+                Dim parentNode As TreeNode = New TreeNode("Marking Positions")
+
+                ' Loop through each mark element
+                For Each markNode As XmlNode In markingPositionsNode.ChildNodes
+                    Dim markTreeNode As TreeNode = New TreeNode(markNode.Name)
+
+                    ' Loop through each child node (X, Y, ID, Side)
+                    For Each childNode As XmlNode In markNode.ChildNodes
+                        Dim childTreeNode As TreeNode = New TreeNode($"{childNode.Name}_{childNode.InnerText.Trim()}")
+                        markTreeNode.Nodes.Add(childTreeNode)
+                    Next
+
+                    parentNode.Nodes.Add(markTreeNode) ' Add the mark node to the parent
+                Next
+
+                TreeView1.Nodes.Add(parentNode) ' Add the parent node to the TreeView
+                TreeView1.ExpandAll() ' Expand all nodes to show the data
+            Else
+                MessageBox.Show("No marking positions found for the selected recipe.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show($"Error loading marking positions: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+
     Public Async Function LoadRecipeAsync() As Task
         Await Task.Run(Sub()
                            Dim basePath As String = "C:\Logs\Default\"
@@ -212,8 +265,16 @@ Public Class NewRec
 
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
-        Selected.Text = selectedRow.Cells(1).Value.ToString()
 
+        If e.RowIndex >= 0 Then
+            Dim selectedRow As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
+            Selected.Text = selectedRow.Cells(1).Value.ToString()
+
+            ' Get the recipe name (or relevant identifier) from the second column
+            Dim recipeName As String = selectedRow.Cells(1).Value.ToString()
+
+            ' Load and display the marking positions in the TreeView for the selected recipe
+            LoadMarkingPositionsToTreeView(recipeName)
+        End If
     End Sub
 End Class
