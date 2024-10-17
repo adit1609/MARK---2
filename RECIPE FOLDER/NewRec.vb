@@ -109,6 +109,7 @@ Public Class NewRec
         DataGridView1.Rows.Clear()
         _loadedFiles.Clear()
         LoadRecipeAsync()
+
     End Function
 
 
