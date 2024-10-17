@@ -789,6 +789,7 @@
     <None Include="Resources\Icon1.ico" />
     <Content Include="mark 2.ico" />
     <None Include="Resources\icons8-logout-50.png" />
+    <None Include="Resources\out %286%29.jpg" />
     <Content Include="userlogin11.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
