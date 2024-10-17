@@ -360,7 +360,7 @@ Partial Class Recipe
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(704, 1094)
+        Me.Panel1.Size = New System.Drawing.Size(728, 1061)
         Me.Panel1.TabIndex = 1
         '
         'Panel2
@@ -369,7 +369,7 @@ Partial Class Recipe
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(704, 1094)
+        Me.Panel2.Size = New System.Drawing.Size(728, 1061)
         Me.Panel2.TabIndex = 6
         '
         'Panel5
@@ -378,7 +378,7 @@ Partial Class Recipe
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(704, 1094)
+        Me.Panel5.Size = New System.Drawing.Size(728, 1061)
         Me.Panel5.TabIndex = 5
         '
         'Panel9
@@ -387,7 +387,7 @@ Partial Class Recipe
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(704, 1094)
+        Me.Panel9.Size = New System.Drawing.Size(728, 1061)
         Me.Panel9.TabIndex = 1
         '
         'Panel4
@@ -396,7 +396,7 @@ Partial Class Recipe
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(704, 1094)
+        Me.Panel4.Size = New System.Drawing.Size(728, 1061)
         Me.Panel4.TabIndex = 3
         '
         'Guna2TabControl1
@@ -411,7 +411,7 @@ Partial Class Recipe
         Me.Guna2TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2TabControl1.Name = "Guna2TabControl1"
         Me.Guna2TabControl1.SelectedIndex = 0
-        Me.Guna2TabControl1.Size = New System.Drawing.Size(704, 1094)
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(728, 1061)
         Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -441,7 +441,7 @@ Partial Class Recipe
         Me.TabPage3.Location = New System.Drawing.Point(4, 4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(696, 1006)
+        Me.TabPage3.Size = New System.Drawing.Size(696, 973)
         Me.TabPage3.TabIndex = 10
         Me.TabPage3.Text = "RECIPE "
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -454,7 +454,7 @@ Partial Class Recipe
         Me.Panel8.Controls.Add(Me.Button4)
         Me.Panel8.Controls.Add(Me.btnclear)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel8.Location = New System.Drawing.Point(3, 947)
+        Me.Panel8.Location = New System.Drawing.Point(3, 914)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(690, 56)
         Me.Panel8.TabIndex = 4
@@ -526,7 +526,7 @@ Partial Class Recipe
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(3, 76)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(690, 927)
+        Me.Panel7.Size = New System.Drawing.Size(690, 894)
         Me.Panel7.TabIndex = 3
         '
         'Guna2Panel2
@@ -535,7 +535,7 @@ Partial Class Recipe
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 235)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(690, 692)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(690, 659)
         Me.Guna2Panel2.TabIndex = 10
         '
         'DATAGRID
@@ -563,7 +563,7 @@ Partial Class Recipe
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DATAGRID.RowTemplate.Height = 28
-        Me.DATAGRID.Size = New System.Drawing.Size(690, 692)
+        Me.DATAGRID.Size = New System.Drawing.Size(690, 659)
         Me.DATAGRID.TabIndex = 8
         '
         'S_NO
@@ -1029,7 +1029,7 @@ Partial Class Recipe
         Me.TabPage5.Controls.Add(Me.Panel50)
         Me.TabPage5.Location = New System.Drawing.Point(4, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(696, 1006)
+        Me.TabPage5.Size = New System.Drawing.Size(720, 1013)
         Me.TabPage5.TabIndex = 7
         Me.TabPage5.Text = "TEACH"
         '
@@ -1040,7 +1040,7 @@ Partial Class Recipe
         Me.Panel50.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel50.Location = New System.Drawing.Point(0, 0)
         Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(696, 1006)
+        Me.Panel50.Size = New System.Drawing.Size(720, 1013)
         Me.Panel50.TabIndex = 0
         '
         'Panel10
@@ -1053,7 +1053,7 @@ Partial Class Recipe
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.Location = New System.Drawing.Point(0, 0)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(696, 1006)
+        Me.Panel10.Size = New System.Drawing.Size(720, 1013)
         Me.Panel10.TabIndex = 2
         '
         'Panel12
@@ -1076,7 +1076,7 @@ Partial Class Recipe
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel12.Location = New System.Drawing.Point(0, 781)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(696, 225)
+        Me.Panel12.Size = New System.Drawing.Size(720, 232)
         Me.Panel12.TabIndex = 15
         '
         'Guna2ComboBox2
@@ -1277,13 +1277,13 @@ Partial Class Recipe
         Me.Panel16.Location = New System.Drawing.Point(0, 733)
         Me.Panel16.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(696, 48)
+        Me.Panel16.Size = New System.Drawing.Size(720, 48)
         Me.Panel16.TabIndex = 11
         '
         'Button10
         '
         Me.Button10.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button10.Location = New System.Drawing.Point(438, 0)
+        Me.Button10.Location = New System.Drawing.Point(462, 0)
         Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(86, 48)
@@ -1294,7 +1294,7 @@ Partial Class Recipe
         'Button8
         '
         Me.Button8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button8.Location = New System.Drawing.Point(524, 0)
+        Me.Button8.Location = New System.Drawing.Point(548, 0)
         Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(86, 48)
@@ -1319,7 +1319,7 @@ Partial Class Recipe
         'Button6
         '
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button6.Location = New System.Drawing.Point(610, 0)
+        Me.Button6.Location = New System.Drawing.Point(634, 0)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(86, 48)
@@ -1333,7 +1333,7 @@ Partial Class Recipe
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel13.Location = New System.Drawing.Point(0, 468)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(696, 265)
+        Me.Panel13.Size = New System.Drawing.Size(720, 265)
         Me.Panel13.TabIndex = 8
         '
         'DataGridView1
@@ -1346,7 +1346,7 @@ Partial Class Recipe
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(696, 265)
+        Me.DataGridView1.Size = New System.Drawing.Size(720, 265)
         Me.DataGridView1.TabIndex = 2
         '
         'Column2
@@ -1385,17 +1385,17 @@ Partial Class Recipe
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 342.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(696, 337)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(720, 337)
         Me.TableLayoutPanel1.TabIndex = 7
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Location = New System.Drawing.Point(350, 2)
+        Me.PictureBox3.Location = New System.Drawing.Point(362, 2)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(344, 338)
+        Me.PictureBox3.Size = New System.Drawing.Size(356, 338)
         Me.PictureBox3.TabIndex = 1
         Me.PictureBox3.TabStop = False
         '
@@ -1413,7 +1413,7 @@ Partial Class Recipe
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(342, 336)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(354, 336)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'PictureBox4
@@ -1445,7 +1445,7 @@ Partial Class Recipe
         Me.Panel14.Location = New System.Drawing.Point(0, 0)
         Me.Panel14.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(696, 131)
+        Me.Panel14.Size = New System.Drawing.Size(720, 131)
         Me.Panel14.TabIndex = 6
         '
         'GroupBox1
@@ -1536,7 +1536,7 @@ Partial Class Recipe
         Me.TabPage6.ForeColor = System.Drawing.Color.White
         Me.TabPage6.Location = New System.Drawing.Point(4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(696, 1006)
+        Me.TabPage6.Size = New System.Drawing.Size(696, 973)
         Me.TabPage6.TabIndex = 8
         Me.TabPage6.Text = "Vision"
         '
@@ -1547,7 +1547,7 @@ Partial Class Recipe
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(696, 1006)
+        Me.Panel11.Size = New System.Drawing.Size(696, 973)
         Me.Panel11.TabIndex = 1
         '
         'Guna2Panel3
@@ -1575,7 +1575,7 @@ Partial Class Recipe
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(696, 1006)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(696, 973)
         Me.Guna2Panel3.TabIndex = 0
         '
         'datagrdFid
@@ -2964,7 +2964,7 @@ Partial Class Recipe
         Me.TabPage1.Controls.Add(Me.Panel59)
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(696, 1006)
+        Me.TabPage1.Size = New System.Drawing.Size(696, 973)
         Me.TabPage1.TabIndex = 9
         Me.TabPage1.Text = "LOCATION"
         '
@@ -3331,7 +3331,7 @@ Partial Class Recipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 1094)
+        Me.ClientSize = New System.Drawing.Size(728, 1061)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.Name = "Recipe"
