@@ -18,20 +18,20 @@ Public Class NewRec
 
     End Sub
     Private Sub LoadMarkingPositionsToTreeView(recipeName As String)
-        ' Construct the file path based on the recipe name
+
         Dim filePath As String = $"C:\Logs\Default\{recipeName}.xml"
 
         Try
-            ' Log the file path for debugging
+
             Debug.WriteLine($"Loading XML from: {filePath}")
 
             Dim xmlDoc As New XmlDocument()
             xmlDoc.Load(filePath) ' Load the XML file
 
-            ' Clear existing nodes in the TreeView before loading new data
+
             TreeView1.Nodes.Clear()
 
-            ' Get the Marking_Positions node
+
             Dim markingPositionsNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Marking_Positions")
 
             ' Log the found node for debugging
@@ -42,24 +42,24 @@ Public Class NewRec
             End If
 
             If markingPositionsNode IsNot Nothing Then
-                ' Create a parent node for Marking Positions
+
                 Dim parentNode As TreeNode = New TreeNode("Marking Positions")
 
-                ' Loop through each mark element
+
                 For Each markNode As XmlNode In markingPositionsNode.ChildNodes
                     Dim markTreeNode As TreeNode = New TreeNode(markNode.Name)
 
-                    ' Loop through each child node (X, Y, ID, Side)
+
                     For Each childNode As XmlNode In markNode.ChildNodes
                         Dim childTreeNode As TreeNode = New TreeNode($"{childNode.Name}_{childNode.InnerText.Trim()}")
                         markTreeNode.Nodes.Add(childTreeNode)
                     Next
 
-                    parentNode.Nodes.Add(markTreeNode) ' Add the mark node to the parent
+                    parentNode.Nodes.Add(markTreeNode)
                 Next
 
-                TreeView1.Nodes.Add(parentNode) ' Add the parent node to the TreeView
-                TreeView1.ExpandAll() ' Expand all nodes to show the data
+                TreeView1.Nodes.Add(parentNode)
+                TreeView1.ExpandAll()
             Else
                 MessageBox.Show("No marking positions found for the selected recipe.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
@@ -75,7 +75,7 @@ Public Class NewRec
                            Dim basePath As String = "C:\Logs\Default\"
                            Dim xmlFiles As String() = Directory.GetFiles(basePath, "*.xml", SearchOption.AllDirectories)
 
-                           ' Use Invoke to update UI elements from the non-UI thread
+
                            Me.Invoke(Sub()
                                          Dim countRecipe As Integer = DataGridView1.Rows.Count + 1
 
@@ -84,17 +84,17 @@ Public Class NewRec
                                                  Dim xmlDoc As New XmlDocument()
                                                  xmlDoc.Load(file)
 
-                                                 ' Use the file name as Program_Name (without extension)
+
                                                  Dim programName As String = Path.GetFileNameWithoutExtension(file)
 
-                                                 ' Retrieve the values, ensuring we handle cases where the nodes might not exist
+
                                                  Dim totalMarkingNode As XmlNode = xmlDoc.SelectSingleNode("Project_Specification/TotalMarking")
                                                  Dim totalMarking As String = If(totalMarkingNode IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(totalMarkingNode.InnerText), totalMarkingNode.InnerText.Trim(), "-")
 
                                                  Dim totalFiducialNode As XmlNode = xmlDoc.SelectSingleNode("Project_Specification/TotalFiducial")
                                                  Dim totalFiducial As String = If(totalFiducialNode IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(totalFiducialNode.InnerText), totalFiducialNode.InnerText.Trim(), "-")
 
-                                                 ' Add data to DataGridView
+
                                                  DataGridView1.Rows.Add(countRecipe, programName, totalMarking, totalFiducial)
                                                  countRecipe += 1
 
@@ -107,31 +107,31 @@ Public Class NewRec
     Private Sub SaveMarkingPositionsToXML(filePath As String)
         Try
             Dim xmlDoc As New XmlDocument()
-            xmlDoc.Load(filePath) ' Load the existing XML
+            xmlDoc.Load(filePath)
 
-            ' Get the root element
+
             Dim root As XmlElement = xmlDoc.DocumentElement
 
-            ' Create or get the 'Marking_Positions' node
+
             Dim markingPositionsNode As XmlElement = root.SelectSingleNode("Marking_Positions")
             If markingPositionsNode Is Nothing Then
                 markingPositionsNode = xmlDoc.CreateElement("Marking_Positions")
                 root.AppendChild(markingPositionsNode)
             Else
-                markingPositionsNode.RemoveAll() ' Clear old data to avoid duplication
+                markingPositionsNode.RemoveAll()
             End If
 
-            ' Loop through all child nodes of the first node in the TreeView
+
             For Each markNode As TreeNode In TreeView1.Nodes(0).Nodes
-                ' Use the node name as the element name for XML
+
                 Dim validMarkName As String = markNode.Text.Replace(" ", "_")
-                ' Ensure the validMarkName does not start with a number
+
                 If Char.IsDigit(validMarkName(0)) Then
-                    validMarkName = "_" & validMarkName ' Prefix with underscore if it starts with a number
+                    validMarkName = "_" & validMarkName
                 End If
                 Dim markElement As XmlElement = xmlDoc.CreateElement(validMarkName)
 
-                ' Add child nodes (X, Y, ID, Side) based on the TreeNode names
+
                 For Each childNode As TreeNode In markNode.Nodes
                     Dim nodeName As String = childNode.Text.Trim() ' Get the text of the child node
                     Dim nodeValue As String = "" ' Default value for the node
@@ -148,7 +148,7 @@ Public Class NewRec
                     End If
                 Next
 
-                ' Append the mark element to 'Marking_Positions'
+
                 markingPositionsNode.AppendChild(markElement)
             Next
 
@@ -270,11 +270,15 @@ Public Class NewRec
             Dim selectedRow As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
             Selected.Text = selectedRow.Cells(1).Value.ToString()
 
-            ' Get the recipe name (or relevant identifier) from the second column
+
             Dim recipeName As String = selectedRow.Cells(1).Value.ToString()
 
             ' Load and display the marking positions in the TreeView for the selected recipe
             LoadMarkingPositionsToTreeView(recipeName)
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
     End Sub
 End Class
