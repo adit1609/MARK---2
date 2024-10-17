@@ -72,7 +72,7 @@ Public Class Home_Page
         'LiveCamConnect()
 
 
-        Label3.Text = My.Settings.ProgramName
+        'Label3.Text = My.Settings.ProgramName
 
         Timer1.Start()
         Alarm.InitializeAlarms()
@@ -348,7 +348,7 @@ Public Class Home_Page
         btReturn.Size = btUser.Size
         btReturn.Dock = DockStyle.Right
         btReturn.Show()
-        btnSPCLogin.Hide()
+
 
     End Sub
 
@@ -363,7 +363,7 @@ Public Class Home_Page
         btReturn.Dock = DockStyle.Right
         btReturn.Size = btUser.Size
         btReturn.Show()
-        btnSPCLogin.Hide()
+
     End Sub
 
     Private Sub btProg_Click(sender As Object, e As EventArgs) Handles btProg.Click
@@ -377,7 +377,7 @@ Public Class Home_Page
         btReturn.Dock = DockStyle.Right
         btReturn.Size = btUser.Size
         btReturn.Show()
-        btnSPCLogin.Hide()
+
     End Sub
 
     Private Sub btmain_Click(sender As Object, e As EventArgs) Handles btmain.Click
@@ -391,7 +391,7 @@ Public Class Home_Page
         btReturn.Dock = DockStyle.Right
         btReturn.Size = btUser.Size
         btReturn.Show()
-        btnSPCLogin.Hide()
+
     End Sub
 
     Private Sub btReturn_Click(sender As Object, e As EventArgs) Handles btReturn.Click
@@ -404,7 +404,7 @@ Public Class Home_Page
         btsetup.Show()
         btReturn.Dock = DockStyle.Right
         btReturn.Hide()
-        btnSPCLogin.Show()
+
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -444,7 +444,7 @@ Public Class Home_Page
         btReturn.Size = btUser.Size
         btReturn.Show()
         Recipe.Button7.PerformClick()
-        btnSPCLogin.Hide()
+
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         btUser.Hide()
@@ -459,7 +459,7 @@ Public Class Home_Page
         normalColor = Button1.BackColor ' Store the normal color of the button
         blinking = True
         Timer2.Start()
-        btnSPCLogin.Hide()
+
     End Sub
 
     ' Method to accept the parameter and update Label3
@@ -621,11 +621,11 @@ Public Class Home_Page
         End If
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles btnSPCLogin.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs)
 
         ShowLoginPanel()
     End Sub

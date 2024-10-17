@@ -23,12 +23,12 @@ Partial Class Recipe
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recipe))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -359,8 +359,9 @@ Partial Class Recipe
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(766, 845)
+        Me.Panel1.Size = New System.Drawing.Size(1021, 1055)
         Me.Panel1.TabIndex = 1
         '
         'Panel2
@@ -368,8 +369,9 @@ Partial Class Recipe
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(766, 845)
+        Me.Panel2.Size = New System.Drawing.Size(1021, 1055)
         Me.Panel2.TabIndex = 6
         '
         'Panel5
@@ -377,8 +379,9 @@ Partial Class Recipe
         Me.Panel5.Controls.Add(Me.Panel9)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(766, 845)
+        Me.Panel5.Size = New System.Drawing.Size(1021, 1055)
         Me.Panel5.TabIndex = 5
         '
         'Panel9
@@ -386,8 +389,9 @@ Partial Class Recipe
         Me.Panel9.Controls.Add(Me.Panel4)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(766, 845)
+        Me.Panel9.Size = New System.Drawing.Size(1021, 1055)
         Me.Panel9.TabIndex = 1
         '
         'Panel4
@@ -395,8 +399,9 @@ Partial Class Recipe
         Me.Panel4.Controls.Add(Me.Guna2TabControl1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(766, 845)
+        Me.Panel4.Size = New System.Drawing.Size(1021, 1055)
         Me.Panel4.TabIndex = 3
         '
         'Guna2TabControl1
@@ -409,9 +414,10 @@ Partial Class Recipe
         Me.Guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(180, 40)
         Me.Guna2TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2TabControl1.Name = "Guna2TabControl1"
         Me.Guna2TabControl1.SelectedIndex = 0
-        Me.Guna2TabControl1.Size = New System.Drawing.Size(766, 845)
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(1021, 1055)
         Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -439,9 +445,10 @@ Partial Class Recipe
         Me.TabPage3.Controls.Add(Me.Panel7)
         Me.TabPage3.Controls.Add(Me.Panel3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(758, 797)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Size = New System.Drawing.Size(1013, 992)
         Me.TabPage3.TabIndex = 10
         Me.TabPage3.Text = "RECIPE "
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -454,19 +461,20 @@ Partial Class Recipe
         Me.Panel8.Controls.Add(Me.Button4)
         Me.Panel8.Controls.Add(Me.btnclear)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel8.Location = New System.Drawing.Point(3, 738)
+        Me.Panel8.Location = New System.Drawing.Point(4, 919)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(752, 56)
+        Me.Panel8.Size = New System.Drawing.Size(1005, 69)
         Me.Panel8.TabIndex = 4
         '
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(260, 0)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Location = New System.Drawing.Point(350, 0)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 56)
+        Me.Button2.Size = New System.Drawing.Size(129, 69)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "DOWNLOAD"
         Me.Button2.UseVisualStyleBackColor = True
@@ -475,10 +483,10 @@ Partial Class Recipe
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(357, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Location = New System.Drawing.Point(479, 0)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 56)
+        Me.Button1.Size = New System.Drawing.Size(129, 69)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "SAVE"
         Me.Button1.UseVisualStyleBackColor = True
@@ -487,10 +495,10 @@ Partial Class Recipe
         '
         Me.btndelete.Dock = System.Windows.Forms.DockStyle.Right
         Me.btndelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndelete.Location = New System.Drawing.Point(454, 0)
-        Me.btndelete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btndelete.Location = New System.Drawing.Point(608, 0)
+        Me.btndelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndelete.Name = "btndelete"
-        Me.btndelete.Size = New System.Drawing.Size(97, 56)
+        Me.btndelete.Size = New System.Drawing.Size(129, 69)
         Me.btndelete.TabIndex = 4
         Me.btndelete.Text = "DELETE"
         Me.btndelete.UseVisualStyleBackColor = True
@@ -499,10 +507,10 @@ Partial Class Recipe
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(551, 0)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button4.Location = New System.Drawing.Point(737, 0)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(104, 56)
+        Me.Button4.Size = New System.Drawing.Size(139, 69)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "ADD/RENAME"
         Me.Button4.UseVisualStyleBackColor = True
@@ -511,10 +519,10 @@ Partial Class Recipe
         '
         Me.btnclear.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnclear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclear.Location = New System.Drawing.Point(655, 0)
-        Me.btnclear.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnclear.Location = New System.Drawing.Point(876, 0)
+        Me.btnclear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnclear.Name = "btnclear"
-        Me.btnclear.Size = New System.Drawing.Size(97, 56)
+        Me.btnclear.Size = New System.Drawing.Size(129, 69)
         Me.btnclear.TabIndex = 10
         Me.btnclear.Text = "CLEAR"
         Me.btnclear.UseVisualStyleBackColor = True
@@ -524,46 +532,48 @@ Partial Class Recipe
         Me.Panel7.Controls.Add(Me.Guna2Panel2)
         Me.Panel7.Controls.Add(Me.Guna2Panel1)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(3, 76)
+        Me.Panel7.Location = New System.Drawing.Point(4, 94)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(752, 718)
+        Me.Panel7.Size = New System.Drawing.Size(1005, 894)
         Me.Panel7.TabIndex = 3
         '
         'Guna2Panel2
         '
         Me.Guna2Panel2.Controls.Add(Me.DATAGRID)
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 235)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(0, 289)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(752, 483)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1005, 605)
         Me.Guna2Panel2.TabIndex = 10
         '
         'DATAGRID
         '
         Me.DATAGRID.AllowUserToAddRows = False
         Me.DATAGRID.AllowUserToDeleteRows = False
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DATAGRID.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DATAGRID.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DATAGRID.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DATAGRID.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.S_NO, Me.pname, Me.cwidht, Me.date_time, Me.x, Me.y, Me.RPATH})
         Me.DATAGRID.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DATAGRID.Location = New System.Drawing.Point(0, 0)
-        Me.DATAGRID.Margin = New System.Windows.Forms.Padding(2)
+        Me.DATAGRID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DATAGRID.Name = "DATAGRID"
         Me.DATAGRID.ReadOnly = True
         Me.DATAGRID.RowHeadersVisible = False
         Me.DATAGRID.RowHeadersWidth = 62
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DATAGRID.RowTemplate.Height = 28
-        Me.DATAGRID.Size = New System.Drawing.Size(752, 483)
+        Me.DATAGRID.Size = New System.Drawing.Size(1005, 605)
         Me.DATAGRID.TabIndex = 8
         '
         'S_NO
@@ -574,7 +584,7 @@ Partial Class Recipe
         Me.S_NO.MinimumWidth = 6
         Me.S_NO.Name = "S_NO"
         Me.S_NO.ReadOnly = True
-        Me.S_NO.Width = 62
+        Me.S_NO.Width = 72
         '
         'pname
         '
@@ -593,7 +603,7 @@ Partial Class Recipe
         Me.cwidht.MinimumWidth = 6
         Me.cwidht.Name = "cwidht"
         Me.cwidht.ReadOnly = True
-        Me.cwidht.Width = 95
+        Me.cwidht.Width = 115
         '
         'date_time
         '
@@ -603,7 +613,7 @@ Partial Class Recipe
         Me.date_time.MinimumWidth = 6
         Me.date_time.Name = "date_time"
         Me.date_time.ReadOnly = True
-        Me.date_time.Width = 70
+        Me.date_time.Width = 83
         '
         'x
         '
@@ -613,7 +623,7 @@ Partial Class Recipe
         Me.x.MinimumWidth = 6
         Me.x.Name = "x"
         Me.x.ReadOnly = True
-        Me.x.Width = 42
+        Me.x.Width = 49
         '
         'y
         '
@@ -623,7 +633,7 @@ Partial Class Recipe
         Me.y.MinimumWidth = 6
         Me.y.Name = "y"
         Me.y.ReadOnly = True
-        Me.y.Width = 42
+        Me.y.Width = 48
         '
         'RPATH
         '
@@ -662,16 +672,18 @@ Partial Class Recipe
         Me.Guna2Panel1.Controls.Add(Me.lbSide)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(752, 235)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1005, 289)
         Me.Guna2Panel1.TabIndex = 9
         '
         'txt_Mark_Id
         '
         Me.txt_Mark_Id.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_Mark_Id.Location = New System.Drawing.Point(153, 206)
+        Me.txt_Mark_Id.Location = New System.Drawing.Point(204, 254)
+        Me.txt_Mark_Id.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_Mark_Id.Name = "txt_Mark_Id"
-        Me.txt_Mark_Id.Size = New System.Drawing.Size(136, 22)
+        Me.txt_Mark_Id.Size = New System.Drawing.Size(180, 26)
         Me.txt_Mark_Id.TabIndex = 63
         '
         'Label20
@@ -679,9 +691,10 @@ Partial Class Recipe
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.Black
-        Me.Label20.Location = New System.Drawing.Point(19, 209)
+        Me.Label20.Location = New System.Drawing.Point(25, 257)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(61, 16)
+        Me.Label20.Size = New System.Drawing.Size(79, 20)
         Me.Label20.TabIndex = 62
         Me.Label20.Text = "MARK ID"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -690,36 +703,40 @@ Partial Class Recipe
         '
         Me.UD_C_pitch.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_C_pitch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_C_pitch.Location = New System.Drawing.Point(438, 169)
+        Me.UD_C_pitch.Location = New System.Drawing.Point(585, 208)
+        Me.UD_C_pitch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.UD_C_pitch.Name = "UD_C_pitch"
-        Me.UD_C_pitch.Size = New System.Drawing.Size(136, 22)
+        Me.UD_C_pitch.Size = New System.Drawing.Size(180, 26)
         Me.UD_C_pitch.TabIndex = 61
         '
         'UD_C_count
         '
         Me.UD_C_count.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_C_count.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_C_count.Location = New System.Drawing.Point(438, 132)
+        Me.UD_C_count.Location = New System.Drawing.Point(585, 162)
+        Me.UD_C_count.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.UD_C_count.Name = "UD_C_count"
-        Me.UD_C_count.Size = New System.Drawing.Size(136, 22)
+        Me.UD_C_count.Size = New System.Drawing.Size(180, 26)
         Me.UD_C_count.TabIndex = 60
         '
         'UD_R_pitch
         '
         Me.UD_R_pitch.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_R_pitch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_R_pitch.Location = New System.Drawing.Point(438, 95)
+        Me.UD_R_pitch.Location = New System.Drawing.Point(585, 117)
+        Me.UD_R_pitch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.UD_R_pitch.Name = "UD_R_pitch"
-        Me.UD_R_pitch.Size = New System.Drawing.Size(136, 22)
+        Me.UD_R_pitch.Size = New System.Drawing.Size(180, 26)
         Me.UD_R_pitch.TabIndex = 59
         '
         'UD_R_count
         '
         Me.UD_R_count.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_R_count.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_R_count.Location = New System.Drawing.Point(438, 58)
+        Me.UD_R_count.Location = New System.Drawing.Point(585, 71)
+        Me.UD_R_count.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.UD_R_count.Name = "UD_R_count"
-        Me.UD_R_count.Size = New System.Drawing.Size(136, 22)
+        Me.UD_R_count.Size = New System.Drawing.Size(180, 26)
         Me.UD_R_count.TabIndex = 58
         '
         'Label28
@@ -728,9 +745,10 @@ Partial Class Recipe
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.Black
-        Me.Label28.Location = New System.Drawing.Point(318, 61)
+        Me.Label28.Location = New System.Drawing.Point(425, 75)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(94, 16)
+        Me.Label28.Size = New System.Drawing.Size(119, 20)
         Me.Label28.TabIndex = 54
         Me.Label28.Text = "ROW COUNT "
         Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -741,9 +759,10 @@ Partial Class Recipe
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(318, 172)
+        Me.Label25.Location = New System.Drawing.Point(425, 212)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(107, 16)
+        Me.Label25.Size = New System.Drawing.Size(137, 20)
         Me.Label25.TabIndex = 57
         Me.Label25.Text = "COLUMN PITCH"
         Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -754,9 +773,10 @@ Partial Class Recipe
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.Black
-        Me.Label27.Location = New System.Drawing.Point(318, 98)
+        Me.Label27.Location = New System.Drawing.Point(425, 121)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(83, 16)
+        Me.Label27.Size = New System.Drawing.Size(105, 20)
         Me.Label27.TabIndex = 55
         Me.Label27.Text = "ROW PITCH"
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -767,9 +787,10 @@ Partial Class Recipe
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.Black
-        Me.Label26.Location = New System.Drawing.Point(318, 135)
+        Me.Label26.Location = New System.Drawing.Point(425, 166)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(115, 16)
+        Me.Label26.Size = New System.Drawing.Size(146, 20)
         Me.Label26.TabIndex = 56
         Me.Label26.Text = "COLUMN COUNT"
         Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -778,9 +799,10 @@ Partial Class Recipe
         '
         Me.txt_p_weight.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_weight.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_weight.Location = New System.Drawing.Point(150, 169)
+        Me.txt_p_weight.Location = New System.Drawing.Point(201, 208)
+        Me.txt_p_weight.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_p_weight.Name = "txt_p_weight"
-        Me.txt_p_weight.Size = New System.Drawing.Size(136, 22)
+        Me.txt_p_weight.Size = New System.Drawing.Size(180, 26)
         Me.txt_p_weight.TabIndex = 53
         '
         'Label24
@@ -789,9 +811,10 @@ Partial Class Recipe
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(16, 61)
+        Me.Label24.Location = New System.Drawing.Point(22, 75)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(111, 16)
+        Me.Label24.Size = New System.Drawing.Size(143, 20)
         Me.Label24.TabIndex = 46
         Me.Label24.Text = "P_LENGTH (mm)"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -802,9 +825,10 @@ Partial Class Recipe
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(16, 172)
+        Me.Label21.Location = New System.Drawing.Point(22, 212)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(107, 16)
+        Me.Label21.Size = New System.Drawing.Size(136, 20)
         Me.Label21.TabIndex = 50
         Me.Label21.Text = "P_WEIGHT (gm)"
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -813,27 +837,30 @@ Partial Class Recipe
         '
         Me.thk.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.thk.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.thk.Location = New System.Drawing.Point(150, 132)
+        Me.thk.Location = New System.Drawing.Point(201, 162)
+        Me.thk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.thk.Name = "thk"
-        Me.thk.Size = New System.Drawing.Size(136, 22)
+        Me.thk.Size = New System.Drawing.Size(180, 26)
         Me.thk.TabIndex = 52
         '
         'txt_p_len
         '
         Me.txt_p_len.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_len.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_len.Location = New System.Drawing.Point(150, 58)
+        Me.txt_p_len.Location = New System.Drawing.Point(201, 71)
+        Me.txt_p_len.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_p_len.Name = "txt_p_len"
-        Me.txt_p_len.Size = New System.Drawing.Size(136, 22)
+        Me.txt_p_len.Size = New System.Drawing.Size(180, 26)
         Me.txt_p_len.TabIndex = 47
         '
         'txt_p_wed
         '
         Me.txt_p_wed.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_wed.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_wed.Location = New System.Drawing.Point(150, 95)
+        Me.txt_p_wed.Location = New System.Drawing.Point(201, 117)
+        Me.txt_p_wed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_p_wed.Name = "txt_p_wed"
-        Me.txt_p_wed.Size = New System.Drawing.Size(136, 22)
+        Me.txt_p_wed.Size = New System.Drawing.Size(180, 26)
         Me.txt_p_wed.TabIndex = 51
         '
         'Label22
@@ -842,9 +869,10 @@ Partial Class Recipe
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(16, 135)
+        Me.Label22.Location = New System.Drawing.Point(22, 166)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(83, 16)
+        Me.Label22.Size = New System.Drawing.Size(108, 20)
         Me.Label22.TabIndex = 49
         Me.Label22.Text = "P_THK (mm)"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -855,9 +883,10 @@ Partial Class Recipe
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(16, 98)
+        Me.Label23.Location = New System.Drawing.Point(22, 121)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(101, 16)
+        Me.Label23.Size = New System.Drawing.Size(130, 20)
         Me.Label23.TabIndex = 48
         Me.Label23.Text = "P_WIDTH (mm)"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -868,9 +897,10 @@ Partial Class Recipe
         Me.Panel15.Controls.Add(Me.btn_Trackmov)
         Me.Panel15.Controls.Add(Me.btn_Widthadj)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel15.Location = New System.Drawing.Point(609, 0)
+        Me.Panel15.Location = New System.Drawing.Point(814, 0)
+        Me.Panel15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(143, 235)
+        Me.Panel15.Size = New System.Drawing.Size(191, 289)
         Me.Panel15.TabIndex = 45
         '
         'btn_Array
@@ -878,9 +908,10 @@ Partial Class Recipe
         Me.btn_Array.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_Array.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Array.ForeColor = System.Drawing.Color.Black
-        Me.btn_Array.Location = New System.Drawing.Point(0, 120)
+        Me.btn_Array.Location = New System.Drawing.Point(0, 148)
+        Me.btn_Array.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Array.Name = "btn_Array"
-        Me.btn_Array.Size = New System.Drawing.Size(143, 60)
+        Me.btn_Array.Size = New System.Drawing.Size(191, 74)
         Me.btn_Array.TabIndex = 4
         Me.btn_Array.Text = "ARRAY"
         Me.btn_Array.UseVisualStyleBackColor = True
@@ -890,9 +921,10 @@ Partial Class Recipe
         Me.btn_Trackmov.Dock = System.Windows.Forms.DockStyle.Top
         Me.btn_Trackmov.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Trackmov.ForeColor = System.Drawing.Color.Black
-        Me.btn_Trackmov.Location = New System.Drawing.Point(0, 60)
+        Me.btn_Trackmov.Location = New System.Drawing.Point(0, 74)
+        Me.btn_Trackmov.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Trackmov.Name = "btn_Trackmov"
-        Me.btn_Trackmov.Size = New System.Drawing.Size(143, 60)
+        Me.btn_Trackmov.Size = New System.Drawing.Size(191, 74)
         Me.btn_Trackmov.TabIndex = 3
         Me.btn_Trackmov.Text = "TRACK MOVE"
         Me.btn_Trackmov.UseVisualStyleBackColor = True
@@ -903,8 +935,9 @@ Partial Class Recipe
         Me.btn_Widthadj.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Widthadj.ForeColor = System.Drawing.Color.Black
         Me.btn_Widthadj.Location = New System.Drawing.Point(0, 0)
+        Me.btn_Widthadj.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Widthadj.Name = "btn_Widthadj"
-        Me.btn_Widthadj.Size = New System.Drawing.Size(143, 60)
+        Me.btn_Widthadj.Size = New System.Drawing.Size(191, 74)
         Me.btn_Widthadj.TabIndex = 2
         Me.btn_Widthadj.Text = "WIDTH ADJUSTMENT"
         Me.btn_Widthadj.UseVisualStyleBackColor = True
@@ -922,9 +955,10 @@ Partial Class Recipe
         Me.cmblocation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmblocation.ItemHeight = 30
         Me.cmblocation.Items.AddRange(New Object() {"A", "B", "C"})
-        Me.cmblocation.Location = New System.Drawing.Point(324, 8)
+        Me.cmblocation.Location = New System.Drawing.Point(432, 10)
+        Me.cmblocation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmblocation.Name = "cmblocation"
-        Me.cmblocation.Size = New System.Drawing.Size(162, 36)
+        Me.cmblocation.Size = New System.Drawing.Size(215, 36)
         Me.cmblocation.TabIndex = 28
         '
         'lbLoc
@@ -933,9 +967,10 @@ Partial Class Recipe
         Me.lbLoc.AutoSize = True
         Me.lbLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbLoc.ForeColor = System.Drawing.Color.Black
-        Me.lbLoc.Location = New System.Drawing.Point(232, 16)
+        Me.lbLoc.Location = New System.Drawing.Point(310, 20)
+        Me.lbLoc.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbLoc.Name = "lbLoc"
-        Me.lbLoc.Size = New System.Drawing.Size(74, 16)
+        Me.lbLoc.Size = New System.Drawing.Size(94, 20)
         Me.lbLoc.TabIndex = 27
         Me.lbLoc.Text = "LOCATION"
         Me.lbLoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -953,9 +988,10 @@ Partial Class Recipe
         Me.cmbpanelside.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cmbpanelside.ItemHeight = 30
         Me.cmbpanelside.Items.AddRange(New Object() {"TOP ", "BOTTOM"})
-        Me.cmbpanelside.Location = New System.Drawing.Point(54, 8)
+        Me.cmbpanelside.Location = New System.Drawing.Point(72, 10)
+        Me.cmbpanelside.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbpanelside.Name = "cmbpanelside"
-        Me.cmbpanelside.Size = New System.Drawing.Size(162, 36)
+        Me.cmbpanelside.Size = New System.Drawing.Size(215, 36)
         Me.cmbpanelside.TabIndex = 26
         '
         'lbSide
@@ -964,9 +1000,10 @@ Partial Class Recipe
         Me.lbSide.AutoSize = True
         Me.lbSide.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbSide.ForeColor = System.Drawing.Color.Black
-        Me.lbSide.Location = New System.Drawing.Point(6, 16)
+        Me.lbSide.Location = New System.Drawing.Point(9, 20)
+        Me.lbSide.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbSide.Name = "lbSide"
-        Me.lbSide.Size = New System.Drawing.Size(38, 16)
+        Me.lbSide.Size = New System.Drawing.Size(48, 20)
         Me.lbSide.TabIndex = 25
         Me.lbSide.Text = "SIDE"
         Me.lbSide.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -978,28 +1015,29 @@ Partial Class Recipe
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.txt_Sel_Prog_name)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Location = New System.Drawing.Point(4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(752, 73)
+        Me.Panel3.Size = New System.Drawing.Size(1005, 90)
         Me.Panel3.TabIndex = 2
         '
         'DE
         '
         Me.DE.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.DE.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DE.Location = New System.Drawing.Point(33, 41)
-        Me.DE.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.DE.Location = New System.Drawing.Point(44, 50)
         Me.DE.Name = "DE"
-        Me.DE.Size = New System.Drawing.Size(198, 23)
+        Me.DE.Size = New System.Drawing.Size(264, 28)
         Me.DE.TabIndex = 0
         Me.DE.Text = "PREVIOUS  PROGRAME"
         Me.DE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'rtxtcurrentpg
         '
-        Me.rtxtcurrentpg.Location = New System.Drawing.Point(51, 3)
+        Me.rtxtcurrentpg.Location = New System.Drawing.Point(68, 4)
+        Me.rtxtcurrentpg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rtxtcurrentpg.Name = "rtxtcurrentpg"
-        Me.rtxtcurrentpg.Size = New System.Drawing.Size(165, 35)
+        Me.rtxtcurrentpg.Size = New System.Drawing.Size(219, 42)
         Me.rtxtcurrentpg.TabIndex = 1
         Me.rtxtcurrentpg.Text = ""
         '
@@ -1007,19 +1045,19 @@ Partial Class Recipe
         '
         Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(419, 41)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(559, 50)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(198, 23)
+        Me.Label2.Size = New System.Drawing.Size(264, 28)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "SELECTED PROGRAME"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txt_Sel_Prog_name
         '
-        Me.txt_Sel_Prog_name.Location = New System.Drawing.Point(432, 3)
+        Me.txt_Sel_Prog_name.Location = New System.Drawing.Point(576, 4)
+        Me.txt_Sel_Prog_name.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_Sel_Prog_name.Name = "txt_Sel_Prog_name"
-        Me.txt_Sel_Prog_name.Size = New System.Drawing.Size(175, 35)
+        Me.txt_Sel_Prog_name.Size = New System.Drawing.Size(232, 42)
         Me.txt_Sel_Prog_name.TabIndex = 1
         Me.txt_Sel_Prog_name.Text = ""
         '
@@ -1028,8 +1066,9 @@ Partial Class Recipe
         Me.TabPage5.BackColor = System.Drawing.Color.Transparent
         Me.TabPage5.Controls.Add(Me.Panel50)
         Me.TabPage5.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(758, 797)
+        Me.TabPage5.Size = New System.Drawing.Size(1013, 1007)
         Me.TabPage5.TabIndex = 7
         Me.TabPage5.Text = "TEACH"
         '
@@ -1039,8 +1078,9 @@ Partial Class Recipe
         Me.Panel50.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel50.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel50.Location = New System.Drawing.Point(0, 0)
+        Me.Panel50.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(758, 797)
+        Me.Panel50.Size = New System.Drawing.Size(1013, 1007)
         Me.Panel50.TabIndex = 0
         '
         'Panel10
@@ -1052,8 +1092,9 @@ Partial Class Recipe
         Me.Panel10.Controls.Add(Me.Panel14)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.Location = New System.Drawing.Point(0, 0)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(758, 797)
+        Me.Panel10.Size = New System.Drawing.Size(1013, 1007)
         Me.Panel10.TabIndex = 2
         '
         'Panel12
@@ -1074,9 +1115,10 @@ Partial Class Recipe
         Me.Panel12.Controls.Add(Me.Label3)
         Me.Panel12.Controls.Add(Me.btpanWide)
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel12.Location = New System.Drawing.Point(0, 781)
+        Me.Panel12.Location = New System.Drawing.Point(0, 961)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(758, 16)
+        Me.Panel12.Size = New System.Drawing.Size(1013, 46)
         Me.Panel12.TabIndex = 15
         '
         'Guna2ComboBox2
@@ -1090,9 +1132,10 @@ Partial Class Recipe
         Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Guna2ComboBox2.ItemHeight = 30
         Me.Guna2ComboBox2.Items.AddRange(New Object() {"0.1MM", "1MM", "10MM", "CONITNUES"})
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(231, 5)
+        Me.Guna2ComboBox2.Location = New System.Drawing.Point(308, 6)
+        Me.Guna2ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(207, 36)
+        Me.Guna2ComboBox2.Size = New System.Drawing.Size(275, 36)
         Me.Guna2ComboBox2.TabIndex = 29
         '
         'Guna2ComboBox1
@@ -1106,9 +1149,10 @@ Partial Class Recipe
         Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.Guna2ComboBox1.ItemHeight = 30
         Me.Guna2ComboBox1.Items.AddRange(New Object() {"HIGH", "MEDIUM", "LOW"})
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(8, 5)
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(11, 6)
+        Me.Guna2ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(207, 36)
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(275, 36)
         Me.Guna2ComboBox1.TabIndex = 28
         '
         'Label8
@@ -1118,10 +1162,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(636, 168)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(848, 207)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 17)
+        Me.Label8.Size = New System.Drawing.Size(46, 20)
         Me.Label8.TabIndex = 27
         Me.Label8.Text = "CW-"
         '
@@ -1130,10 +1173,10 @@ Partial Class Recipe
         Me.Button16.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_down_arrow_50
         Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.Location = New System.Drawing.Point(552, 119)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button16.Location = New System.Drawing.Point(736, 146)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(80, 112)
+        Me.Button16.Size = New System.Drawing.Size(107, 138)
         Me.Button16.TabIndex = 26
         Me.Button16.UseVisualStyleBackColor = True
         '
@@ -1142,10 +1185,10 @@ Partial Class Recipe
         Me.Button15.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_up_arrow_50
         Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.Location = New System.Drawing.Point(452, 119)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button15.Location = New System.Drawing.Point(603, 146)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(95, 112)
+        Me.Button15.Size = New System.Drawing.Size(127, 138)
         Me.Button15.TabIndex = 25
         Me.Button15.UseVisualStyleBackColor = True
         '
@@ -1154,10 +1197,10 @@ Partial Class Recipe
         Me.btxmin.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_left_arrow_50
         Me.btxmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btxmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btxmin.Location = New System.Drawing.Point(11, 119)
-        Me.btxmin.Margin = New System.Windows.Forms.Padding(2)
+        Me.btxmin.Location = New System.Drawing.Point(15, 146)
+        Me.btxmin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btxmin.Name = "btxmin"
-        Me.btxmin.Size = New System.Drawing.Size(122, 82)
+        Me.btxmin.Size = New System.Drawing.Size(163, 101)
         Me.btxmin.TabIndex = 23
         Me.btxmin.UseVisualStyleBackColor = True
         '
@@ -1166,10 +1209,10 @@ Partial Class Recipe
         Me.btxmax.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_right_arrow_50__1_
         Me.btxmax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btxmax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btxmax.Location = New System.Drawing.Point(297, 119)
-        Me.btxmax.Margin = New System.Windows.Forms.Padding(2)
+        Me.btxmax.Location = New System.Drawing.Point(396, 146)
+        Me.btxmax.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btxmax.Name = "btxmax"
-        Me.btxmax.Size = New System.Drawing.Size(122, 82)
+        Me.btxmax.Size = New System.Drawing.Size(163, 101)
         Me.btxmax.TabIndex = 22
         Me.btxmax.UseVisualStyleBackColor = True
         '
@@ -1178,10 +1221,10 @@ Partial Class Recipe
         Me.btpanN.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_down_arrow_50
         Me.btpanN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btpanN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btpanN.Location = New System.Drawing.Point(151, 177)
-        Me.btpanN.Margin = New System.Windows.Forms.Padding(2)
+        Me.btpanN.Location = New System.Drawing.Point(201, 218)
+        Me.btpanN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btpanN.Name = "btpanN"
-        Me.btpanN.Size = New System.Drawing.Size(122, 82)
+        Me.btpanN.Size = New System.Drawing.Size(163, 101)
         Me.btpanN.TabIndex = 21
         Me.btpanN.UseVisualStyleBackColor = True
         '
@@ -1192,10 +1235,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(465, 90)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(620, 111)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 17)
+        Me.Label7.Size = New System.Drawing.Size(50, 20)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "CW+"
         '
@@ -1206,10 +1248,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(43, 210)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(57, 258)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(24, 17)
+        Me.Label6.Size = New System.Drawing.Size(28, 20)
         Me.Label6.TabIndex = 20
         Me.Label6.Text = "-X"
         '
@@ -1220,10 +1261,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(335, 100)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(447, 123)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(27, 17)
+        Me.Label5.Size = New System.Drawing.Size(32, 20)
         Me.Label5.TabIndex = 19
         Me.Label5.Text = "+X"
         '
@@ -1234,10 +1274,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(277, 229)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(369, 282)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(24, 17)
+        Me.Label4.Size = New System.Drawing.Size(27, 20)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "Y-"
         '
@@ -1248,10 +1287,9 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(120, 71)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(160, 87)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(27, 17)
+        Me.Label3.Size = New System.Drawing.Size(31, 20)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Y+"
         '
@@ -1260,10 +1298,10 @@ Partial Class Recipe
         Me.btpanWide.BackgroundImage = Global.Gui_Tset.My.Resources.Resources.icons8_up_arrow_50
         Me.btpanWide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btpanWide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btpanWide.Location = New System.Drawing.Point(151, 71)
-        Me.btpanWide.Margin = New System.Windows.Forms.Padding(2)
+        Me.btpanWide.Location = New System.Drawing.Point(201, 87)
+        Me.btpanWide.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btpanWide.Name = "btpanWide"
-        Me.btpanWide.Size = New System.Drawing.Size(122, 82)
+        Me.btpanWide.Size = New System.Drawing.Size(163, 101)
         Me.btpanWide.TabIndex = 24
         Me.btpanWide.UseVisualStyleBackColor = True
         '
@@ -1274,19 +1312,19 @@ Partial Class Recipe
         Me.Panel16.Controls.Add(Me.Label1)
         Me.Panel16.Controls.Add(Me.Button6)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel16.Location = New System.Drawing.Point(0, 733)
-        Me.Panel16.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel16.Location = New System.Drawing.Point(0, 902)
+        Me.Panel16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(758, 48)
+        Me.Panel16.Size = New System.Drawing.Size(1013, 59)
         Me.Panel16.TabIndex = 11
         '
         'Button10
         '
         Me.Button10.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button10.Location = New System.Drawing.Point(500, 0)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button10.Location = New System.Drawing.Point(668, 0)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(86, 48)
+        Me.Button10.Size = New System.Drawing.Size(115, 59)
         Me.Button10.TabIndex = 28
         Me.Button10.Text = "ADD"
         Me.Button10.UseVisualStyleBackColor = True
@@ -1294,10 +1332,10 @@ Partial Class Recipe
         'Button8
         '
         Me.Button8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button8.Location = New System.Drawing.Point(586, 0)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button8.Location = New System.Drawing.Point(783, 0)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(86, 48)
+        Me.Button8.Size = New System.Drawing.Size(115, 59)
         Me.Button8.TabIndex = 27
         Me.Button8.Text = "SAVE"
         Me.Button8.UseVisualStyleBackColor = True
@@ -1309,20 +1347,19 @@ Partial Class Recipe
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(310, 15)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(413, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 15)
+        Me.Label1.Size = New System.Drawing.Size(91, 18)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "JOG KEYS"
         '
         'Button6
         '
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button6.Location = New System.Drawing.Point(672, 0)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button6.Location = New System.Drawing.Point(898, 0)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(86, 48)
+        Me.Button6.Size = New System.Drawing.Size(115, 59)
         Me.Button6.TabIndex = 25
         Me.Button6.Text = "DELETE"
         Me.Button6.UseVisualStyleBackColor = True
@@ -1331,9 +1368,10 @@ Partial Class Recipe
         '
         Me.Panel13.Controls.Add(Me.DataGridView1)
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel13.Location = New System.Drawing.Point(0, 468)
+        Me.Panel13.Location = New System.Drawing.Point(0, 576)
+        Me.Panel13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(758, 265)
+        Me.Panel13.Size = New System.Drawing.Size(1013, 326)
         Me.Panel13.TabIndex = 8
         '
         'DataGridView1
@@ -1344,9 +1382,10 @@ Partial Class Recipe
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.Column3, Me.Column5})
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(758, 265)
+        Me.DataGridView1.Size = New System.Drawing.Size(1013, 326)
         Me.DataGridView1.TabIndex = 2
         '
         'Column2
@@ -1380,22 +1419,23 @@ Partial Class Recipe
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox3, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 131)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 161)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 342.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(758, 337)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 421.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1013, 415)
         Me.TableLayoutPanel1.TabIndex = 7
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Location = New System.Drawing.Point(381, 2)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox3.Location = New System.Drawing.Point(509, 2)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(375, 338)
+        Me.PictureBox3.Size = New System.Drawing.Size(501, 418)
         Me.PictureBox3.TabIndex = 1
         Me.PictureBox3.TabStop = False
         '
@@ -1403,27 +1443,28 @@ Partial Class Recipe
         '
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox4, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox5, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 4)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(373, 336)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(498, 414)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.Info
         Me.PictureBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox4.Location = New System.Drawing.Point(2, 170)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox4.Location = New System.Drawing.Point(3, 209)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(477, 164)
+        Me.PictureBox4.Size = New System.Drawing.Size(636, 203)
         Me.PictureBox4.TabIndex = 2
         Me.PictureBox4.TabStop = False
         '
@@ -1431,10 +1472,10 @@ Partial Class Recipe
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox5.Location = New System.Drawing.Point(2, 2)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox5.Location = New System.Drawing.Point(3, 2)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(477, 164)
+        Me.PictureBox5.Size = New System.Drawing.Size(636, 203)
         Me.PictureBox5.TabIndex = 1
         Me.PictureBox5.TabStop = False
         '
@@ -1443,9 +1484,9 @@ Partial Class Recipe
         Me.Panel14.Controls.Add(Me.GroupBox1)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel14.Location = New System.Drawing.Point(0, 0)
-        Me.Panel14.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(758, 131)
+        Me.Panel14.Size = New System.Drawing.Size(1013, 161)
         Me.Panel14.TabIndex = 6
         '
         'GroupBox1
@@ -1456,9 +1497,11 @@ Partial Class Recipe
         Me.GroupBox1.Controls.Add(Me.Label34)
         Me.GroupBox1.Controls.Add(Me.Label33)
         Me.GroupBox1.Controls.Add(Me.Label32)
-        Me.GroupBox1.Location = New System.Drawing.Point(27, 8)
+        Me.GroupBox1.Location = New System.Drawing.Point(36, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(651, 50)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(868, 62)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Current Position"
@@ -1467,27 +1510,30 @@ Partial Class Recipe
         '
         Me.TXCW.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TXCW.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXCW.Location = New System.Drawing.Point(507, 19)
+        Me.TXCW.Location = New System.Drawing.Point(676, 23)
+        Me.TXCW.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TXCW.Name = "TXCW"
-        Me.TXCW.Size = New System.Drawing.Size(136, 22)
+        Me.TXCW.Size = New System.Drawing.Size(180, 26)
         Me.TXCW.TabIndex = 25
         '
         'TXX
         '
         Me.TXX.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TXX.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXX.Location = New System.Drawing.Point(58, 19)
+        Me.TXX.Location = New System.Drawing.Point(77, 23)
+        Me.TXX.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TXX.Name = "TXX"
-        Me.TXX.Size = New System.Drawing.Size(136, 22)
+        Me.TXX.Size = New System.Drawing.Size(180, 26)
         Me.TXX.TabIndex = 24
         '
         'TXY
         '
         Me.TXY.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TXY.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXY.Location = New System.Drawing.Point(301, 19)
+        Me.TXY.Location = New System.Drawing.Point(401, 23)
+        Me.TXY.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TXY.Name = "TXY"
-        Me.TXY.Size = New System.Drawing.Size(136, 22)
+        Me.TXY.Size = New System.Drawing.Size(180, 26)
         Me.TXY.TabIndex = 21
         '
         'Label34
@@ -1496,9 +1542,10 @@ Partial Class Recipe
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.Color.Black
-        Me.Label34.Location = New System.Drawing.Point(455, 25)
+        Me.Label34.Location = New System.Drawing.Point(607, 31)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(29, 16)
+        Me.Label34.Size = New System.Drawing.Size(37, 20)
         Me.Label34.TabIndex = 23
         Me.Label34.Text = "CW"
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1509,9 +1556,10 @@ Partial Class Recipe
         Me.Label33.AutoSize = True
         Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.ForeColor = System.Drawing.Color.Black
-        Me.Label33.Location = New System.Drawing.Point(27, 22)
+        Me.Label33.Location = New System.Drawing.Point(36, 27)
+        Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(15, 16)
+        Me.Label33.Size = New System.Drawing.Size(20, 20)
         Me.Label33.TabIndex = 22
         Me.Label33.Text = "X"
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1522,9 +1570,10 @@ Partial Class Recipe
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.ForeColor = System.Drawing.Color.Black
-        Me.Label32.Location = New System.Drawing.Point(250, 22)
+        Me.Label32.Location = New System.Drawing.Point(333, 27)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(16, 16)
+        Me.Label32.Size = New System.Drawing.Size(19, 20)
         Me.Label32.TabIndex = 20
         Me.Label32.Text = "Y"
         Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1535,8 +1584,9 @@ Partial Class Recipe
         Me.TabPage6.Controls.Add(Me.Panel11)
         Me.TabPage6.ForeColor = System.Drawing.Color.White
         Me.TabPage6.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(758, 797)
+        Me.TabPage6.Size = New System.Drawing.Size(1013, 992)
         Me.TabPage6.TabIndex = 8
         Me.TabPage6.Text = "Vision"
         '
@@ -1546,8 +1596,9 @@ Partial Class Recipe
         Me.Panel11.Controls.Add(Me.Guna2Panel3)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(758, 797)
+        Me.Panel11.Size = New System.Drawing.Size(1013, 992)
         Me.Panel11.TabIndex = 1
         '
         'Guna2Panel3
@@ -1574,55 +1625,57 @@ Partial Class Recipe
         Me.Guna2Panel3.Controls.Add(Me.Panel21)
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(758, 797)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1013, 992)
         Me.Guna2Panel3.TabIndex = 0
         '
         'datagrdFid
         '
         Me.datagrdFid.AllowUserToAddRows = False
         Me.datagrdFid.AllowUserToDeleteRows = False
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(184, Byte), Integer))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(156, Byte), Integer), CType(CType(18, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black
-        Me.datagrdFid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(184, Byte), Integer))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(156, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        Me.datagrdFid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.datagrdFid.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.datagrdFid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(156, Byte), Integer), CType(CType(18, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagrdFid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(156, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagrdFid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.datagrdFid.ColumnHeadersHeight = 20
         Me.datagrdFid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.datagrdFid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.Column4, Me.DataGridViewTextBoxColumn3, Me.Column6, Me.Column7, Me.Column11, Me.Column12, Me.Column8, Me.Column9, Me.Column13, Me.Column14, Me.Column15, Me.Column16, Me.Column10})
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(207, Byte), Integer))
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(97, Byte), Integer))
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagrdFid.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(207, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(189, Byte), Integer), CType(CType(97, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrdFid.DefaultCellStyle = DataGridViewCellStyle5
         Me.datagrdFid.GridColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(218, Byte), Integer), CType(CType(171, Byte), Integer))
-        Me.datagrdFid.Location = New System.Drawing.Point(0, 557)
+        Me.datagrdFid.Location = New System.Drawing.Point(0, 686)
+        Me.datagrdFid.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.datagrdFid.Name = "datagrdFid"
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagrdFid.RowHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagrdFid.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.datagrdFid.RowHeadersVisible = False
         Me.datagrdFid.RowHeadersWidth = 51
-        Me.datagrdFid.Size = New System.Drawing.Size(764, 118)
+        Me.datagrdFid.Size = New System.Drawing.Size(1019, 145)
         Me.datagrdFid.TabIndex = 3
         Me.datagrdFid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Orange
         Me.datagrdFid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(184, Byte), Integer))
@@ -1653,7 +1706,7 @@ Partial Class Recipe
         Me.Column1.HeaderText = "TYPE"
         Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
-        Me.Column1.Width = 58
+        Me.Column1.Width = 71
         '
         'DataGridViewTextBoxColumn1
         '
@@ -1661,7 +1714,7 @@ Partial Class Recipe
         Me.DataGridViewTextBoxColumn1.HeaderText = "SHAPE TYPE"
         Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 97
+        Me.DataGridViewTextBoxColumn1.Width = 121
         '
         'DataGridViewTextBoxColumn2
         '
@@ -1669,7 +1722,7 @@ Partial Class Recipe
         Me.DataGridViewTextBoxColumn2.HeaderText = "X1"
         Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 43
+        Me.DataGridViewTextBoxColumn2.Width = 52
         '
         'Column4
         '
@@ -1677,7 +1730,7 @@ Partial Class Recipe
         Me.Column4.HeaderText = "Y1"
         Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
-        Me.Column4.Width = 43
+        Me.Column4.Width = 52
         '
         'DataGridViewTextBoxColumn3
         '
@@ -1685,7 +1738,7 @@ Partial Class Recipe
         Me.DataGridViewTextBoxColumn3.HeaderText = "X2 , RADIUS "
         Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 96
+        Me.DataGridViewTextBoxColumn3.Width = 119
         '
         'Column6
         '
@@ -1693,7 +1746,7 @@ Partial Class Recipe
         Me.Column6.HeaderText = "Y2"
         Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
-        Me.Column6.Width = 43
+        Me.Column6.Width = 52
         '
         'Column7
         '
@@ -1701,7 +1754,7 @@ Partial Class Recipe
         Me.Column7.HeaderText = "CENTRE P."
         Me.Column7.MinimumWidth = 6
         Me.Column7.Name = "Column7"
-        Me.Column7.Width = 87
+        Me.Column7.Width = 108
         '
         'Column11
         '
@@ -1709,7 +1762,7 @@ Partial Class Recipe
         Me.Column11.HeaderText = "X-OFFSET"
         Me.Column11.MinimumWidth = 6
         Me.Column11.Name = "Column11"
-        Me.Column11.Width = 81
+        Me.Column11.Width = 103
         '
         'Column12
         '
@@ -1717,7 +1770,7 @@ Partial Class Recipe
         Me.Column12.HeaderText = "Y-OFFSET"
         Me.Column12.MinimumWidth = 6
         Me.Column12.Name = "Column12"
-        Me.Column12.Width = 81
+        Me.Column12.Width = 103
         '
         'Column8
         '
@@ -1725,7 +1778,7 @@ Partial Class Recipe
         Me.Column8.HeaderText = "POS X"
         Me.Column8.MinimumWidth = 6
         Me.Column8.Name = "Column8"
-        Me.Column8.Width = 62
+        Me.Column8.Width = 77
         '
         'Column9
         '
@@ -1733,7 +1786,7 @@ Partial Class Recipe
         Me.Column9.HeaderText = "POS Y"
         Me.Column9.MinimumWidth = 6
         Me.Column9.Name = "Column9"
-        Me.Column9.Width = 62
+        Me.Column9.Width = 77
         '
         'Column13
         '
@@ -1741,7 +1794,7 @@ Partial Class Recipe
         Me.Column13.HeaderText = "THRESHOULD"
         Me.Column13.MinimumWidth = 6
         Me.Column13.Name = "Column13"
-        Me.Column13.Width = 105
+        Me.Column13.Width = 131
         '
         'Column14
         '
@@ -1749,7 +1802,7 @@ Partial Class Recipe
         Me.Column14.HeaderText = "TOLERANCE"
         Me.Column14.MinimumWidth = 6
         Me.Column14.Name = "Column14"
-        Me.Column14.Width = 95
+        Me.Column14.Width = 119
         '
         'Column15
         '
@@ -1757,6 +1810,7 @@ Partial Class Recipe
         Me.Column15.HeaderText = "BRIGHTNESS"
         Me.Column15.MinimumWidth = 6
         Me.Column15.Name = "Column15"
+        Me.Column15.Width = 124
         '
         'Column16
         '
@@ -1764,7 +1818,7 @@ Partial Class Recipe
         Me.Column16.HeaderText = "SCORE"
         Me.Column16.MinimumWidth = 6
         Me.Column16.Name = "Column16"
-        Me.Column16.Width = 67
+        Me.Column16.Width = 83
         '
         'Column10
         '
@@ -1772,7 +1826,7 @@ Partial Class Recipe
         Me.Column10.HeaderText = "SELECT"
         Me.Column10.MinimumWidth = 6
         Me.Column10.Name = "Column10"
-        Me.Column10.Width = 52
+        Me.Column10.Width = 65
         '
         'Guna2ComboBox3
         '
@@ -1785,9 +1839,10 @@ Partial Class Recipe
         Me.Guna2ComboBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2ComboBox3.ItemHeight = 30
         Me.Guna2ComboBox3.Items.AddRange(New Object() {"0.1MM", "1MM", "10MM", "CONITNUES"})
-        Me.Guna2ComboBox3.Location = New System.Drawing.Point(340, 930)
+        Me.Guna2ComboBox3.Location = New System.Drawing.Point(453, 1145)
+        Me.Guna2ComboBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ComboBox3.Name = "Guna2ComboBox3"
-        Me.Guna2ComboBox3.Size = New System.Drawing.Size(207, 36)
+        Me.Guna2ComboBox3.Size = New System.Drawing.Size(275, 36)
         Me.Guna2ComboBox3.TabIndex = 43
         '
         'Guna2ComboBox4
@@ -1801,9 +1856,10 @@ Partial Class Recipe
         Me.Guna2ComboBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Guna2ComboBox4.ItemHeight = 30
         Me.Guna2ComboBox4.Items.AddRange(New Object() {"HIGH", "MEDIUM", "LOW"})
-        Me.Guna2ComboBox4.Location = New System.Drawing.Point(554, 930)
+        Me.Guna2ComboBox4.Location = New System.Drawing.Point(739, 1145)
+        Me.Guna2ComboBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ComboBox4.Name = "Guna2ComboBox4"
-        Me.Guna2ComboBox4.Size = New System.Drawing.Size(207, 36)
+        Me.Guna2ComboBox4.Size = New System.Drawing.Size(275, 36)
         Me.Guna2ComboBox4.TabIndex = 42
         '
         'Label13
@@ -1814,10 +1870,9 @@ Partial Class Recipe
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label13.Location = New System.Drawing.Point(636, 973)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Location = New System.Drawing.Point(848, 1198)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(38, 17)
+        Me.Label13.Size = New System.Drawing.Size(46, 20)
         Me.Label13.TabIndex = 41
         Me.Label13.Text = "CW-"
         '
@@ -1827,10 +1882,10 @@ Partial Class Recipe
         Me.Button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button19.Location = New System.Drawing.Point(594, 1002)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button19.Location = New System.Drawing.Point(792, 1233)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(122, 112)
+        Me.Button19.Size = New System.Drawing.Size(163, 138)
         Me.Button19.TabIndex = 40
         Me.Button19.UseVisualStyleBackColor = True
         '
@@ -1840,10 +1895,10 @@ Partial Class Recipe
         Me.Button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button20.Location = New System.Drawing.Point(454, 1002)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button20.Location = New System.Drawing.Point(605, 1233)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(122, 112)
+        Me.Button20.Size = New System.Drawing.Size(163, 138)
         Me.Button20.TabIndex = 39
         Me.Button20.UseVisualStyleBackColor = True
         '
@@ -1853,10 +1908,10 @@ Partial Class Recipe
         Me.Button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button21.Location = New System.Drawing.Point(47, 971)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button21.Location = New System.Drawing.Point(63, 1195)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(95, 69)
+        Me.Button21.Size = New System.Drawing.Size(127, 85)
         Me.Button21.TabIndex = 37
         Me.Button21.UseVisualStyleBackColor = True
         '
@@ -1866,10 +1921,10 @@ Partial Class Recipe
         Me.Button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button22.Location = New System.Drawing.Point(245, 971)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button22.Location = New System.Drawing.Point(327, 1195)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(95, 69)
+        Me.Button22.Size = New System.Drawing.Size(127, 85)
         Me.Button22.TabIndex = 36
         Me.Button22.UseVisualStyleBackColor = True
         '
@@ -1879,10 +1934,10 @@ Partial Class Recipe
         Me.Button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button23.Location = New System.Drawing.Point(146, 1008)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button23.Location = New System.Drawing.Point(195, 1241)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(95, 69)
+        Me.Button23.Size = New System.Drawing.Size(127, 85)
         Me.Button23.TabIndex = 35
         Me.Button23.UseVisualStyleBackColor = True
         '
@@ -1894,10 +1949,9 @@ Partial Class Recipe
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label14.Location = New System.Drawing.Point(495, 973)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Location = New System.Drawing.Point(660, 1198)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(41, 17)
+        Me.Label14.Size = New System.Drawing.Size(50, 20)
         Me.Label14.TabIndex = 31
         Me.Label14.Text = "CW+"
         '
@@ -1909,10 +1963,9 @@ Partial Class Recipe
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label15.Location = New System.Drawing.Point(17, 997)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Location = New System.Drawing.Point(23, 1227)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(24, 17)
+        Me.Label15.Size = New System.Drawing.Size(28, 20)
         Me.Label15.TabIndex = 34
         Me.Label15.Text = "-X"
         '
@@ -1924,10 +1977,9 @@ Partial Class Recipe
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label16.Location = New System.Drawing.Point(337, 997)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label16.Location = New System.Drawing.Point(449, 1227)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(27, 17)
+        Me.Label16.Size = New System.Drawing.Size(32, 20)
         Me.Label16.TabIndex = 33
         Me.Label16.Text = "+X"
         '
@@ -1939,10 +1991,9 @@ Partial Class Recipe
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label17.Location = New System.Drawing.Point(187, 1079)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label17.Location = New System.Drawing.Point(249, 1328)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(24, 17)
+        Me.Label17.Size = New System.Drawing.Size(27, 20)
         Me.Label17.TabIndex = 32
         Me.Label17.Text = "Y-"
         '
@@ -1954,10 +2005,9 @@ Partial Class Recipe
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label18.Location = New System.Drawing.Point(187, 916)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label18.Location = New System.Drawing.Point(249, 1127)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(27, 17)
+        Me.Label18.Size = New System.Drawing.Size(31, 20)
         Me.Label18.TabIndex = 30
         Me.Label18.Text = "Y+"
         '
@@ -1967,19 +2017,20 @@ Partial Class Recipe
         Me.Button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button24.Location = New System.Drawing.Point(146, 935)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button24.Location = New System.Drawing.Point(195, 1151)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(95, 69)
+        Me.Button24.Size = New System.Drawing.Size(127, 85)
         Me.Button24.TabIndex = 38
         Me.Button24.UseVisualStyleBackColor = True
         '
         'Panel24
         '
         Me.Panel24.Controls.Add(Me.Panel25)
-        Me.Panel24.Location = New System.Drawing.Point(0, 736)
+        Me.Panel24.Location = New System.Drawing.Point(0, 906)
+        Me.Panel24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(764, 174)
+        Me.Panel24.Size = New System.Drawing.Size(1019, 214)
         Me.Panel24.TabIndex = 11
         '
         'Panel25
@@ -1988,8 +2039,9 @@ Partial Class Recipe
         Me.Panel25.Controls.Add(Me.Panel26)
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
+        Me.Panel25.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(764, 174)
+        Me.Panel25.Size = New System.Drawing.Size(1019, 214)
         Me.Panel25.TabIndex = 0
         '
         'Panel27
@@ -2001,10 +2053,10 @@ Partial Class Recipe
         Me.Panel27.Controls.Add(Me.Guna2Button14)
         Me.Panel27.Controls.Add(Me.Guna2Button13)
         Me.Panel27.Controls.Add(Me.Guna2Button12)
-        Me.Panel27.Location = New System.Drawing.Point(235, 5)
-        Me.Panel27.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel27.Location = New System.Drawing.Point(313, 6)
+        Me.Panel27.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(239, 160)
+        Me.Panel27.Size = New System.Drawing.Size(319, 197)
         Me.Panel27.TabIndex = 11
         '
         'Guna2CircleButton2
@@ -2018,10 +2070,11 @@ Partial Class Recipe
         Me.Guna2CircleButton2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2CircleButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(65, 68)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(87, 84)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(35, 32)
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(47, 39)
         Me.Guna2CircleButton2.TabIndex = 26
         '
         'Guna2Button17
@@ -2035,9 +2088,10 @@ Partial Class Recipe
         Me.Guna2Button17.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button17.ForeColor = System.Drawing.Color.White
         Me.Guna2Button17.Image = CType(resources.GetObject("Guna2Button17.Image"), System.Drawing.Image)
-        Me.Guna2Button17.Location = New System.Drawing.Point(185, 68)
+        Me.Guna2Button17.Location = New System.Drawing.Point(247, 84)
+        Me.Guna2Button17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button17.Name = "Guna2Button17"
-        Me.Guna2Button17.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button17.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button17.TabIndex = 16
         '
         'Guna2Button16
@@ -2051,9 +2105,10 @@ Partial Class Recipe
         Me.Guna2Button16.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button16.ForeColor = System.Drawing.Color.White
         Me.Guna2Button16.Image = CType(resources.GetObject("Guna2Button16.Image"), System.Drawing.Image)
-        Me.Guna2Button16.Location = New System.Drawing.Point(149, 66)
+        Me.Guna2Button16.Location = New System.Drawing.Point(199, 81)
+        Me.Guna2Button16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button16.Name = "Guna2Button16"
-        Me.Guna2Button16.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button16.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button16.TabIndex = 15
         '
         'Guna2Button15
@@ -2067,9 +2122,10 @@ Partial Class Recipe
         Me.Guna2Button15.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button15.ForeColor = System.Drawing.Color.White
         Me.Guna2Button15.Image = CType(resources.GetObject("Guna2Button15.Image"), System.Drawing.Image)
-        Me.Guna2Button15.Location = New System.Drawing.Point(64, 113)
+        Me.Guna2Button15.Location = New System.Drawing.Point(85, 139)
+        Me.Guna2Button15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button15.Name = "Guna2Button15"
-        Me.Guna2Button15.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button15.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button15.TabIndex = 14
         '
         'Guna2Button14
@@ -2083,9 +2139,10 @@ Partial Class Recipe
         Me.Guna2Button14.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button14.ForeColor = System.Drawing.Color.White
         Me.Guna2Button14.Image = CType(resources.GetObject("Guna2Button14.Image"), System.Drawing.Image)
-        Me.Guna2Button14.Location = New System.Drawing.Point(106, 68)
+        Me.Guna2Button14.Location = New System.Drawing.Point(141, 84)
+        Me.Guna2Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button14.Name = "Guna2Button14"
-        Me.Guna2Button14.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button14.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button14.TabIndex = 13
         '
         'Guna2Button13
@@ -2099,9 +2156,10 @@ Partial Class Recipe
         Me.Guna2Button13.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button13.ForeColor = System.Drawing.Color.White
         Me.Guna2Button13.Image = CType(resources.GetObject("Guna2Button13.Image"), System.Drawing.Image)
-        Me.Guna2Button13.Location = New System.Drawing.Point(17, 66)
+        Me.Guna2Button13.Location = New System.Drawing.Point(23, 81)
+        Me.Guna2Button13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button13.Name = "Guna2Button13"
-        Me.Guna2Button13.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button13.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button13.TabIndex = 12
         '
         'Guna2Button12
@@ -2115,9 +2173,10 @@ Partial Class Recipe
         Me.Guna2Button12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button12.ForeColor = System.Drawing.Color.White
         Me.Guna2Button12.Image = CType(resources.GetObject("Guna2Button12.Image"), System.Drawing.Image)
-        Me.Guna2Button12.Location = New System.Drawing.Point(64, 18)
+        Me.Guna2Button12.Location = New System.Drawing.Point(85, 22)
+        Me.Guna2Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button12.Name = "Guna2Button12"
-        Me.Guna2Button12.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button12.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button12.TabIndex = 11
         '
         'Panel26
@@ -2130,10 +2189,10 @@ Partial Class Recipe
         Me.Panel26.Controls.Add(Me.Guna2Button6)
         Me.Panel26.Controls.Add(Me.Guna2Button5)
         Me.Panel26.Controls.Add(Me.Guna2Button4)
-        Me.Panel26.Location = New System.Drawing.Point(7, 5)
-        Me.Panel26.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel26.Location = New System.Drawing.Point(9, 6)
+        Me.Panel26.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(224, 160)
+        Me.Panel26.Size = New System.Drawing.Size(299, 197)
         Me.Panel26.TabIndex = 10
         '
         'Guna2Button11
@@ -2148,9 +2207,10 @@ Partial Class Recipe
         Me.Guna2Button11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button11.ForeColor = System.Drawing.Color.White
         Me.Guna2Button11.Image = CType(resources.GetObject("Guna2Button11.Image"), System.Drawing.Image)
-        Me.Guna2Button11.Location = New System.Drawing.Point(58, 68)
+        Me.Guna2Button11.Location = New System.Drawing.Point(77, 84)
+        Me.Guna2Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button11.Name = "Guna2Button11"
-        Me.Guna2Button11.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button11.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button11.TabIndex = 16
         '
         'Guna2Button10
@@ -2165,9 +2225,10 @@ Partial Class Recipe
         Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button10.ForeColor = System.Drawing.Color.White
         Me.Guna2Button10.Image = CType(resources.GetObject("Guna2Button10.Image"), System.Drawing.Image)
-        Me.Guna2Button10.Location = New System.Drawing.Point(138, 68)
+        Me.Guna2Button10.Location = New System.Drawing.Point(184, 84)
+        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button10.Name = "Guna2Button10"
-        Me.Guna2Button10.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button10.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button10.TabIndex = 14
         '
         'Guna2Button9
@@ -2182,9 +2243,10 @@ Partial Class Recipe
         Me.Guna2Button9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button9.ForeColor = System.Drawing.Color.White
         Me.Guna2Button9.Image = CType(resources.GetObject("Guna2Button9.Image"), System.Drawing.Image)
-        Me.Guna2Button9.Location = New System.Drawing.Point(93, 92)
+        Me.Guna2Button9.Location = New System.Drawing.Point(124, 113)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button9.Name = "Guna2Button9"
-        Me.Guna2Button9.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button9.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button9.TabIndex = 15
         '
         'Guna2Button7
@@ -2199,9 +2261,10 @@ Partial Class Recipe
         Me.Guna2Button7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button7.ForeColor = System.Drawing.Color.White
         Me.Guna2Button7.Image = CType(resources.GetObject("Guna2Button7.Image"), System.Drawing.Image)
-        Me.Guna2Button7.Location = New System.Drawing.Point(13, 68)
+        Me.Guna2Button7.Location = New System.Drawing.Point(17, 84)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button7.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button7.TabIndex = 13
         '
         'Guna2Button8
@@ -2216,9 +2279,10 @@ Partial Class Recipe
         Me.Guna2Button8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button8.ForeColor = System.Drawing.Color.White
         Me.Guna2Button8.Image = CType(resources.GetObject("Guna2Button8.Image"), System.Drawing.Image)
-        Me.Guna2Button8.Location = New System.Drawing.Point(93, 44)
+        Me.Guna2Button8.Location = New System.Drawing.Point(124, 54)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button8.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button8.TabIndex = 14
         '
         'Guna2Button6
@@ -2233,9 +2297,10 @@ Partial Class Recipe
         Me.Guna2Button6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button6.ForeColor = System.Drawing.Color.White
         Me.Guna2Button6.Image = CType(resources.GetObject("Guna2Button6.Image"), System.Drawing.Image)
-        Me.Guna2Button6.Location = New System.Drawing.Point(183, 68)
+        Me.Guna2Button6.Location = New System.Drawing.Point(244, 84)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button6.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button6.TabIndex = 12
         '
         'Guna2Button5
@@ -2250,9 +2315,10 @@ Partial Class Recipe
         Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button5.ForeColor = System.Drawing.Color.White
         Me.Guna2Button5.Image = CType(resources.GetObject("Guna2Button5.Image"), System.Drawing.Image)
-        Me.Guna2Button5.Location = New System.Drawing.Point(93, 121)
+        Me.Guna2Button5.Location = New System.Drawing.Point(124, 149)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button5.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button5.TabIndex = 11
         '
         'Guna2Button4
@@ -2268,9 +2334,10 @@ Partial Class Recipe
         Me.Guna2Button4.ForeColor = System.Drawing.Color.Black
         Me.Guna2Button4.Image = CType(resources.GetObject("Guna2Button4.Image"), System.Drawing.Image)
         Me.Guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.Guna2Button4.Location = New System.Drawing.Point(93, 5)
+        Me.Guna2Button4.Location = New System.Drawing.Point(124, 6)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(39, 34)
+        Me.Guna2Button4.Size = New System.Drawing.Size(52, 42)
         Me.Guna2Button4.TabIndex = 10
         Me.Guna2Button4.Text = "^"
         '
@@ -2286,18 +2353,19 @@ Partial Class Recipe
         Me.Panel23.Controls.Add(Me.Button14)
         Me.Panel23.Controls.Add(Me.Button18)
         Me.Panel23.ForeColor = System.Drawing.Color.Black
-        Me.Panel23.Location = New System.Drawing.Point(0, 681)
+        Me.Panel23.Location = New System.Drawing.Point(0, 838)
+        Me.Panel23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(764, 55)
+        Me.Panel23.Size = New System.Drawing.Size(1019, 68)
         Me.Panel23.TabIndex = 10
         '
         'Button17
         '
         Me.Button17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button17.Location = New System.Drawing.Point(86, 0)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button17.Location = New System.Drawing.Point(115, 0)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(86, 55)
+        Me.Button17.Size = New System.Drawing.Size(115, 68)
         Me.Button17.TabIndex = 40
         Me.Button17.Text = "GET"
         Me.Button17.UseVisualStyleBackColor = True
@@ -2305,10 +2373,10 @@ Partial Class Recipe
         'Button13
         '
         Me.Button13.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button13.Location = New System.Drawing.Point(420, 0)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button13.Location = New System.Drawing.Point(559, 0)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(86, 55)
+        Me.Button13.Size = New System.Drawing.Size(115, 68)
         Me.Button13.TabIndex = 39
         Me.Button13.Text = "ADD"
         Me.Button13.UseVisualStyleBackColor = True
@@ -2316,10 +2384,10 @@ Partial Class Recipe
         'Learn
         '
         Me.Learn.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Learn.Location = New System.Drawing.Point(506, 0)
-        Me.Learn.Margin = New System.Windows.Forms.Padding(2)
+        Me.Learn.Location = New System.Drawing.Point(674, 0)
+        Me.Learn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Learn.Name = "Learn"
-        Me.Learn.Size = New System.Drawing.Size(86, 55)
+        Me.Learn.Size = New System.Drawing.Size(115, 68)
         Me.Learn.TabIndex = 38
         Me.Learn.Text = "LEARN"
         Me.Learn.UseVisualStyleBackColor = True
@@ -2328,9 +2396,9 @@ Partial Class Recipe
         '
         Me.Button7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button7.Location = New System.Drawing.Point(0, 0)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(86, 55)
+        Me.Button7.Size = New System.Drawing.Size(115, 68)
         Me.Button7.TabIndex = 37
         Me.Button7.Text = "SAVE ROI"
         Me.Button7.UseVisualStyleBackColor = True
@@ -2346,9 +2414,10 @@ Partial Class Recipe
         Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(278, 6)
+        Me.Guna2Button1.Location = New System.Drawing.Point(371, 7)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(41, 43)
+        Me.Guna2Button1.Size = New System.Drawing.Size(55, 53)
         Me.Guna2Button1.TabIndex = 36
         '
         'Guna2CircleButton1
@@ -2361,30 +2430,31 @@ Partial Class Recipe
         Me.Guna2CircleButton1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2CircleButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2CircleButton1.Location = New System.Drawing.Point(325, 6)
+        Me.Guna2CircleButton1.Location = New System.Drawing.Point(433, 7)
+        Me.Guna2CircleButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2CircleButton1.Name = "Guna2CircleButton1"
         Me.Guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton1.Size = New System.Drawing.Size(49, 43)
+        Me.Guna2CircleButton1.Size = New System.Drawing.Size(65, 53)
         Me.Guna2CircleButton1.TabIndex = 35
         '
         'Button12
         '
         Me.Button12.BackColor = System.Drawing.Color.White
         Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.Location = New System.Drawing.Point(375, -2)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button12.Location = New System.Drawing.Point(500, -2)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(41, 55)
+        Me.Button12.Size = New System.Drawing.Size(55, 68)
         Me.Button12.TabIndex = 34
         Me.Button12.UseVisualStyleBackColor = False
         '
         'Button14
         '
         Me.Button14.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button14.Location = New System.Drawing.Point(592, 0)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button14.Location = New System.Drawing.Point(789, 0)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(86, 55)
+        Me.Button14.Size = New System.Drawing.Size(115, 68)
         Me.Button14.TabIndex = 32
         Me.Button14.Text = "SAVE"
         Me.Button14.UseVisualStyleBackColor = True
@@ -2392,10 +2462,10 @@ Partial Class Recipe
         'Button18
         '
         Me.Button18.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button18.Location = New System.Drawing.Point(678, 0)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button18.Location = New System.Drawing.Point(904, 0)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(86, 55)
+        Me.Button18.Size = New System.Drawing.Size(115, 68)
         Me.Button18.TabIndex = 30
         Me.Button18.Text = "DELETE"
         Me.Button18.UseVisualStyleBackColor = True
@@ -2409,35 +2479,38 @@ Partial Class Recipe
         Me.Panel19.Controls.Add(Me.Panel20)
         Me.Panel19.Controls.Add(Me.GroupBoxParam)
         Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel19.Location = New System.Drawing.Point(0, 54)
-        Me.Panel19.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel19.Location = New System.Drawing.Point(0, 66)
+        Me.Panel19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(758, 207)
+        Me.Panel19.Size = New System.Drawing.Size(1013, 255)
         Me.Panel19.TabIndex = 7
         '
         'PictureBox9
         '
-        Me.PictureBox9.Location = New System.Drawing.Point(199, 5)
+        Me.PictureBox9.Location = New System.Drawing.Point(265, 6)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(165, 183)
+        Me.PictureBox9.Size = New System.Drawing.Size(220, 225)
         Me.PictureBox9.TabIndex = 21
         Me.PictureBox9.TabStop = False
         '
         'Guna2PictureBox2
         '
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(28, 31)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(37, 38)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(139, 117)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(185, 144)
         Me.Guna2PictureBox2.TabIndex = 20
         Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(213, 35)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(284, 43)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(139, 117)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(185, 144)
         Me.Guna2PictureBox1.TabIndex = 19
         Me.Guna2PictureBox1.TabStop = False
         '
@@ -2445,8 +2518,9 @@ Partial Class Recipe
         '
         Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(378, 207)
+        Me.PictureBox6.Size = New System.Drawing.Size(506, 255)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 18
         Me.PictureBox6.TabStop = False
@@ -2468,9 +2542,10 @@ Partial Class Recipe
         Me.Panel20.Controls.Add(Me.TextBox2)
         Me.Panel20.Controls.Add(Me.GroupBoxGrabImage)
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(378, 0)
+        Me.Panel20.Location = New System.Drawing.Point(506, 0)
+        Me.Panel20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(380, 207)
+        Me.Panel20.Size = New System.Drawing.Size(507, 255)
         Me.Panel20.TabIndex = 17
         '
         'Label36
@@ -2478,17 +2553,19 @@ Partial Class Recipe
         Me.Label36.AutoSize = True
         Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label36.ForeColor = System.Drawing.Color.Black
-        Me.Label36.Location = New System.Drawing.Point(33, 177)
+        Me.Label36.Location = New System.Drawing.Point(44, 218)
+        Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(43, 16)
+        Me.Label36.Size = New System.Drawing.Size(53, 20)
         Me.Label36.TabIndex = 43
         Me.Label36.Text = "Score"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(82, 175)
+        Me.TextBox1.Location = New System.Drawing.Point(109, 215)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(52, 22)
         Me.TextBox1.TabIndex = 42
         '
         'Label9
@@ -2496,9 +2573,10 @@ Partial Class Recipe
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(160, 177)
+        Me.Label9.Location = New System.Drawing.Point(213, 218)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(43, 16)
+        Me.Label9.Size = New System.Drawing.Size(51, 20)
         Me.Label9.TabIndex = 41
         Me.Label9.Text = "TYPE"
         '
@@ -2507,9 +2585,10 @@ Partial Class Recipe
         Me.FIDTYPE.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FIDTYPE.FormattingEnabled = True
         Me.FIDTYPE.Items.AddRange(New Object() {"MAIN", "SUB"})
-        Me.FIDTYPE.Location = New System.Drawing.Point(209, 173)
+        Me.FIDTYPE.Location = New System.Drawing.Point(279, 213)
+        Me.FIDTYPE.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.FIDTYPE.Name = "FIDTYPE"
-        Me.FIDTYPE.Size = New System.Drawing.Size(71, 24)
+        Me.FIDTYPE.Size = New System.Drawing.Size(93, 28)
         Me.FIDTYPE.TabIndex = 40
         '
         'GroupBox3
@@ -2517,9 +2596,11 @@ Partial Class Recipe
         Me.GroupBox3.Controls.Add(Me.LiveTriggerOnce)
         Me.GroupBox3.Controls.Add(Me.LiveTriggerOn)
         Me.GroupBox3.Controls.Add(Me.LiveTriggerOff)
-        Me.GroupBox3.Location = New System.Drawing.Point(19, 64)
+        Me.GroupBox3.Location = New System.Drawing.Point(25, 79)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(355, 48)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(473, 59)
         Me.GroupBox3.TabIndex = 32
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "LIVE CAMERA"
@@ -2528,9 +2609,10 @@ Partial Class Recipe
         '
         Me.LiveTriggerOnce.ForeColor = System.Drawing.Color.Black
         Me.LiveTriggerOnce.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LiveTriggerOnce.Location = New System.Drawing.Point(227, 15)
+        Me.LiveTriggerOnce.Location = New System.Drawing.Point(303, 18)
+        Me.LiveTriggerOnce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LiveTriggerOnce.Name = "LiveTriggerOnce"
-        Me.LiveTriggerOnce.Size = New System.Drawing.Size(88, 25)
+        Me.LiveTriggerOnce.Size = New System.Drawing.Size(117, 31)
         Me.LiveTriggerOnce.TabIndex = 5
         Me.LiveTriggerOnce.Text = "Trigger Once"
         Me.LiveTriggerOnce.UseVisualStyleBackColor = True
@@ -2540,9 +2622,10 @@ Partial Class Recipe
         Me.LiveTriggerOn.AutoSize = True
         Me.LiveTriggerOn.ForeColor = System.Drawing.Color.Black
         Me.LiveTriggerOn.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LiveTriggerOn.Location = New System.Drawing.Point(105, 19)
+        Me.LiveTriggerOn.Location = New System.Drawing.Point(140, 23)
+        Me.LiveTriggerOn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LiveTriggerOn.Name = "LiveTriggerOn"
-        Me.LiveTriggerOn.Size = New System.Drawing.Size(88, 17)
+        Me.LiveTriggerOn.Size = New System.Drawing.Size(110, 20)
         Me.LiveTriggerOn.TabIndex = 1
         Me.LiveTriggerOn.TabStop = True
         Me.LiveTriggerOn.Text = "Trigger Mode"
@@ -2553,9 +2636,10 @@ Partial Class Recipe
         Me.LiveTriggerOff.AutoSize = True
         Me.LiveTriggerOff.ForeColor = System.Drawing.Color.Black
         Me.LiveTriggerOff.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LiveTriggerOff.Location = New System.Drawing.Point(6, 19)
+        Me.LiveTriggerOff.Location = New System.Drawing.Point(8, 23)
+        Me.LiveTriggerOff.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.LiveTriggerOff.Name = "LiveTriggerOff"
-        Me.LiveTriggerOff.Size = New System.Drawing.Size(78, 17)
+        Me.LiveTriggerOff.Size = New System.Drawing.Size(94, 20)
         Me.LiveTriggerOff.TabIndex = 0
         Me.LiveTriggerOff.TabStop = True
         Me.LiveTriggerOff.Text = "Continuous"
@@ -2566,9 +2650,10 @@ Partial Class Recipe
         Me.RadioButton4.AutoSize = True
         Me.RadioButton4.ForeColor = System.Drawing.Color.Black
         Me.RadioButton4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.RadioButton4.Location = New System.Drawing.Point(124, 122)
+        Me.RadioButton4.Location = New System.Drawing.Point(165, 150)
+        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(96, 17)
+        Me.RadioButton4.Size = New System.Drawing.Size(114, 20)
         Me.RadioButton4.TabIndex = 39
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "WHITE LIGHT"
@@ -2579,9 +2664,10 @@ Partial Class Recipe
         Me.RadioButton3.AutoSize = True
         Me.RadioButton3.ForeColor = System.Drawing.Color.Black
         Me.RadioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.RadioButton3.Location = New System.Drawing.Point(25, 122)
+        Me.RadioButton3.Location = New System.Drawing.Point(33, 150)
+        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton3.Size = New System.Drawing.Size(99, 20)
         Me.RadioButton3.TabIndex = 30
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "RED LIGHT"
@@ -2592,9 +2678,10 @@ Partial Class Recipe
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.Color.Black
-        Me.Label35.Location = New System.Drawing.Point(255, 148)
+        Me.Label35.Location = New System.Drawing.Point(340, 182)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(70, 16)
+        Me.Label35.Size = New System.Drawing.Size(90, 20)
         Me.Label35.TabIndex = 38
         Me.Label35.Text = "Brightness"
         '
@@ -2603,9 +2690,10 @@ Partial Class Recipe
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.ForeColor = System.Drawing.Color.Black
-        Me.Label31.Location = New System.Drawing.Point(128, 148)
+        Me.Label31.Location = New System.Drawing.Point(171, 182)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(75, 16)
+        Me.Label31.Size = New System.Drawing.Size(92, 20)
         Me.Label31.TabIndex = 37
         Me.Label31.Text = "Threshould"
         '
@@ -2614,31 +2702,35 @@ Partial Class Recipe
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.Black
-        Me.Label19.Location = New System.Drawing.Point(7, 148)
+        Me.Label19.Location = New System.Drawing.Point(9, 182)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(69, 16)
+        Me.Label19.Size = New System.Drawing.Size(83, 20)
         Me.Label19.TabIndex = 36
         Me.Label19.Text = "Tolerance"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(331, 146)
+        Me.TextBox4.Location = New System.Drawing.Point(441, 180)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(52, 22)
         Me.TextBox4.TabIndex = 35
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(209, 146)
+        Me.TextBox3.Location = New System.Drawing.Point(279, 180)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(52, 22)
         Me.TextBox3.TabIndex = 34
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(82, 146)
+        Me.TextBox2.Location = New System.Drawing.Point(109, 180)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(40, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(52, 22)
         Me.TextBox2.TabIndex = 33
         '
         'GroupBoxGrabImage
@@ -2646,9 +2738,11 @@ Partial Class Recipe
         Me.GroupBoxGrabImage.Controls.Add(Me.ButtonSoftwareOnce)
         Me.GroupBoxGrabImage.Controls.Add(Me.RadioButtonTriggerOn)
         Me.GroupBoxGrabImage.Controls.Add(Me.RadioButtonTriggerOff)
-        Me.GroupBoxGrabImage.Location = New System.Drawing.Point(19, 10)
+        Me.GroupBoxGrabImage.Location = New System.Drawing.Point(25, 12)
+        Me.GroupBoxGrabImage.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxGrabImage.Name = "GroupBoxGrabImage"
-        Me.GroupBoxGrabImage.Size = New System.Drawing.Size(355, 48)
+        Me.GroupBoxGrabImage.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBoxGrabImage.Size = New System.Drawing.Size(473, 59)
         Me.GroupBoxGrabImage.TabIndex = 31
         Me.GroupBoxGrabImage.TabStop = False
         Me.GroupBoxGrabImage.Text = "FIDUCIAL CAMERA"
@@ -2657,9 +2751,10 @@ Partial Class Recipe
         '
         Me.ButtonSoftwareOnce.ForeColor = System.Drawing.Color.Black
         Me.ButtonSoftwareOnce.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ButtonSoftwareOnce.Location = New System.Drawing.Point(227, 17)
+        Me.ButtonSoftwareOnce.Location = New System.Drawing.Point(303, 21)
+        Me.ButtonSoftwareOnce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonSoftwareOnce.Name = "ButtonSoftwareOnce"
-        Me.ButtonSoftwareOnce.Size = New System.Drawing.Size(88, 25)
+        Me.ButtonSoftwareOnce.Size = New System.Drawing.Size(117, 31)
         Me.ButtonSoftwareOnce.TabIndex = 5
         Me.ButtonSoftwareOnce.Text = "Trigger Once"
         Me.ButtonSoftwareOnce.UseVisualStyleBackColor = True
@@ -2669,9 +2764,10 @@ Partial Class Recipe
         Me.RadioButtonTriggerOn.AutoSize = True
         Me.RadioButtonTriggerOn.ForeColor = System.Drawing.Color.Black
         Me.RadioButtonTriggerOn.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.RadioButtonTriggerOn.Location = New System.Drawing.Point(105, 21)
+        Me.RadioButtonTriggerOn.Location = New System.Drawing.Point(140, 26)
+        Me.RadioButtonTriggerOn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButtonTriggerOn.Name = "RadioButtonTriggerOn"
-        Me.RadioButtonTriggerOn.Size = New System.Drawing.Size(88, 17)
+        Me.RadioButtonTriggerOn.Size = New System.Drawing.Size(110, 20)
         Me.RadioButtonTriggerOn.TabIndex = 1
         Me.RadioButtonTriggerOn.TabStop = True
         Me.RadioButtonTriggerOn.Text = "Trigger Mode"
@@ -2682,9 +2778,10 @@ Partial Class Recipe
         Me.RadioButtonTriggerOff.AutoSize = True
         Me.RadioButtonTriggerOff.ForeColor = System.Drawing.Color.Black
         Me.RadioButtonTriggerOff.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.RadioButtonTriggerOff.Location = New System.Drawing.Point(6, 21)
+        Me.RadioButtonTriggerOff.Location = New System.Drawing.Point(8, 26)
+        Me.RadioButtonTriggerOff.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButtonTriggerOff.Name = "RadioButtonTriggerOff"
-        Me.RadioButtonTriggerOff.Size = New System.Drawing.Size(78, 17)
+        Me.RadioButtonTriggerOff.Size = New System.Drawing.Size(94, 20)
         Me.RadioButtonTriggerOff.TabIndex = 0
         Me.RadioButtonTriggerOff.TabStop = True
         Me.RadioButtonTriggerOff.Text = "Continuous"
@@ -2700,9 +2797,11 @@ Partial Class Recipe
         Me.GroupBoxParam.Controls.Add(Me.LabelFrameRate)
         Me.GroupBoxParam.Controls.Add(Me.LabelGain)
         Me.GroupBoxParam.Controls.Add(Me.LabelExposureTime)
-        Me.GroupBoxParam.Location = New System.Drawing.Point(889, 5)
+        Me.GroupBoxParam.Location = New System.Drawing.Point(1185, 6)
+        Me.GroupBoxParam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBoxParam.Name = "GroupBoxParam"
-        Me.GroupBoxParam.Size = New System.Drawing.Size(246, 153)
+        Me.GroupBoxParam.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBoxParam.Size = New System.Drawing.Size(328, 188)
         Me.GroupBoxParam.TabIndex = 16
         Me.GroupBoxParam.TabStop = False
         Me.GroupBoxParam.Text = "Parameters"
@@ -2710,9 +2809,10 @@ Partial Class Recipe
         'ButtonParamSet
         '
         Me.ButtonParamSet.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ButtonParamSet.Location = New System.Drawing.Point(132, 118)
+        Me.ButtonParamSet.Location = New System.Drawing.Point(176, 145)
+        Me.ButtonParamSet.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonParamSet.Name = "ButtonParamSet"
-        Me.ButtonParamSet.Size = New System.Drawing.Size(95, 25)
+        Me.ButtonParamSet.Size = New System.Drawing.Size(127, 31)
         Me.ButtonParamSet.TabIndex = 7
         Me.ButtonParamSet.Text = "Set Parameter"
         Me.ButtonParamSet.UseVisualStyleBackColor = True
@@ -2720,41 +2820,46 @@ Partial Class Recipe
         'ButtonParamGet
         '
         Me.ButtonParamGet.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ButtonParamGet.Location = New System.Drawing.Point(10, 118)
+        Me.ButtonParamGet.Location = New System.Drawing.Point(13, 145)
+        Me.ButtonParamGet.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ButtonParamGet.Name = "ButtonParamGet"
-        Me.ButtonParamGet.Size = New System.Drawing.Size(104, 25)
+        Me.ButtonParamGet.Size = New System.Drawing.Size(139, 31)
         Me.ButtonParamGet.TabIndex = 6
         Me.ButtonParamGet.Text = "Get Parameter"
         Me.ButtonParamGet.UseVisualStyleBackColor = True
         '
         'TextBoxFrameRate
         '
-        Me.TextBoxFrameRate.Location = New System.Drawing.Point(132, 89)
+        Me.TextBoxFrameRate.Location = New System.Drawing.Point(176, 110)
+        Me.TextBoxFrameRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxFrameRate.Name = "TextBoxFrameRate"
-        Me.TextBoxFrameRate.Size = New System.Drawing.Size(88, 20)
+        Me.TextBoxFrameRate.Size = New System.Drawing.Size(116, 22)
         Me.TextBoxFrameRate.TabIndex = 5
         '
         'TextBoxGain
         '
-        Me.TextBoxGain.Location = New System.Drawing.Point(132, 61)
+        Me.TextBoxGain.Location = New System.Drawing.Point(176, 75)
+        Me.TextBoxGain.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxGain.Name = "TextBoxGain"
-        Me.TextBoxGain.Size = New System.Drawing.Size(88, 20)
+        Me.TextBoxGain.Size = New System.Drawing.Size(116, 22)
         Me.TextBoxGain.TabIndex = 4
         '
         'TextBoxExposureTime
         '
-        Me.TextBoxExposureTime.Location = New System.Drawing.Point(132, 28)
+        Me.TextBoxExposureTime.Location = New System.Drawing.Point(176, 34)
+        Me.TextBoxExposureTime.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxExposureTime.Name = "TextBoxExposureTime"
-        Me.TextBoxExposureTime.Size = New System.Drawing.Size(88, 20)
+        Me.TextBoxExposureTime.Size = New System.Drawing.Size(116, 22)
         Me.TextBoxExposureTime.TabIndex = 3
         '
         'LabelFrameRate
         '
         Me.LabelFrameRate.AutoSize = True
         Me.LabelFrameRate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LabelFrameRate.Location = New System.Drawing.Point(33, 92)
+        Me.LabelFrameRate.Location = New System.Drawing.Point(44, 113)
+        Me.LabelFrameRate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelFrameRate.Name = "LabelFrameRate"
-        Me.LabelFrameRate.Size = New System.Drawing.Size(62, 13)
+        Me.LabelFrameRate.Size = New System.Drawing.Size(78, 16)
         Me.LabelFrameRate.TabIndex = 2
         Me.LabelFrameRate.Text = "Frame Rate"
         '
@@ -2762,9 +2867,10 @@ Partial Class Recipe
         '
         Me.LabelGain.AutoSize = True
         Me.LabelGain.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LabelGain.Location = New System.Drawing.Point(33, 64)
+        Me.LabelGain.Location = New System.Drawing.Point(44, 79)
+        Me.LabelGain.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelGain.Name = "LabelGain"
-        Me.LabelGain.Size = New System.Drawing.Size(29, 13)
+        Me.LabelGain.Size = New System.Drawing.Size(35, 16)
         Me.LabelGain.TabIndex = 1
         Me.LabelGain.Text = "Gain"
         '
@@ -2772,9 +2878,10 @@ Partial Class Recipe
         '
         Me.LabelExposureTime.AutoSize = True
         Me.LabelExposureTime.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LabelExposureTime.Location = New System.Drawing.Point(31, 31)
+        Me.LabelExposureTime.Location = New System.Drawing.Point(41, 38)
+        Me.LabelExposureTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelExposureTime.Name = "LabelExposureTime"
-        Me.LabelExposureTime.Size = New System.Drawing.Size(77, 13)
+        Me.LabelExposureTime.Size = New System.Drawing.Size(98, 16)
         Me.LabelExposureTime.TabIndex = 0
         Me.LabelExposureTime.Text = "Exposure Time"
         '
@@ -2785,9 +2892,9 @@ Partial Class Recipe
         Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel17.ForeColor = System.Drawing.Color.Black
         Me.Panel17.Location = New System.Drawing.Point(0, 0)
-        Me.Panel17.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(758, 54)
+        Me.Panel17.Size = New System.Drawing.Size(1013, 66)
         Me.Panel17.TabIndex = 5
         '
         'GroupBox2
@@ -2798,9 +2905,11 @@ Partial Class Recipe
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Location = New System.Drawing.Point(365, 2)
+        Me.GroupBox2.Location = New System.Drawing.Point(487, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(397, 50)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(529, 62)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Current Position"
@@ -2809,27 +2918,30 @@ Partial Class Recipe
         '
         Me.C__Current.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.C__Current.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.C__Current.Location = New System.Drawing.Point(303, 20)
+        Me.C__Current.Location = New System.Drawing.Point(404, 25)
+        Me.C__Current.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.C__Current.Name = "C__Current"
-        Me.C__Current.Size = New System.Drawing.Size(72, 22)
+        Me.C__Current.Size = New System.Drawing.Size(95, 26)
         Me.C__Current.TabIndex = 31
         '
         'X_Current
         '
         Me.X_Current.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.X_Current.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.X_Current.Location = New System.Drawing.Point(51, 20)
+        Me.X_Current.Location = New System.Drawing.Point(68, 25)
+        Me.X_Current.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.X_Current.Name = "X_Current"
-        Me.X_Current.Size = New System.Drawing.Size(72, 22)
+        Me.X_Current.Size = New System.Drawing.Size(95, 26)
         Me.X_Current.TabIndex = 30
         '
         'Y_Current
         '
         Me.Y_Current.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Y_Current.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Y_Current.Location = New System.Drawing.Point(170, 20)
+        Me.Y_Current.Location = New System.Drawing.Point(227, 25)
+        Me.Y_Current.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Y_Current.Name = "Y_Current"
-        Me.Y_Current.Size = New System.Drawing.Size(72, 22)
+        Me.Y_Current.Size = New System.Drawing.Size(95, 26)
         Me.Y_Current.TabIndex = 27
         '
         'Label10
@@ -2838,9 +2950,10 @@ Partial Class Recipe
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(268, 23)
+        Me.Label10.Location = New System.Drawing.Point(357, 28)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(29, 16)
+        Me.Label10.Size = New System.Drawing.Size(37, 20)
         Me.Label10.TabIndex = 29
         Me.Label10.Text = "CW"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2851,9 +2964,10 @@ Partial Class Recipe
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(30, 23)
+        Me.Label11.Location = New System.Drawing.Point(40, 28)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(15, 16)
+        Me.Label11.Size = New System.Drawing.Size(20, 20)
         Me.Label11.TabIndex = 28
         Me.Label11.Text = "X"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2864,9 +2978,10 @@ Partial Class Recipe
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(148, 23)
+        Me.Label12.Location = New System.Drawing.Point(197, 28)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(16, 16)
+        Me.Label12.Size = New System.Drawing.Size(19, 20)
         Me.Label12.TabIndex = 26
         Me.Label12.Text = "Y"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2879,18 +2994,18 @@ Partial Class Recipe
         Me.Panel18.Controls.Add(Me.Button11)
         Me.Panel18.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel18.Location = New System.Drawing.Point(0, 0)
-        Me.Panel18.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(362, 54)
+        Me.Panel18.Size = New System.Drawing.Size(483, 66)
         Me.Panel18.TabIndex = 0
         '
         'Button3
         '
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Button3.Location = New System.Drawing.Point(284, 2)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Location = New System.Drawing.Point(379, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(66, 50)
+        Me.Button3.Size = New System.Drawing.Size(88, 62)
         Me.Button3.TabIndex = 26
         Me.Button3.Text = "UCL"
         Me.Button3.UseVisualStyleBackColor = True
@@ -2898,10 +3013,10 @@ Partial Class Recipe
         'Button5
         '
         Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Button5.Location = New System.Drawing.Point(196, 2)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button5.Location = New System.Drawing.Point(261, 2)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(66, 50)
+        Me.Button5.Size = New System.Drawing.Size(88, 62)
         Me.Button5.TabIndex = 25
         Me.Button5.Text = "+"
         Me.Button5.UseVisualStyleBackColor = True
@@ -2909,20 +3024,20 @@ Partial Class Recipe
         'Button9
         '
         Me.Button9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Button9.Location = New System.Drawing.Point(104, 1)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button9.Location = New System.Drawing.Point(139, 1)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(66, 50)
+        Me.Button9.Size = New System.Drawing.Size(88, 62)
         Me.Button9.TabIndex = 24
         Me.Button9.Text = "PV"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(11, 2)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button11.Location = New System.Drawing.Point(15, 2)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(66, 49)
+        Me.Button11.Size = New System.Drawing.Size(88, 60)
         Me.Button11.TabIndex = 19
         Me.Button11.Text = "SP"
         Me.Button11.UseVisualStyleBackColor = True
@@ -2931,17 +3046,19 @@ Partial Class Recipe
         '
         Me.Panel21.Controls.Add(Me.PictureBox8)
         Me.Panel21.Controls.Add(Me.PictureBox7)
-        Me.Panel21.Location = New System.Drawing.Point(0, 263)
+        Me.Panel21.Location = New System.Drawing.Point(0, 324)
+        Me.Panel21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(765, 270)
+        Me.Panel21.Size = New System.Drawing.Size(1020, 332)
         Me.Panel21.TabIndex = 46
         '
         'PictureBox8
         '
         Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Left
         Me.PictureBox8.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(279, 270)
+        Me.PictureBox8.Size = New System.Drawing.Size(372, 332)
         Me.PictureBox8.TabIndex = 45
         Me.PictureBox8.TabStop = False
         '
@@ -2949,9 +3066,10 @@ Partial Class Recipe
         '
         Me.PictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox7.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox7.Location = New System.Drawing.Point(285, 0)
+        Me.PictureBox7.Location = New System.Drawing.Point(381, 0)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(480, 270)
+        Me.PictureBox7.Size = New System.Drawing.Size(639, 332)
         Me.PictureBox7.TabIndex = 44
         Me.PictureBox7.TabStop = False
         '
@@ -2963,8 +3081,9 @@ Partial Class Recipe
         Me.TabPage1.Controls.Add(Me.Panel39)
         Me.TabPage1.Controls.Add(Me.Panel59)
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(720, 1013)
+        Me.TabPage1.Size = New System.Drawing.Size(1013, 992)
         Me.TabPage1.TabIndex = 9
         Me.TabPage1.Text = "LOCATION"
         '
@@ -2972,9 +3091,10 @@ Partial Class Recipe
         '
         Me.Panel6.Controls.Add(Me.TableLayoutPanel4)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 252)
+        Me.Panel6.Location = New System.Drawing.Point(0, 311)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(720, 315)
+        Me.Panel6.Size = New System.Drawing.Size(1013, 388)
         Me.Panel6.TabIndex = 8
         '
         'TableLayoutPanel4
@@ -2992,22 +3112,24 @@ Partial Class Recipe
         Me.TableLayoutPanel4.Controls.Add(Me.Panel41, 0, 0)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 4
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(720, 315)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1013, 388)
         Me.TableLayoutPanel4.TabIndex = 3
         '
         'Panel48
         '
         Me.Panel48.Controls.Add(Me.bt_Pcbunclamp)
         Me.Panel48.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel48.Location = New System.Drawing.Point(363, 237)
+        Me.Panel48.Location = New System.Drawing.Point(510, 295)
+        Me.Panel48.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(354, 75)
+        Me.Panel48.Size = New System.Drawing.Size(499, 89)
         Me.Panel48.TabIndex = 7
         '
         'bt_Pcbunclamp
@@ -3015,9 +3137,9 @@ Partial Class Recipe
         Me.bt_Pcbunclamp.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Pcbunclamp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Pcbunclamp.Location = New System.Drawing.Point(0, 0)
-        Me.bt_Pcbunclamp.Margin = New System.Windows.Forms.Padding(2)
+        Me.bt_Pcbunclamp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bt_Pcbunclamp.Name = "bt_Pcbunclamp"
-        Me.bt_Pcbunclamp.Size = New System.Drawing.Size(354, 75)
+        Me.bt_Pcbunclamp.Size = New System.Drawing.Size(499, 89)
         Me.bt_Pcbunclamp.TabIndex = 35
         Me.bt_Pcbunclamp.Text = "PCB SIDE CLAMP "
         Me.bt_Pcbunclamp.UseVisualStyleBackColor = True
@@ -3026,9 +3148,10 @@ Partial Class Recipe
         '
         Me.Panel47.Controls.Add(Me.bt_Pcbclamp)
         Me.Panel47.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel47.Location = New System.Drawing.Point(3, 237)
+        Me.Panel47.Location = New System.Drawing.Point(4, 295)
+        Me.Panel47.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel47.Name = "Panel47"
-        Me.Panel47.Size = New System.Drawing.Size(354, 75)
+        Me.Panel47.Size = New System.Drawing.Size(498, 89)
         Me.Panel47.TabIndex = 6
         '
         'bt_Pcbclamp
@@ -3036,9 +3159,9 @@ Partial Class Recipe
         Me.bt_Pcbclamp.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Pcbclamp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Pcbclamp.Location = New System.Drawing.Point(0, 0)
-        Me.bt_Pcbclamp.Margin = New System.Windows.Forms.Padding(2)
+        Me.bt_Pcbclamp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bt_Pcbclamp.Name = "bt_Pcbclamp"
-        Me.bt_Pcbclamp.Size = New System.Drawing.Size(354, 75)
+        Me.bt_Pcbclamp.Size = New System.Drawing.Size(498, 89)
         Me.bt_Pcbclamp.TabIndex = 34
         Me.bt_Pcbclamp.Text = "PCB TOP CLAMP"
         Me.bt_Pcbclamp.UseVisualStyleBackColor = True
@@ -3047,9 +3170,10 @@ Partial Class Recipe
         '
         Me.Panel46.Controls.Add(Me.Panel49)
         Me.Panel46.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel46.Location = New System.Drawing.Point(363, 159)
+        Me.Panel46.Location = New System.Drawing.Point(510, 198)
+        Me.Panel46.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel46.Name = "Panel46"
-        Me.Panel46.Size = New System.Drawing.Size(354, 72)
+        Me.Panel46.Size = New System.Drawing.Size(499, 89)
         Me.Panel46.TabIndex = 5
         '
         'Panel49
@@ -3059,15 +3183,17 @@ Partial Class Recipe
         Me.Panel49.Controls.Add(Me.btservo)
         Me.Panel49.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel49.Location = New System.Drawing.Point(0, 0)
+        Me.Panel49.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel49.Name = "Panel49"
-        Me.Panel49.Size = New System.Drawing.Size(354, 72)
+        Me.Panel49.Size = New System.Drawing.Size(499, 89)
         Me.Panel49.TabIndex = 39
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(230, 26)
+        Me.PictureBox1.Location = New System.Drawing.Point(307, 32)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(44, 29)
+        Me.PictureBox1.Size = New System.Drawing.Size(59, 36)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -3078,8 +3204,9 @@ Partial Class Recipe
         Me.btservo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btservo.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btservo.Location = New System.Drawing.Point(0, 0)
+        Me.btservo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btservo.Name = "btservo"
-        Me.btservo.Size = New System.Drawing.Size(354, 72)
+        Me.btservo.Size = New System.Drawing.Size(499, 89)
         Me.btservo.TabIndex = 0
         Me.btservo.TabStop = True
         Me.btservo.Text = "SERVO"
@@ -3090,9 +3217,10 @@ Partial Class Recipe
         '
         Me.Panel45.Controls.Add(Me.RadioButton2)
         Me.Panel45.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel45.Location = New System.Drawing.Point(3, 159)
+        Me.Panel45.Location = New System.Drawing.Point(4, 198)
+        Me.Panel45.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(354, 72)
+        Me.Panel45.Size = New System.Drawing.Size(498, 89)
         Me.Panel45.TabIndex = 4
         '
         'RadioButton2
@@ -3102,8 +3230,9 @@ Partial Class Recipe
         Me.RadioButton2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(0, 0)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(354, 72)
+        Me.RadioButton2.Size = New System.Drawing.Size(498, 89)
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "PCB STOPPER"
@@ -3114,9 +3243,10 @@ Partial Class Recipe
         '
         Me.Panel44.Controls.Add(Me.bt_Pcbunload)
         Me.Panel44.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel44.Location = New System.Drawing.Point(363, 81)
+        Me.Panel44.Location = New System.Drawing.Point(510, 101)
+        Me.Panel44.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(354, 72)
+        Me.Panel44.Size = New System.Drawing.Size(499, 89)
         Me.Panel44.TabIndex = 3
         '
         'bt_Pcbunload
@@ -3124,8 +3254,9 @@ Partial Class Recipe
         Me.bt_Pcbunload.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Pcbunload.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Pcbunload.Location = New System.Drawing.Point(0, 0)
+        Me.bt_Pcbunload.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bt_Pcbunload.Name = "bt_Pcbunload"
-        Me.bt_Pcbunload.Size = New System.Drawing.Size(354, 72)
+        Me.bt_Pcbunload.Size = New System.Drawing.Size(499, 89)
         Me.bt_Pcbunload.TabIndex = 39
         Me.bt_Pcbunload.Text = "PCB UNLOAD"
         Me.bt_Pcbunload.UseVisualStyleBackColor = True
@@ -3134,9 +3265,10 @@ Partial Class Recipe
         '
         Me.Panel43.Controls.Add(Me.bt_Pcbload)
         Me.Panel43.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel43.Location = New System.Drawing.Point(3, 81)
+        Me.Panel43.Location = New System.Drawing.Point(4, 101)
+        Me.Panel43.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel43.Name = "Panel43"
-        Me.Panel43.Size = New System.Drawing.Size(354, 72)
+        Me.Panel43.Size = New System.Drawing.Size(498, 89)
         Me.Panel43.TabIndex = 2
         '
         'bt_Pcbload
@@ -3144,8 +3276,9 @@ Partial Class Recipe
         Me.bt_Pcbload.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Pcbload.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Pcbload.Location = New System.Drawing.Point(0, 0)
+        Me.bt_Pcbload.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bt_Pcbload.Name = "bt_Pcbload"
-        Me.bt_Pcbload.Size = New System.Drawing.Size(354, 72)
+        Me.bt_Pcbload.Size = New System.Drawing.Size(498, 89)
         Me.bt_Pcbload.TabIndex = 35
         Me.bt_Pcbload.Text = "PCB LOAD"
         Me.bt_Pcbload.UseVisualStyleBackColor = True
@@ -3154,9 +3287,10 @@ Partial Class Recipe
         '
         Me.Panel42.Controls.Add(Me.bt_Gateopenr)
         Me.Panel42.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel42.Location = New System.Drawing.Point(363, 3)
+        Me.Panel42.Location = New System.Drawing.Point(510, 4)
+        Me.Panel42.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel42.Name = "Panel42"
-        Me.Panel42.Size = New System.Drawing.Size(354, 72)
+        Me.Panel42.Size = New System.Drawing.Size(499, 89)
         Me.Panel42.TabIndex = 1
         '
         'bt_Gateopenr
@@ -3164,8 +3298,9 @@ Partial Class Recipe
         Me.bt_Gateopenr.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Gateopenr.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Gateopenr.Location = New System.Drawing.Point(0, 0)
+        Me.bt_Gateopenr.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bt_Gateopenr.Name = "bt_Gateopenr"
-        Me.bt_Gateopenr.Size = New System.Drawing.Size(354, 72)
+        Me.bt_Gateopenr.Size = New System.Drawing.Size(499, 89)
         Me.bt_Gateopenr.TabIndex = 36
         Me.bt_Gateopenr.Text = "GATE OPEN R"
         Me.bt_Gateopenr.UseVisualStyleBackColor = True
@@ -3174,9 +3309,10 @@ Partial Class Recipe
         '
         Me.Panel41.Controls.Add(Me.bt_Gateopenl)
         Me.Panel41.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel41.Location = New System.Drawing.Point(3, 3)
+        Me.Panel41.Location = New System.Drawing.Point(4, 4)
+        Me.Panel41.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(354, 72)
+        Me.Panel41.Size = New System.Drawing.Size(498, 89)
         Me.Panel41.TabIndex = 0
         '
         'bt_Gateopenl
@@ -3184,9 +3320,9 @@ Partial Class Recipe
         Me.bt_Gateopenl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.bt_Gateopenl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bt_Gateopenl.Location = New System.Drawing.Point(0, 0)
-        Me.bt_Gateopenl.Margin = New System.Windows.Forms.Padding(2)
+        Me.bt_Gateopenl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bt_Gateopenl.Name = "bt_Gateopenl"
-        Me.bt_Gateopenl.Size = New System.Drawing.Size(354, 72)
+        Me.bt_Gateopenl.Size = New System.Drawing.Size(498, 89)
         Me.bt_Gateopenl.TabIndex = 32
         Me.bt_Gateopenl.Text = " GATE OPEN L"
         Me.bt_Gateopenl.UseVisualStyleBackColor = True
@@ -3195,9 +3331,10 @@ Partial Class Recipe
         '
         Me.Panel37.Controls.Add(Me.TableLayoutPanel3)
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel37.Location = New System.Drawing.Point(0, 111)
+        Me.Panel37.Location = New System.Drawing.Point(0, 137)
+        Me.Panel37.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(720, 141)
+        Me.Panel37.Size = New System.Drawing.Size(1013, 174)
         Me.Panel37.TabIndex = 6
         '
         'TableLayoutPanel3
@@ -3210,21 +3347,23 @@ Partial Class Recipe
         Me.TableLayoutPanel3.Controls.Add(Me.Panel38, 1, 0)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(720, 141)
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1013, 174)
         Me.TableLayoutPanel3.TabIndex = 0
         '
         'btUnloadpos
         '
         Me.btUnloadpos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btUnloadpos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btUnloadpos.Location = New System.Drawing.Point(3, 73)
+        Me.btUnloadpos.Location = New System.Drawing.Point(4, 91)
+        Me.btUnloadpos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btUnloadpos.Name = "btUnloadpos"
-        Me.btUnloadpos.Size = New System.Drawing.Size(354, 65)
+        Me.btUnloadpos.Size = New System.Drawing.Size(498, 79)
         Me.btUnloadpos.TabIndex = 32
         Me.btUnloadpos.Text = "UNLOAD POSITION"
         Me.btUnloadpos.UseVisualStyleBackColor = True
@@ -3233,10 +3372,10 @@ Partial Class Recipe
         '
         Me.btLoadpos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btLoadpos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btLoadpos.Location = New System.Drawing.Point(2, 2)
-        Me.btLoadpos.Margin = New System.Windows.Forms.Padding(2)
+        Me.btLoadpos.Location = New System.Drawing.Point(3, 2)
+        Me.btLoadpos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btLoadpos.Name = "btLoadpos"
-        Me.btLoadpos.Size = New System.Drawing.Size(356, 66)
+        Me.btLoadpos.Size = New System.Drawing.Size(500, 83)
         Me.btLoadpos.TabIndex = 31
         Me.btLoadpos.Text = "              POSITION                            "
         Me.btLoadpos.UseVisualStyleBackColor = True
@@ -3245,9 +3384,10 @@ Partial Class Recipe
         '
         Me.Panel38.Controls.Add(Me.Panel40)
         Me.Panel38.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel38.Location = New System.Drawing.Point(363, 3)
+        Me.Panel38.Location = New System.Drawing.Point(510, 4)
+        Me.Panel38.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(354, 64)
+        Me.Panel38.Size = New System.Drawing.Size(499, 79)
         Me.Panel38.TabIndex = 33
         '
         'Panel40
@@ -3257,15 +3397,17 @@ Partial Class Recipe
         Me.Panel40.Controls.Add(Me.HOMEPOS)
         Me.Panel40.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel40.Location = New System.Drawing.Point(0, 0)
+        Me.Panel40.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(354, 64)
+        Me.Panel40.Size = New System.Drawing.Size(499, 79)
         Me.Panel40.TabIndex = 40
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(246, 16)
+        Me.PictureBox2.Location = New System.Drawing.Point(328, 20)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(44, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(59, 36)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
@@ -3276,8 +3418,9 @@ Partial Class Recipe
         Me.HOMEPOS.Dock = System.Windows.Forms.DockStyle.Fill
         Me.HOMEPOS.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HOMEPOS.Location = New System.Drawing.Point(0, 0)
+        Me.HOMEPOS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.HOMEPOS.Name = "HOMEPOS"
-        Me.HOMEPOS.Size = New System.Drawing.Size(354, 64)
+        Me.HOMEPOS.Size = New System.Drawing.Size(499, 79)
         Me.HOMEPOS.TabIndex = 0
         Me.HOMEPOS.TabStop = True
         Me.HOMEPOS.Text = "HOME POS"
@@ -3288,18 +3431,20 @@ Partial Class Recipe
         '
         Me.Panel39.Controls.Add(Me.Label30)
         Me.Panel39.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel39.Location = New System.Drawing.Point(0, 55)
+        Me.Panel39.Location = New System.Drawing.Point(0, 68)
+        Me.Panel39.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(720, 56)
+        Me.Panel39.Size = New System.Drawing.Size(1013, 69)
         Me.Panel39.TabIndex = 7
         '
         'Label30
         '
         Me.Label30.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(-20, 22)
+        Me.Label30.Location = New System.Drawing.Point(-1, 27)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(161, 31)
+        Me.Label30.Size = New System.Drawing.Size(215, 38)
         Me.Label30.TabIndex = 1
         Me.Label30.Text = "CONVEYOR"
         Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -3308,8 +3453,9 @@ Partial Class Recipe
         '
         Me.Panel59.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel59.Location = New System.Drawing.Point(0, 0)
+        Me.Panel59.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel59.Name = "Panel59"
-        Me.Panel59.Size = New System.Drawing.Size(720, 55)
+        Me.Panel59.Size = New System.Drawing.Size(1013, 68)
         Me.Panel59.TabIndex = 0
         '
         'Timer1
@@ -3329,11 +3475,12 @@ Partial Class Recipe
         '
         'Recipe
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(766, 845)
+        Me.ClientSize = New System.Drawing.Size(1021, 1055)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Recipe"
         Me.Text = "Recipe"
         Me.Panel1.ResumeLayout(False)
