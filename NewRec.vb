@@ -16,6 +16,7 @@
         Dim xValue As String = X.Text
         Dim yValue As String = Y.Text
         Dim idValue As String = ID.Text
+        Dim pside As String = SIDE.SelectedItem.ToString()
         'ye checkbox ko checked rakega 
         Dim markNode As TreeNode = New TreeNode($"{currentMark}st MARK") With {
             .Checked = True 'uss checkbox ko check rakhega 
@@ -24,6 +25,7 @@
         markNode.Nodes.Add(New TreeNode($"X - {xValue}"))
         markNode.Nodes.Add(New TreeNode($"Y - {yValue}"))
         markNode.Nodes.Add(New TreeNode($"ID - {idValue}"))
+        markNode.Nodes.Add(New TreeNode($"Side - {pside}"))
         'parent node banaega yaha pe (papa)
         TreeView1.Nodes(0).Nodes.Add(markNode)
         ' jo add ho raha usko expand kar dega 
