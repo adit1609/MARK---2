@@ -882,7 +882,7 @@ Partial Class Operations
         '
         Me.CheckBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.CheckBox7.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox7.Location = New System.Drawing.Point(2, 368)
         Me.CheckBox7.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox7.Name = "CheckBox7"
@@ -895,7 +895,7 @@ Partial Class Operations
         '
         Me.CheckBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.CheckBox6.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox6.Location = New System.Drawing.Point(2, 307)
         Me.CheckBox6.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox6.Name = "CheckBox6"
@@ -908,7 +908,7 @@ Partial Class Operations
         '
         Me.CheckBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.CheckBox5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox5.Location = New System.Drawing.Point(2, 246)
         Me.CheckBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox5.Name = "CheckBox5"
@@ -921,7 +921,7 @@ Partial Class Operations
         '
         Me.CheckBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.CheckBox3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox3.Location = New System.Drawing.Point(2, 124)
         Me.CheckBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox3.Name = "CheckBox3"
@@ -947,7 +947,7 @@ Partial Class Operations
         '
         Me.CheckBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.Location = New System.Drawing.Point(2, 2)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBox1.Name = "CheckBox1"
