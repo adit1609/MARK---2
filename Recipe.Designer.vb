@@ -408,13 +408,13 @@ Partial Class Recipe
         '
         Me.Guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom
         Me.Guna2TabControl1.Controls.Add(Me.TabPage3)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage1)
         Me.Guna2TabControl1.Controls.Add(Me.TabPage5)
         Me.Guna2TabControl1.Controls.Add(Me.TabPage6)
-        Me.Guna2TabControl1.Controls.Add(Me.TabPage1)
         Me.Guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(253, 50)
         Me.Guna2TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2TabControl1.Margin = New System.Windows.Forms.Padding(0, 0, 0, 0)
         Me.Guna2TabControl1.Name = "Guna2TabControl1"
         Me.Guna2TabControl1.SelectedIndex = 0
         Me.Guna2TabControl1.Size = New System.Drawing.Size(1021, 1055)
@@ -433,7 +433,7 @@ Partial Class Recipe
         Me.Guna2TabControl1.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
         Me.Guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
         Me.Guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.TabButtonSize = New System.Drawing.Size(253, 50)
         Me.Guna2TabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
         Me.Guna2TabControl1.TabIndex = 7
         Me.Guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(239, Byte), Integer))
@@ -448,7 +448,7 @@ Partial Class Recipe
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage3.Size = New System.Drawing.Size(1013, 992)
+        Me.TabPage3.Size = New System.Drawing.Size(1013, 997)
         Me.TabPage3.TabIndex = 10
         Me.TabPage3.Text = "RECIPE "
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -461,7 +461,7 @@ Partial Class Recipe
         Me.Panel8.Controls.Add(Me.Button4)
         Me.Panel8.Controls.Add(Me.btnclear)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel8.Location = New System.Drawing.Point(4, 919)
+        Me.Panel8.Location = New System.Drawing.Point(4, 924)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1005, 69)
@@ -535,7 +535,7 @@ Partial Class Recipe
         Me.Panel7.Location = New System.Drawing.Point(4, 94)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1005, 894)
+        Me.Panel7.Size = New System.Drawing.Size(1005, 899)
         Me.Panel7.TabIndex = 3
         '
         'Guna2Panel2
@@ -545,7 +545,7 @@ Partial Class Recipe
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 289)
         Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1005, 605)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1005, 610)
         Me.Guna2Panel2.TabIndex = 10
         '
         'DATAGRID
@@ -573,7 +573,7 @@ Partial Class Recipe
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DATAGRID.RowTemplate.Height = 28
-        Me.DATAGRID.Size = New System.Drawing.Size(1005, 605)
+        Me.DATAGRID.Size = New System.Drawing.Size(1005, 610)
         Me.DATAGRID.TabIndex = 8
         '
         'S_NO
@@ -1070,7 +1070,7 @@ Partial Class Recipe
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Size = New System.Drawing.Size(1013, 1007)
         Me.TabPage5.TabIndex = 7
-        Me.TabPage5.Text = "TEACH"
+        Me.TabPage5.Text = "MARKING POS"
         '
         'Panel50
         '
@@ -1586,9 +1586,9 @@ Partial Class Recipe
         Me.TabPage6.Location = New System.Drawing.Point(4, 4)
         Me.TabPage6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1013, 992)
+        Me.TabPage6.Size = New System.Drawing.Size(1013, 1007)
         Me.TabPage6.TabIndex = 8
-        Me.TabPage6.Text = "Vision"
+        Me.TabPage6.Text = "FIDUCIAL"
         '
         'Panel11
         '
@@ -1598,7 +1598,7 @@ Partial Class Recipe
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
         Me.Panel11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(1013, 992)
+        Me.Panel11.Size = New System.Drawing.Size(1013, 1007)
         Me.Panel11.TabIndex = 1
         '
         'Guna2Panel3
@@ -1627,7 +1627,7 @@ Partial Class Recipe
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1013, 992)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1013, 1007)
         Me.Guna2Panel3.TabIndex = 0
         '
         'datagrdFid
@@ -3083,9 +3083,9 @@ Partial Class Recipe
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1013, 992)
+        Me.TabPage1.Size = New System.Drawing.Size(1013, 1007)
         Me.TabPage1.TabIndex = 9
-        Me.TabPage1.Text = "LOCATION"
+        Me.TabPage1.Text = "CONVEYOR"
         '
         'Panel6
         '
