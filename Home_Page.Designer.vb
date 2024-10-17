@@ -60,17 +60,19 @@ Partial Class Home_Page
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(772, 749)
+        Me.Panel1.Size = New System.Drawing.Size(1029, 922)
         Me.Panel1.TabIndex = 1
         '
         'pnDock
         '
         Me.pnDock.BackColor = System.Drawing.Color.IndianRed
         Me.pnDock.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnDock.Location = New System.Drawing.Point(0, 90)
+        Me.pnDock.Location = New System.Drawing.Point(0, 111)
+        Me.pnDock.Margin = New System.Windows.Forms.Padding(4)
         Me.pnDock.Name = "pnDock"
-        Me.pnDock.Size = New System.Drawing.Size(772, 598)
+        Me.pnDock.Size = New System.Drawing.Size(1029, 736)
         Me.pnDock.TabIndex = 2
         '
         'Panel3
@@ -80,8 +82,9 @@ Partial Class Home_Page
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(772, 90)
+        Me.Panel3.Size = New System.Drawing.Size(1029, 111)
         Me.Panel3.TabIndex = 1
         '
         'Label3
@@ -89,10 +92,9 @@ Partial Class Home_Page
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(11, 46)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(15, 57)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 25)
+        Me.Label3.Size = New System.Drawing.Size(71, 31)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Curr"
         '
@@ -100,10 +102,9 @@ Partial Class Home_Page
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.OrangeRed
-        Me.Label2.Location = New System.Drawing.Point(627, 13)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(836, 16)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(192, 21)
+        Me.Label2.Size = New System.Drawing.Size(256, 26)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "lblDateTime"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -117,9 +118,10 @@ Partial Class Home_Page
         Me.Panel4.Controls.Add(Me.Button7)
         Me.Panel4.Controls.Add(Me.Button6)
         Me.Panel4.Controls.Add(Me.Button8)
-        Me.Panel4.Location = New System.Drawing.Point(352, 46)
+        Me.Panel4.Location = New System.Drawing.Point(469, 57)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(416, 41)
+        Me.Panel4.Size = New System.Drawing.Size(555, 50)
         Me.Panel4.TabIndex = 0
         '
         'btnSPCLogin
@@ -127,10 +129,10 @@ Partial Class Home_Page
         Me.btnSPCLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnSPCLogin.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnSPCLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSPCLogin.Location = New System.Drawing.Point(2, 0)
-        Me.btnSPCLogin.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSPCLogin.Location = New System.Drawing.Point(3, 0)
+        Me.btnSPCLogin.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSPCLogin.Name = "btnSPCLogin"
-        Me.btnSPCLogin.Size = New System.Drawing.Size(69, 41)
+        Me.btnSPCLogin.Size = New System.Drawing.Size(92, 50)
         Me.btnSPCLogin.TabIndex = 9
         Me.btnSPCLogin.Text = "SPC"
         Me.btnSPCLogin.UseVisualStyleBackColor = True
@@ -140,10 +142,10 @@ Partial Class Home_Page
         Me.Button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button10.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(71, 0)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button10.Location = New System.Drawing.Point(95, 0)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(69, 41)
+        Me.Button10.Size = New System.Drawing.Size(92, 50)
         Me.Button10.TabIndex = 8
         Me.Button10.Text = "PLC VI"
         Me.Button10.UseVisualStyleBackColor = True
@@ -154,10 +156,10 @@ Partial Class Home_Page
         Me.Button9.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
-        Me.Button9.Location = New System.Drawing.Point(140, 0)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button9.Location = New System.Drawing.Point(187, 0)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(69, 41)
+        Me.Button9.Size = New System.Drawing.Size(92, 50)
         Me.Button9.TabIndex = 7
         Me.Button9.UseVisualStyleBackColor = True
         '
@@ -166,10 +168,10 @@ Partial Class Home_Page
         Me.Button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button7.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(209, 0)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button7.Location = New System.Drawing.Point(279, 0)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(69, 41)
+        Me.Button7.Size = New System.Drawing.Size(92, 50)
         Me.Button7.TabIndex = 6
         Me.Button7.Text = "PLC LMC"
         Me.Button7.UseVisualStyleBackColor = True
@@ -179,10 +181,10 @@ Partial Class Home_Page
         Me.Button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(278, 0)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button6.Location = New System.Drawing.Point(371, 0)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(69, 41)
+        Me.Button6.Size = New System.Drawing.Size(92, 50)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "NI BAR"
         Me.Button6.UseVisualStyleBackColor = True
@@ -192,10 +194,10 @@ Partial Class Home_Page
         Me.Button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Button8.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(347, 0)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button8.Location = New System.Drawing.Point(463, 0)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(69, 41)
+        Me.Button8.Size = New System.Drawing.Size(92, 50)
         Me.Button8.TabIndex = 4
         Me.Button8.Text = "MES"
         Me.Button8.UseVisualStyleBackColor = True
@@ -211,19 +213,20 @@ Partial Class Home_Page
         Me.Panel2.Controls.Add(Me.btmain)
         Me.Panel2.Controls.Add(Me.btUser)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 688)
+        Me.Panel2.Location = New System.Drawing.Point(0, 847)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(772, 61)
+        Me.Panel2.Size = New System.Drawing.Size(1029, 75)
         Me.Panel2.TabIndex = 0
         '
         'btProg
         '
         Me.btProg.Dock = System.Windows.Forms.DockStyle.Left
         Me.btProg.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btProg.Location = New System.Drawing.Point(384, 0)
-        Me.btProg.Margin = New System.Windows.Forms.Padding(2)
+        Me.btProg.Location = New System.Drawing.Point(513, 0)
+        Me.btProg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btProg.Name = "btProg"
-        Me.btProg.Size = New System.Drawing.Size(128, 61)
+        Me.btProg.Size = New System.Drawing.Size(171, 75)
         Me.btProg.TabIndex = 5
         Me.btProg.Text = "PROGRAMMING"
         Me.btProg.UseVisualStyleBackColor = True
@@ -232,10 +235,10 @@ Partial Class Home_Page
         '
         Me.btoper.Dock = System.Windows.Forms.DockStyle.Left
         Me.btoper.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btoper.Location = New System.Drawing.Point(256, 0)
-        Me.btoper.Margin = New System.Windows.Forms.Padding(2)
+        Me.btoper.Location = New System.Drawing.Point(342, 0)
+        Me.btoper.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btoper.Name = "btoper"
-        Me.btoper.Size = New System.Drawing.Size(128, 61)
+        Me.btoper.Size = New System.Drawing.Size(171, 75)
         Me.btoper.TabIndex = 4
         Me.btoper.Text = "OPERATION"
         Me.btoper.UseVisualStyleBackColor = True
@@ -245,10 +248,10 @@ Partial Class Home_Page
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(128, 0)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Location = New System.Drawing.Point(171, 0)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(128, 61)
+        Me.Button1.Size = New System.Drawing.Size(171, 75)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "HOMING "
         Me.Button1.UseVisualStyleBackColor = False
@@ -257,10 +260,10 @@ Partial Class Home_Page
         '
         Me.btReturn.Dock = System.Windows.Forms.DockStyle.Right
         Me.btReturn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btReturn.Location = New System.Drawing.Point(506, 0)
-        Me.btReturn.Margin = New System.Windows.Forms.Padding(2)
+        Me.btReturn.Location = New System.Drawing.Point(674, 0)
+        Me.btReturn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btReturn.Name = "btReturn"
-        Me.btReturn.Size = New System.Drawing.Size(10, 61)
+        Me.btReturn.Size = New System.Drawing.Size(13, 75)
         Me.btReturn.TabIndex = 8
         Me.btReturn.Text = "RETURN"
         Me.btReturn.UseVisualStyleBackColor = True
@@ -269,10 +272,10 @@ Partial Class Home_Page
         '
         Me.btsetup.Dock = System.Windows.Forms.DockStyle.Right
         Me.btsetup.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btsetup.Location = New System.Drawing.Point(516, 0)
-        Me.btsetup.Margin = New System.Windows.Forms.Padding(2)
+        Me.btsetup.Location = New System.Drawing.Point(687, 0)
+        Me.btsetup.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btsetup.Name = "btsetup"
-        Me.btsetup.Size = New System.Drawing.Size(128, 61)
+        Me.btsetup.Size = New System.Drawing.Size(171, 75)
         Me.btsetup.TabIndex = 7
         Me.btsetup.Text = "SETUP"
         Me.btsetup.UseVisualStyleBackColor = True
@@ -281,10 +284,10 @@ Partial Class Home_Page
         '
         Me.btmain.Dock = System.Windows.Forms.DockStyle.Right
         Me.btmain.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btmain.Location = New System.Drawing.Point(644, 0)
-        Me.btmain.Margin = New System.Windows.Forms.Padding(2)
+        Me.btmain.Location = New System.Drawing.Point(858, 0)
+        Me.btmain.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btmain.Name = "btmain"
-        Me.btmain.Size = New System.Drawing.Size(128, 61)
+        Me.btmain.Size = New System.Drawing.Size(171, 75)
         Me.btmain.TabIndex = 6
         Me.btmain.Text = "MAINTENANCE"
         Me.btmain.UseVisualStyleBackColor = True
@@ -294,9 +297,9 @@ Partial Class Home_Page
         Me.btUser.Dock = System.Windows.Forms.DockStyle.Left
         Me.btUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btUser.Location = New System.Drawing.Point(0, 0)
-        Me.btUser.Margin = New System.Windows.Forms.Padding(2)
+        Me.btUser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btUser.Name = "btUser"
-        Me.btUser.Size = New System.Drawing.Size(128, 61)
+        Me.btUser.Size = New System.Drawing.Size(171, 75)
         Me.btUser.TabIndex = 3
         Me.btUser.Text = "USER"
         Me.btUser.UseVisualStyleBackColor = True
@@ -312,11 +315,12 @@ Partial Class Home_Page
         '
         'Home_Page
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(772, 749)
+        Me.ClientSize = New System.Drawing.Size(1029, 922)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Home_Page"
         Me.Text = "LASER MARKING MACHINE"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
