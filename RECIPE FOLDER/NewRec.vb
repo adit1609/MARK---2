@@ -104,6 +104,7 @@ Public Class NewRec
             Return
         End If
         Dim recipeXml As New RECIPEXML()
+        'yaha pe ye load karne ke kaam mei aayega 
         recipeXml.CreateRecipeXML(recipeName, length, width)
         DataGridView1.Rows.Clear()
         _loadedFiles.Clear()
