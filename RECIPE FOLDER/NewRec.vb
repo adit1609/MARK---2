@@ -51,27 +51,105 @@ Public Class NewRec
                                      End Sub)
                        End Sub)
     End Function
+    Private Sub SaveMarkingPositionsToXML(filePath As String)
+        Try
+            Dim xmlDoc As New XmlDocument()
+            xmlDoc.Load(filePath) ' Load the existing XML
+
+            ' Get the root element
+            Dim root As XmlElement = xmlDoc.DocumentElement
+
+            ' Create or get the 'Marking_Positions' node
+            Dim markingPositionsNode As XmlElement = root.SelectSingleNode("Marking_Positions")
+            If markingPositionsNode Is Nothing Then
+                markingPositionsNode = xmlDoc.CreateElement("Marking_Positions")
+                root.AppendChild(markingPositionsNode)
+            Else
+                markingPositionsNode.RemoveAll() ' Clear old data to avoid duplication
+            End If
+
+            ' Loop through all child nodes of the first node in the TreeView
+            For Each markNode As TreeNode In TreeView1.Nodes(0).Nodes
+                ' Use the node name as the element name for XML
+                Dim validMarkName As String = markNode.Text.Replace(" ", "_")
+                ' Ensure the validMarkName does not start with a number
+                If Char.IsDigit(validMarkName(0)) Then
+                    validMarkName = "_" & validMarkName ' Prefix with underscore if it starts with a number
+                End If
+                Dim markElement As XmlElement = xmlDoc.CreateElement(validMarkName)
+
+                ' Add child nodes (X, Y, ID, Side) based on the TreeNode names
+                For Each childNode As TreeNode In markNode.Nodes
+                    Dim nodeName As String = childNode.Text.Trim() ' Get the text of the child node
+                    Dim nodeValue As String = "" ' Default value for the node
+
+                    ' Extract the value from the node name
+                    If nodeName.Contains("_") Then
+                        Dim parts() As String = nodeName.Split("_"c) ' Split using underscore
+                        If parts.Length = 2 Then
+                            nodeValue = parts(1).Trim() ' Get the value part after the underscore
+                            Dim subElement As XmlElement = xmlDoc.CreateElement(parts(0).Trim()) ' Use the key part as the element name
+                            subElement.InnerText = nodeValue
+                            markElement.AppendChild(subElement) ' Add to mark element
+                        End If
+                    End If
+                Next
+
+                ' Append the mark element to 'Marking_Positions'
+                markingPositionsNode.AppendChild(markElement)
+            Next
+
+            ' Save the updated XML
+            xmlDoc.Save(filePath)
+            MessageBox.Show("Marking positions saved successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Catch ex As XmlException
+            MessageBox.Show($"XML Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     Private Async Function Button37_Click(sender As Object, e As EventArgs) As Task Handles TEACH.Click
-        Dim xValue As String = X.Text
-        Dim yValue As String = Y.Text
-        Dim idValue As String = ID.Text
-        Dim pside As String = SIDE.SelectedItem.ToString()
-        'ye checkbox ko checked rakega 
-        Dim markNode As TreeNode = New TreeNode($"{currentMark}st MARK") With {
-            .Checked = True 'uss checkbox ko check rakhega 
-        }
-        'x and y mark ke value uss tree node mei caputure kar lega 
-        markNode.Nodes.Add(New TreeNode($"X - {xValue}"))
-        markNode.Nodes.Add(New TreeNode($"Y - {yValue}"))
-        markNode.Nodes.Add(New TreeNode($"ID - {idValue}"))
-        markNode.Nodes.Add(New TreeNode($"Side - {pside}"))
-        'parent node banaega yaha pe (papa)
+        Dim xValue As String = X.Text.Trim()
+        Dim yValue As String = Y.Text.Trim()
+        Dim idValue As String = ID.Text.Trim()
+        Dim pside As String = SIDE.SelectedItem.ToString().Trim()
+
+        ' Create the mark node without spaces
+        Dim markNode As TreeNode = New TreeNode($"{currentMark}st_MARK") With {
+        .Checked = True ' Check the checkbox
+    }
+
+        ' Capture x and y mark values as child nodes without spaces
+        markNode.Nodes.Add(New TreeNode($"X_{xValue}"))   ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"Y_{yValue}"))   ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"ID_{idValue}"))  ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"Side_{pside}"))  ' Replaced space with underscore
+
+        ' Add the mark node as a child of the first node
         TreeView1.Nodes(0).Nodes.Add(markNode)
-        ' jo add ho raha usko expand kar dega 
+
+        ' Expand the parent node to show the new child
         TreeView1.Nodes(0).Expand()
-        currentMark += 1
+
+        currentMark += 1 ' Increment the current mark counter
     End Function
+
 
 
     Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
@@ -109,8 +187,33 @@ Public Class NewRec
         DataGridView1.Rows.Clear()
         _loadedFiles.Clear()
         LoadRecipeAsync()
+    End Function
 
+    Private Async Function SAVE_Click(sender As Object, e As EventArgs) As Task Handles SAVE.Click
+        If DataGridView1.SelectedRows.Count = 0 Then
+            MessageBox.Show("Please select a recipe to save the marking position.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
+        ' Get the recipe name from the 2nd column (e.g., "mm")
+        Dim recipeName As String = DataGridView1.SelectedRows(0).Cells(1).Value.ToString()
+
+        ' Combine the base path with the recipe name, ensuring it has the .xml extension
+        Dim basePath As String = "C:\Logs\Default\"
+        Dim fileUri As String = $"file:///{basePath}{recipeName}.xml"
+
+        ' Convert the URI to a valid local path
+        Dim filePath As String = New Uri(fileUri).LocalPath
+
+        ' Save the marking positions to the XML file
+        SaveMarkingPositionsToXML(filePath)
     End Function
 
 
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Dim selectedRow As DataGridViewRow = DataGridView1.SelectedRows(0)
+        Selected.Text = selectedRow.Cells(1).Value.ToString()
+
+    End Sub
 End Class
