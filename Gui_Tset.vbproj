@@ -299,6 +299,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RECIPE FOLDER\Module2.vb" />
     <Compile Include="RECIPE FOLDER\NewRec.Designer.vb">
       <DependentUpon>NewRec.vb</DependentUpon>
     </Compile>

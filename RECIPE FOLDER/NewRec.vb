@@ -1,11 +1,19 @@
 ﻿Imports Guna.UI2.WinForms
 Imports System.IO
 Imports System.Xml
+Imports ActUtlTypeLib
 
 Public Class NewRec
     Private currentMark As Integer = 1
     Private _loadedFiles As New HashSet(Of String)()
+    Public val As Integer
+    Dim plc As New ActUtlType
     Public Property RecipeName As String
+
+    Public Async Function plccon() As Task
+        plc.ActLogicalStationNumber = 1
+        plc.Open()
+    End Function
     Private Sub Label65_Click(sender As Object, e As EventArgs) Handles Label65.Click
 
     End Sub
@@ -27,14 +35,13 @@ Public Class NewRec
 
             Dim xmlDoc As New XmlDocument()
             xmlDoc.Load(filePath) ' Load the XML file
-
-
             TreeView1.Nodes.Clear()
 
 
             Dim markingPositionsNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Marking_Positions")
 
             ' Log the found node for debugging
+            'ye node ko save kar dega 
             If markingPositionsNode IsNot Nothing Then
                 Debug.WriteLine("Marking_Positions node found.")
             Else
@@ -61,7 +68,7 @@ Public Class NewRec
                 TreeView1.Nodes.Add(parentNode)
                 TreeView1.ExpandAll()
             Else
-                MessageBox.Show("No marking positions found for the selected recipe.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'MessageBox.Show("No marking positions found for the selected recipe.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
         Catch ex As Exception
@@ -208,6 +215,7 @@ Public Class NewRec
     Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
         Design()
         LoadRecipeAsync()
+        plccon()
     End Function
 
     Public Sub Design()
@@ -277,8 +285,69 @@ Public Class NewRec
             LoadMarkingPositionsToTreeView(recipeName)
         End If
     End Sub
+    Public totalXCount As Integer
+    Private Sub SaveTreeViewDataToLists()
+        ' Clear all lists before saving new data
+        Module2.ClearAllLists()
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ' Loop through all child nodes under the first (root) node in TreeView1
+        For Each markNode As TreeNode In TreeView1.Nodes(0).Nodes
+            ' Skip this node if it's checked
+            If markNode.Checked Then Continue For
 
+            Dim xValue, yValue As Integer
+            Dim idValue As String
+            Dim sideValue As Integer
+
+            ' Loop through each child node of the current mark node
+            For Each childNode As TreeNode In markNode.Nodes
+                Dim parts() As String = childNode.Text.Split("_"c)
+                If parts.Length = 2 Then
+                    Select Case parts(0).ToLower()
+                        Case "x"
+                            xValue = Integer.Parse(parts(1))
+                        Case "y"
+                            yValue = Integer.Parse(parts(1))
+                        Case "id"
+                            idValue = parts(1)
+                        Case "side"
+                            sideValue = If(parts(1).ToLower() = "top", 0, 1)
+                    End Select
+                End If
+            Next
+
+
+            ' Add the values to the respective lists
+            Module2.XValues.Add(xValue)
+            Module2.YValues.Add(yValue)
+            Module2.IDValues.Add(idValue)
+            Module2.SideValues.Add(sideValue)
+        Next
+        totalXCount = Module2.XValues.Count
+
+
+        MessageBox.Show("TreeView data saved to lists successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+
+
+    Public Sub PrintLists()
+        MessageBox.Show("X Values: " & String.Join(", ", Module2.XValues))
+        MessageBox.Show("Y Values: " & String.Join(", ", Module2.YValues))
+        MessageBox.Show("ID Values: " & String.Join(", ", Module2.IDValues))
+        MessageBox.Show("Side Values: " & String.Join(", ", Module2.SideValues))
+        MessageBox.Show(totalXCount)
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SaveTreeViewDataToLists()
+        PrintLists()
+    End Sub
+
+    Private Async Function btnclear_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles btnclear.MouseDown
+        plc.SetDevice("M232", 1)
+    End Function
+
+    Private Async Function btnclear_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles btnclear.MouseUp
+        plc.SetDevice("M232", 0)
+    End Function
 End Class
