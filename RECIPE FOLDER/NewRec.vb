@@ -14,6 +14,7 @@ Public Class NewRec
         plc.ActLogicalStationNumber = 1
         plc.Open()
     End Function
+
     Private Sub Label65_Click(sender As Object, e As EventArgs) Handles Label65.Click
 
     End Sub
@@ -44,8 +45,10 @@ Public Class NewRec
             'ye node ko save kar dega 
             If markingPositionsNode IsNot Nothing Then
                 Debug.WriteLine("Marking_Positions node found.")
+
             Else
                 Debug.WriteLine("Marking_Positions node NOT found.")
+
             End If
 
             If markingPositionsNode IsNot Nothing Then
@@ -169,49 +172,6 @@ Public Class NewRec
             MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    Private Async Function Button37_Click(sender As Object, e As EventArgs) As Task Handles TEACH.Click
-        Dim xValue As String = X.Text.Trim()
-        Dim yValue As String = Y.Text.Trim()
-        Dim idValue As String = ID.Text.Trim()
-        Dim pside As String = SIDE.SelectedItem.ToString().Trim()
-
-        ' Create the mark node without spaces
-        Dim markNode As TreeNode = New TreeNode($"{currentMark}st_MARK") With {
-        .Checked = True ' Check the checkbox
-    }
-
-        ' Capture x and y mark values as child nodes without spaces
-        markNode.Nodes.Add(New TreeNode($"X_{xValue}"))   ' Replaced space with underscore
-        markNode.Nodes.Add(New TreeNode($"Y_{yValue}"))   ' Replaced space with underscore
-        markNode.Nodes.Add(New TreeNode($"ID_{idValue}"))  ' Replaced space with underscore
-        markNode.Nodes.Add(New TreeNode($"Side_{pside}"))  ' Replaced space with underscore
-
-        ' Add the mark node as a child of the first node
-        TreeView1.Nodes(0).Nodes.Add(markNode)
-
-        ' Expand the parent node to show the new child
-        TreeView1.Nodes(0).Expand()
-
-        currentMark += 1 ' Increment the current mark counter
-    End Function
-
-
-
     Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
         Design()
         LoadRecipeAsync()
@@ -250,7 +210,7 @@ Public Class NewRec
         LoadRecipeAsync()
     End Function
 
-    Private Async Function SAVE_Click(sender As Object, e As EventArgs) As Task Handles SAVE.Click
+    Private Async Function SAVEE_Click(sender As Object, e As EventArgs) As Task Handles SAVE.Click
         If DataGridView1.SelectedRows.Count = 0 Then
             MessageBox.Show("Please select a recipe to save the marking position.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
@@ -350,4 +310,122 @@ Public Class NewRec
     Private Async Function btnclear_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles btnclear.MouseUp
         plc.SetDevice("M232", 0)
     End Function
+
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        StartTimer()
+    End Sub
+    Private previousM224State As Boolean = False
+    Private WithEvents timer As New Timer()
+    Private Async Function StartTimer() As Task
+        ' Set up the timer interval (1 second or as appropriate)
+        timer.Interval = 100
+        timer.Start()
+    End Function
+    Private Async Function Timer_Tick(sender As Object, e As EventArgs) As Task Handles timer.Tick
+        ' Check if M224 is turned on
+        Dim isM224On As Boolean = False
+        plc.GetDevice("M224", isM224On)
+
+        ' Send values only when M224 just turned on
+        If isM224On AndAlso Not previousM224State Then
+            SendValuesToPLC()
+        End If
+
+        ' Update previous state
+        previousM224State = isM224On
+    End Function
+    Public Function ConvertFloatToWord(ByVal value As Single) As Integer()
+        Dim floatBytes As Byte() = BitConverter.GetBytes(value)
+        Dim lowWord As Integer = BitConverter.ToInt16(floatBytes, 0)
+        Dim highWord As Integer = BitConverter.ToInt16(floatBytes, 2)
+        Return {lowWord, highWord}
+    End Function
+
+
+    ' Convert word to float
+    Public Function ConvertWordToFloat(ByVal register As Integer()) As Single
+        Dim bytes(3) As Byte
+        Dim lowWordBytes() As Byte = BitConverter.GetBytes(register(0))
+        Dim highWordBytes() As Byte = BitConverter.GetBytes(register(1))
+
+        Array.Copy(lowWordBytes, 0, bytes, 0, 2)
+        Array.Copy(highWordBytes, 0, bytes, 2, 2)
+
+        Return BitConverter.ToSingle(bytes, 0)
+    End Function
+    Private Sub SendValuesToPLC()
+        ' Send X, Y, and Pattern ID data to PLC
+        For index As Integer = 0 To Module2.XValues.Count - 1
+            ' Convert X value and send to PLC (D370, D371)
+            Dim floatValueX As Single
+            If Single.TryParse(Module2.XValues(index), floatValueX) Then
+                Dim wordsX() As Integer = ConvertFloatToWord(floatValueX)
+                plc.SetDevice("D370", wordsX(0))
+                plc.SetDevice("D371", wordsX(1))
+            End If
+
+            ' Convert Y value and send to PLC (D372, D373)
+            Dim floatValueY As Single
+            If Single.TryParse(Module2.YValues(index).ToString(), floatValueY) Then
+                Dim wordsY() As Integer = ConvertFloatToWord(floatValueY)
+                plc.SetDevice("D372", wordsY(0))
+                plc.SetDevice("D373", wordsY(1))
+            End If
+
+            ' Send Pattern ID to D390
+            Dim patternID As Integer = Module2.IDValues(index)
+            plc.SetDevice("D390", patternID)
+
+            ' Send Side value to D391 (assuming 0 = top, 1 = bottom)
+            Dim sideValue As Integer = Module2.SideValues(index) ' 0 or 1
+            plc.SetDevice("D391", sideValue)
+
+            ' Break the loop after Module1.time seconds
+            If index >= Module2.time Then
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Private Sub SAVE_Click(sender As Object, e As EventArgs) Handles SAVE.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Async Function Button37_Click(sender As Object, e As EventArgs) As Task Handles TEACH.Click
+        Dim xValue As String = X.Text.Trim()
+        Dim yValue As String = Y.Text.Trim()
+        Dim idValue As String = ID.Text.Trim()
+        Dim pside As String = SIDE.SelectedItem.ToString().Trim()
+
+        If TreeView1.Nodes.Count = 0 Then
+            TreeView1.Nodes.Add(New TreeNode("Marking Position"))
+        End If
+
+        ' Create the mark node without spaces
+        Dim markNode As TreeNode = New TreeNode($"{currentMark}st_MARK") With {
+        .Checked = True ' Check the checkbox
+    }
+
+        ' Capture x and y mark values as child nodes without spaces
+        markNode.Nodes.Add(New TreeNode($"X_{xValue}"))   ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"Y_{yValue}"))   ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"ID_{idValue}"))  ' Replaced space with underscore
+        markNode.Nodes.Add(New TreeNode($"Side_{pside}"))  ' Replaced space with underscore
+
+        ' Add the mark node as a child of the first node
+        TreeView1.Nodes(0).Nodes.Add(markNode)
+
+        ' Expand the parent node to show the new child
+        TreeView1.Nodes(0).Expand()
+
+        currentMark += 1 ' Increment the current mark counter
+    End Function
+
+    ' Converts a Single (float) to two words (integers) for the PLC
+
 End Class

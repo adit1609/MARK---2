@@ -141,67 +141,65 @@ Public Class Operations
         plc.ActLogicalStationNumber = 1
         plc.Open()
         Timer1.Start()
-        CheckBox5.Checked = MySettings.Default.fiducial
-        If CheckBox5.Checked Then
-            plc.SetDevice("M243", 1)
+        'CheckBox5.Checked = MySettings.Default.fiducial
+        'If CheckBox5.Checked Then
+        '    plc.SetDevice("M243", 1)
 
-        Else
-            plc.SetDevice("M243", 0)
-        End If
+        'Else
+        '    plc.SetDevice("M243", 0)
+        'End If
 
-        CheckBox1.Checked = MySettings.Default.MES1
-
-
-
-
-        CheckBox2.Checked = MySettings.Default.BARCODE_SC
-        If CheckBox2.Checked Then
-
-            plc.SetDevice("M242", 1)
-        Else
-
-            plc.SetDevice("M242", 0)
-        End If
-
-
-        CheckBox3.Checked = MySettings.Default.L_MARK
-        If CheckBox3.Checked Then
-
-            plc.SetDevice("M241", 1)
-        Else
-
-            plc.SetDevice("M241", 0)
-        End If
-
-
-        CheckBox6.Checked = MySettings.Default.SMEMA_S
-        If CheckBox6.Checked Then
-
-            plc.SetDevice("M255", 1)
-        Else
-
-            plc.SetDevice("M255", 0)
-        End If
-
-
-        CheckBox7.Checked = MySettings.Default.CAM_SCA
+        'CheckBox1.Checked = MySettings.Default.MES1
 
 
 
-        CheckBox4.Checked = MySettings.Default.FLIP
-        If CheckBox4.Checked Then
 
-            plc.SetDevice("M256", 1)
-        Else
+        'CheckBox2.Checked = MySettings.Default.BARCODE_SC
+        'If CheckBox2.Checked Then
 
-            plc.SetDevice("M256", 0)
-        End If
+        '    plc.SetDevice("M242", 1)
+        'Else
 
-
-        RichTextBox5.Text = MySettings.Default.Good_Count
-        RichTextBox7.Text = MySettings.Default.NG_Count
+        '    plc.SetDevice("M242", 0)
+        'End If
 
 
+        'CheckBox3.Checked = MySettings.Default.L_MARK
+        'If CheckBox3.Checked Then
+
+        '    plc.SetDevice("M241", 1)
+        'Else
+
+        '    plc.SetDevice("M241", 0)
+        'End If
+
+
+        'CheckBox6.Checked = MySettings.Default.SMEMA_S
+        'If CheckBox6.Checked Then
+
+        '    plc.SetDevice("M255", 1)
+        'Else
+
+        '    plc.SetDevice("M255", 0)
+        'End If
+
+
+        'CheckBox7.Checked = MySettings.Default.CAM_SCA
+
+
+
+        'CheckBox4.Checked = MySettings.Default.FLIP
+        'If CheckBox4.Checked Then
+
+        '    plc.SetDevice("M256", 1)
+        'Else
+
+        '    plc.SetDevice("M256", 0)
+        'End If
+
+
+        'RichTextBox5.Text = MySettings.Default.Good_Count
+        'RichTextBox7.Text = MySettings.Default.NG_Count
 
 
 
@@ -218,10 +216,12 @@ Public Class Operations
 
 
 
-        'ComboBoxDeviceList.Items.Clear()
-        'ComboBoxDeviceList.SelectedIndex = -1
-        RichTextBox1.Text = My.Settings.ProgramName
-        loadRecipe()
+
+
+        ''ComboBoxDeviceList.Items.Clear()
+        ''ComboBoxDeviceList.SelectedIndex = -1
+        'RichTextBox1.Text = My.Settings.ProgramName
+        'loadRecipe()
     End Sub
     Private Sub loadRecipe()
         Dim progname As String
