@@ -98,10 +98,10 @@ Public Class NewRec
                                                  Dim programName As String = Path.GetFileNameWithoutExtension(file)
 
 
-                                                 Dim totalMarkingNode As XmlNode = xmlDoc.SelectSingleNode("Project_Specification/TotalMarking")
+                                                 Dim totalMarkingNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/TotalMarking")
                                                  Dim totalMarking As String = If(totalMarkingNode IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(totalMarkingNode.InnerText), totalMarkingNode.InnerText.Trim(), "-")
 
-                                                 Dim totalFiducialNode As XmlNode = xmlDoc.SelectSingleNode("Project_Specification/TotalFiducial")
+                                                 Dim totalFiducialNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/TotalFiducial")
                                                  Dim totalFiducial As String = If(totalFiducialNode IsNot Nothing AndAlso Not String.IsNullOrWhiteSpace(totalFiducialNode.InnerText), totalFiducialNode.InnerText.Trim(), "-")
 
 
@@ -115,13 +115,18 @@ Public Class NewRec
                        End Sub)
     End Function
     Private Sub SaveMarkingPositionsToXML(filePath As String)
+
         Try
             Dim xmlDoc As New XmlDocument()
             xmlDoc.Load(filePath)
 
 
             Dim root As XmlElement = xmlDoc.DocumentElement
-
+            Dim totalMarkingNode As XmlElement = root.SelectSingleNode("TotalMarking")
+            If totalMarkingNode Is Nothing Then
+                totalMarkingNode = xmlDoc.CreateElement("TotalMarking")
+                root.AppendChild(totalMarkingNode)
+            End If
 
             Dim markingPositionsNode As XmlElement = root.SelectSingleNode("Marking_Positions")
             If markingPositionsNode Is Nothing Then
@@ -130,10 +135,10 @@ Public Class NewRec
             Else
                 markingPositionsNode.RemoveAll()
             End If
-
+            Dim markCount As Integer = 0
 
             For Each markNode As TreeNode In TreeView1.Nodes(0).Nodes
-
+                markCount += 1
                 Dim validMarkName As String = markNode.Text.Replace(" ", "_")
 
                 If Char.IsDigit(validMarkName(0)) Then
@@ -161,6 +166,7 @@ Public Class NewRec
 
                 markingPositionsNode.AppendChild(markElement)
             Next
+            totalMarkingNode.InnerText = markCount.ToString()
 
             ' Save the updated XML
             xmlDoc.Save(filePath)
@@ -231,6 +237,9 @@ Public Class NewRec
 
         ' Save the marking positions to the XML file
         SaveMarkingPositionsToXML(filePath)
+        DataGridView1.Rows.Clear()
+        _loadedFiles.Clear()
+        LoadRecipeAsync()
     End Function
 
 
@@ -453,6 +462,7 @@ Public Class NewRec
 
         currentMark += 1 ' Increment the current mark counter
     End Function
+
 
     Public check As Integer
     Private Sub btndelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
