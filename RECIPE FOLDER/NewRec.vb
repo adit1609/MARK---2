@@ -260,6 +260,7 @@ Public Class NewRec
     Public totalXCount As Integer
     Private Sub SaveTreeViewDataToLists()
         ' Clear all lists before saving new data
+        currentIndex = 0
         Module2.ClearAllLists()
 
         ' Loop through all child nodes under the first (root) node in TreeView1

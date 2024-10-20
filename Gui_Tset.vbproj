@@ -801,6 +801,8 @@
     <Content Include="mark 2.ico" />
     <None Include="Resources\icons8-logout-50.png" />
     <None Include="Resources\out %286%29.jpg" />
+    <None Include="Resources\icons8-rotate-left-64.png" />
+    <None Include="Resources\icons8-rotate-right-64.png" />
     <Content Include="userlogin11.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
