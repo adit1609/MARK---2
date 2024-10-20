@@ -176,6 +176,8 @@ Public Class NewRec
         Design()
         LoadRecipeAsync()
         plccon()
+        plc.SetDevice("M224", 0)
+
     End Function
 
     Public Sub Design()
@@ -183,6 +185,7 @@ Public Class NewRec
         For Each row As DataGridViewRow In DataGridView1.Rows
             row.Height = 100
         Next
+
 
     End Sub
 
@@ -255,7 +258,7 @@ Public Class NewRec
             ' Skip this node if it's checked
             If markNode.Checked Then Continue For
 
-            Dim xValue, yValue As Integer
+            Dim xValue, yValue As String
             Dim idValue As String
             Dim sideValue As Integer
 
@@ -265,17 +268,23 @@ Public Class NewRec
                 If parts.Length = 2 Then
                     Select Case parts(0).ToLower()
                         Case "x"
-                            xValue = Integer.Parse(parts(1))
+                            ' Store X value as string (words or numbers)
+                            xValue = parts(1)
+
                         Case "y"
-                            yValue = Integer.Parse(parts(1))
+                            ' Store Y value as string (words or numbers)
+                            yValue = parts(1)
+
                         Case "id"
+                            ' Store ID as string
                             idValue = parts(1)
+
                         Case "side"
+                            ' Store Side value as integer (0 for top, 1 for bottom)
                             sideValue = If(parts(1).ToLower() = "top", 0, 1)
                     End Select
                 End If
             Next
-
 
             ' Add the values to the respective lists
             Module2.XValues.Add(xValue)
@@ -283,11 +292,16 @@ Public Class NewRec
             Module2.IDValues.Add(idValue)
             Module2.SideValues.Add(sideValue)
         Next
+
+        ' Update total X count
         totalXCount = Module2.XValues.Count
+        Module2.time = totalXCount
 
-
-        MessageBox.Show("TreeView data saved to lists successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        ' Confirm success
+        MessageBox.Show("TreeView data saved to lists successfully!",
+                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
 
 
 
@@ -315,26 +329,74 @@ Public Class NewRec
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         StartTimer()
     End Sub
-    Private previousM224State As Boolean = False
-    Private WithEvents timer As New Timer()
+    '
+    Public WithEvents timer As New Timer()
     Private Async Function StartTimer() As Task
         ' Set up the timer interval (1 second or as appropriate)
-        timer.Interval = 100
-        timer.Start()
-    End Function
-    Private Async Function Timer_Tick(sender As Object, e As EventArgs) As Task Handles timer.Tick
-        ' Check if M224 is turned on
-        Dim isM224On As Boolean = False
-        plc.GetDevice("M224", isM224On)
 
-        ' Send values only when M224 just turned on
-        If isM224On AndAlso Not previousM224State Then
-            SendValuesToPLC()
+        timer.Start()
+
+    End Function
+
+    Private previousState As Boolean = False   ' Track the previous state of M224
+    Private currentIndex As Integer = 0
+    Dim boardexit As Integer = 0 ' Track the index of the next value to send
+
+    Private Async Function Timer_Tick(sender As Object, e As EventArgs) As Task Handles timer.Tick
+        Dim currentState As Integer
+
+
+        ' Read the state of M224
+        plc.GetDevice("M224", currentState)
+
+        ' Detect rising edge: M224 goes from 0 -> 1
+        If currentState = 1 AndAlso Not previousState Then
+            ' Send the current value from the list
+            If currentIndex < Module2.time Then
+                ' Send X and Y values to the PLC
+                SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
+                SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
+
+                ' Send pattern ID to D390
+                plc.SetDevice("D390", Module2.IDValues(currentIndex))
+
+                ' Send Side value to D391 (0 = top, 1 = bottom)
+                plc.SetDevice("D391", Module2.SideValues(currentIndex))
+
+                ' Move to the next index
+                currentIndex += 1
+                boardexit += 1
+            End If
+            If (boardexit = Module2.time) Then
+                plc.SetDevice("M301", 1)
+                boardexit = 0
+            End If
+
+
+
+            ' If the end of the list is reached, reset the index to start over
+            If currentIndex >= Module2.XValues.Count Then
+                currentIndex = 0
+            End If
         End If
 
-        ' Update previous state
-        previousM224State = isM224On
+        ' Update the previous state for the next tick
+        previousState = (currentState = 1)
     End Function
+
+    ' Helper function to send float values to two consecutive PLC addresses
+
+
+
+    Private Sub SendFloatValues(valueStr As String, address1 As String, address2 As String)
+        Dim floatValue As Single
+        If Single.TryParse(valueStr, floatValue) Then
+            Dim words() As Integer = ConvertFloatToWord(floatValue)
+            plc.SetDevice(address1, words(0))
+            plc.SetDevice(address2, words(1))
+        End If
+    End Sub
+
     Public Function ConvertFloatToWord(ByVal value As Single) As Integer()
         Dim floatBytes As Byte() = BitConverter.GetBytes(value)
         Dim lowWord As Integer = BitConverter.ToInt16(floatBytes, 0)
@@ -354,40 +416,6 @@ Public Class NewRec
 
         Return BitConverter.ToSingle(bytes, 0)
     End Function
-    Private Sub SendValuesToPLC()
-        ' Send X, Y, and Pattern ID data to PLC
-        For index As Integer = 0 To Module2.XValues.Count - 1
-            ' Convert X value and send to PLC (D370, D371)
-            Dim floatValueX As Single
-            If Single.TryParse(Module2.XValues(index), floatValueX) Then
-                Dim wordsX() As Integer = ConvertFloatToWord(floatValueX)
-                plc.SetDevice("D370", wordsX(0))
-                plc.SetDevice("D371", wordsX(1))
-            End If
-
-            ' Convert Y value and send to PLC (D372, D373)
-            Dim floatValueY As Single
-            If Single.TryParse(Module2.YValues(index).ToString(), floatValueY) Then
-                Dim wordsY() As Integer = ConvertFloatToWord(floatValueY)
-                plc.SetDevice("D372", wordsY(0))
-                plc.SetDevice("D373", wordsY(1))
-            End If
-
-            ' Send Pattern ID to D390
-            Dim patternID As Integer = Module2.IDValues(index)
-            plc.SetDevice("D390", patternID)
-
-            ' Send Side value to D391 (assuming 0 = top, 1 = bottom)
-            Dim sideValue As Integer = Module2.SideValues(index) ' 0 or 1
-            plc.SetDevice("D391", sideValue)
-
-            ' Break the loop after Module1.time seconds
-            If index >= Module2.time Then
-                Exit For
-            End If
-        Next
-    End Sub
-
     Private Sub SAVE_Click(sender As Object, e As EventArgs) Handles SAVE.Click
 
     End Sub
@@ -425,6 +453,23 @@ Public Class NewRec
 
         currentMark += 1 ' Increment the current mark counter
     End Function
+
+    Public check As Integer
+    Private Sub btndelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
+        MessageBox.Show(Module2.XValues(1))
+
+
+
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        plc.GetDevice("M204", check)
+    End Sub
+
+    Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
+
+    End Sub
 
     ' Converts a Single (float) to two words (integers) for the PLC
 
