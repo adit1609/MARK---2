@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.Xml
 Imports ActUtlTypeLib
+Imports System.Web.UI.Design
 
 Public Class NewRec
     Private currentMark As Integer = 1
@@ -13,6 +14,7 @@ Public Class NewRec
     Public Async Function plccon() As Task
         plc.ActLogicalStationNumber = 1
         plc.Open()
+        Timer1.Start()
     End Function
 
     Private Sub Label65_Click(sender As Object, e As EventArgs) Handles Label65.Click
@@ -178,13 +180,7 @@ Public Class NewRec
             MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
-        Design()
-        LoadRecipeAsync()
-        plccon()
-        plc.SetDevice("M224", 0)
 
-    End Function
 
     Public Sub Design()
         TreeView1.CheckBoxes = True
@@ -261,6 +257,7 @@ Public Class NewRec
     Private Sub SaveTreeViewDataToLists()
         ' Clear all lists before saving new data
         currentIndex = 0
+        boardexit = 0
         Module2.ClearAllLists()
 
         ' Loop through all child nodes under the first (root) node in TreeView1
@@ -376,6 +373,7 @@ Public Class NewRec
                 ' Move to the next index
                 currentIndex += 1
                 boardexit += 1
+                plc.SetDevice("M300", 1)
             End If
             If (boardexit = Module2.time) Then
                 plc.SetDevice("M301", 1)
@@ -474,13 +472,182 @@ Public Class NewRec
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        plc.GetDevice("M204", check)
-    End Sub
 
     Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
 
     End Sub
+
+    Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
+        Design()
+        LoadRecipeAsync()
+        plccon()
+        plc.SetDevice("M224", 0)
+
+    End Function
+
+    Private Sub Button9_MouseDown(sender As Object, e As MouseEventArgs) Handles PLOAD.MouseDown
+        plc.SetDevice("M234", 1)
+    End Sub
+
+    Private Sub PLOAD_MouseUp(sender As Object, e As MouseEventArgs) Handles PLOAD.MouseUp
+        plc.SetDevice("M234", 0)
+    End Sub
+
+    Private Sub PUNLOAD_MouseDown(sender As Object, e As MouseEventArgs) Handles PUNLOAD.MouseDown
+        plc.SetDevice("M233", 1)
+    End Sub
+
+    Private Sub PUNLOAD_MouseUp(sender As Object, e As MouseEventArgs) Handles PUNLOAD.MouseUp
+        plc.SetDevice("M233", 0)
+    End Sub
+
+    Private Sub Button13_MouseDown(sender As Object, e As MouseEventArgs) Handles STOPER.MouseDown
+        plc.SetDevice("M237", 1)
+    End Sub
+
+    Private Sub STOPER_MouseUp(sender As Object, e As MouseEventArgs) Handles STOPER.MouseUp
+        plc.SetDevice("M237", 0)
+    End Sub
+
+    Private Sub CLAMPSIDE_MouseDown(sender As Object, e As MouseEventArgs) Handles CLAMPSIDE.MouseDown
+        plc.SetDevice("M239", 1)
+    End Sub
+
+    Private Sub CLAMPSIDE_MouseUp(sender As Object, e As MouseEventArgs) Handles CLAMPSIDE.MouseUp
+        plc.SetDevice("M239", 0)
+    End Sub
+
+    Private Sub CLAMPTOP_MouseDown(sender As Object, e As MouseEventArgs) Handles CLAMPTOP.MouseDown
+        plc.SetDevice("M248", 1)
+
+    End Sub
+
+    Private Sub CLAMPTOP_MouseUp(sender As Object, e As MouseEventArgs) Handles CLAMPTOP.MouseUp
+        plc.SetDevice("M248", 0)
+    End Sub
+
+    Private Sub Button11_MouseDown(sender As Object, e As MouseEventArgs) Handles Button11.MouseDown
+        plc.SetDevice("M235", 1)
+    End Sub
+
+    Private Sub Button11_MouseUp(sender As Object, e As MouseEventArgs) Handles Button11.MouseUp
+        plc.SetDevice("M235", 0)
+    End Sub
+
+    Private Sub Button12_MouseDown(sender As Object, e As MouseEventArgs) Handles Button12.MouseDown
+        plc.SetDevice("M236", 1)
+    End Sub
+
+    Private Sub Button12_MouseUp(sender As Object, e As MouseEventArgs) Handles Button12.MouseUp
+        plc.SetDevice("M236", 0)
+    End Sub
+
+    Private Sub Button6_MouseDown(sender As Object, e As MouseEventArgs) Handles Button6.MouseDown
+        plc.SetDevice("M252", 1)
+    End Sub
+
+    Private Sub Button6_MouseUp(sender As Object, e As MouseEventArgs) Handles Button6.MouseUp
+        plc.SetDevice("M252", 0)
+    End Sub
+
+    Private Sub Button47_Click(sender As Object, e As EventArgs) Handles YUP.Click
+
+    End Sub
+
+    Private Sub Button46_Click(sender As Object, e As EventArgs) Handles XMIN.Click
+
+    End Sub
+
+    Private Sub YDOWN_MouseDown(sender As Object, e As MouseEventArgs) Handles YDOWN.MouseDown
+        plc.SetDevice("M200", 1)
+    End Sub
+
+    Private Sub YDOWN_MouseUp(sender As Object, e As MouseEventArgs) Handles YDOWN.MouseUp
+        plc.SetDevice("M200", 0)
+    End Sub
+
+    Private Sub YUP_MouseDown(sender As Object, e As MouseEventArgs) Handles YUP.MouseDown
+        plc.SetDevice("M201", 1)
+    End Sub
+
+    Private Sub YUP_MouseUp(sender As Object, e As MouseEventArgs) Handles YUP.MouseUp
+        plc.SetDevice("M201", 0)
+    End Sub
+
+    Private Sub XMAX_MouseDown(sender As Object, e As MouseEventArgs) Handles XMAX.MouseDown
+        plc.SetDevice("M205", 1)
+    End Sub
+
+    Private Sub XMAX_MouseUp(sender As Object, e As MouseEventArgs) Handles XMAX.MouseUp
+        plc.SetDevice("M205", 0)
+    End Sub
+
+    Private Sub XMIN_MouseDown(sender As Object, e As MouseEventArgs) Handles XMIN.MouseDown
+        plc.SetDevice("M206", 1)
+    End Sub
+
+    Private Sub XMIN_MouseUp(sender As Object, e As MouseEventArgs) Handles XMIN.MouseUp
+        plc.SetDevice("M206", 0)
+    End Sub
+
+    Private Sub CWWID_MouseDown(sender As Object, e As MouseEventArgs) Handles CWWID.MouseDown
+        plc.SetDevice("M249", 1)
+    End Sub
+
+    Private Sub CWWID_MouseUp(sender As Object, e As MouseEventArgs) Handles CWWID.MouseUp
+        plc.SetDevice("M249", 0)
+    End Sub
+
+    Private Sub CWCLOSE_MouseDown(sender As Object, e As MouseEventArgs) Handles CWCLOSE.MouseDown
+        plc.SetDevice("M250", 1)
+    End Sub
+
+    Private Sub CWCLOSE_MouseUp(sender As Object, e As MouseEventArgs) Handles CWCLOSE.MouseUp
+        plc.SetDevice("M250", 0)
+    End Sub
+
+    Private Async Function Button9_Click(sender As Object, e As EventArgs) As Task Handles Button9.Click
+        Dim floatValueCW As Single
+        If Single.TryParse(WidthTextbox.Text, floatValueCW) Then
+            ' Convert the float value to two 16-bit integers
+            Dim words() As Integer = ConvertFloatToWord(floatValueCW)
+
+            ' Write the integers to the PLC registers
+            plc.SetDevice("D320", words(0))
+            plc.SetDevice("D321", words(1))
+        Else
+            ' If parsing fails, you can handle the invalid input here
+        End If
+    End Function
+
+    Private Sub WidthTextbox_MouseDown(sender As Object, e As MouseEventArgs) Handles WidthTextbox.MouseDown
+        plc.SetDevice("M240", 1)
+
+    End Sub
+
+    Private Sub WidthTextbox_MouseUp(sender As Object, e As MouseEventArgs) Handles WidthTextbox.MouseUp
+        plc.SetDevice("M240", 0)
+    End Sub
+
+    Private Async Function Timer1_Tick(sender As Object, e As EventArgs) As Task Handles Timer1.Tick
+        Dim Xval(1) As Integer
+        plc.GetDevice("D342", Xval(0))
+        plc.GetDevice("D343", Xval(1))
+        Dim xnum As Single = ConvertWordToFloat(Xval)
+        X.Text = xnum.ToString("F4")
+        Dim Yval(1) As Integer
+        plc.GetDevice("D344", Xval(0))
+        plc.GetDevice("D345", Xval(1))
+        Dim ynum As Single = ConvertWordToFloat(Yval)
+        Y.Text = xnum.ToString("F4")
+        Dim CWval(1) As Integer
+        plc.GetDevice("D312", Xval(0))
+        plc.GetDevice("D313", Xval(1))
+        Dim CWnum As Single = ConvertWordToFloat(CWval)
+        CW.Text = xnum.ToString("F4")
+    End Function
+
+
 
     ' Converts a Single (float) to two words (integers) for the PLC
 
