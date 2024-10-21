@@ -376,21 +376,23 @@ Public Class NewRec
                     SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
                     SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
 
-                    ' Send pattern ID to D390
-                    plc.SetDevice("D390", Module2.IDValues(currentIndex))
+                ' Send pattern ID to D390
+                plc.SetDevice("D374", Module2.IDValues(currentIndex))
 
-                    ' Send Side value to D391 (0 = top, 1 = bottom)
-                    plc.SetDevice("D391", Module2.SideValues(currentIndex))
+                ' Send Side value to D391 (0 = top, 1 = bottom)
+                plc.SetDevice("D375", Module2.SideValues(currentIndex))
 
-                    ' Move to the next index
-                    currentIndex += 1
+                ' Move to the next index
+                currentIndex += 1
                     boardexit += 1
                     plc.SetDevice("M300", 1)
                 End If
                 If (boardexit = Module2.time) Then
                     plc.SetDevice("M301", 1)
-                    boardexit = 0
-                End If
+
+                currentIndex = 0
+                boardexit = 0
+            End If
 
 
 
@@ -665,17 +667,17 @@ Public Class NewRec
         plc.GetDevice("D342", Xval(0))
         plc.GetDevice("D343", Xval(1))
         Dim xnum As Single = ConvertWordToFloat(Xval)
-        X.Text = xnum.ToString("F4")
+        X.Text = xnum.ToString("F6")
         Dim Yval(1) As Integer
-        plc.GetDevice("D344", Xval(0))
-        plc.GetDevice("D345", Xval(1))
+        plc.GetDevice("D344", Yval(0))
+        plc.GetDevice("D345", Yval(1))
         Dim ynum As Single = ConvertWordToFloat(Yval)
-        Y.Text = xnum.ToString("F4")
+        Y.Text = ynum.ToString("F6")
         Dim CWval(1) As Integer
-        plc.GetDevice("D312", Xval(0))
-        plc.GetDevice("D313", Xval(1))
+        plc.GetDevice("D312", CWval(0))
+        plc.GetDevice("D313", CWval(1))
         Dim CWnum As Single = ConvertWordToFloat(CWval)
-        CW.Text = xnum.ToString("F4")
+        CW.Text = CWnum.ToString("F6")
     End Function
 
     Private Sub Button3_MouseEnter(sender As Object, e As EventArgs) Handles Button3.MouseEnter
@@ -688,6 +690,19 @@ Public Class NewRec
 
     Private Sub Button3_MouseUp(sender As Object, e As MouseEventArgs) Handles Button3.MouseUp
         plc.SetDevice("M202", 0)
+    End Sub
+    Dim Bulbcheck As Integer
+    Private Sub Button44_Click(sender As Object, e As EventArgs) Handles Button44.Click
+        Bulbcheck = Bulbcheck + 1
+        If Bulbcheck = 1 Then
+            plc.SetDevice("M246", 1)
+            plc.SetDevice("M247", 1)
+
+        Else
+            Bulbcheck = 0
+            plc.SetDevice("M246", 0)
+            plc.SetDevice("M247", 0)
+        End If
     End Sub
 
 

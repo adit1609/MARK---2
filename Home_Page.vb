@@ -367,7 +367,7 @@ Public Class Home_Page
     End Sub
 
     Private Sub btProg_Click(sender As Object, e As EventArgs) Handles btProg.Click
-        Home_Page(New Programing)
+        Home_Page(New NewRec)
         btUser.Hide()
         btoper.Hide()
         btProg.Hide()

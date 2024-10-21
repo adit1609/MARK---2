@@ -357,7 +357,7 @@ Partial Class Recipe
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1476, 1061)
+        Me.Panel1.Size = New System.Drawing.Size(772, 1061)
         Me.Panel1.TabIndex = 1
         '
         'Panel2
@@ -366,7 +366,7 @@ Partial Class Recipe
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1476, 1061)
+        Me.Panel2.Size = New System.Drawing.Size(772, 1061)
         Me.Panel2.TabIndex = 6
         '
         'Panel5
@@ -375,7 +375,7 @@ Partial Class Recipe
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1476, 1061)
+        Me.Panel5.Size = New System.Drawing.Size(772, 1061)
         Me.Panel5.TabIndex = 5
         '
         'Panel9
@@ -384,7 +384,7 @@ Partial Class Recipe
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1476, 1061)
+        Me.Panel9.Size = New System.Drawing.Size(772, 1061)
         Me.Panel9.TabIndex = 1
         '
         'Panel4
@@ -393,7 +393,7 @@ Partial Class Recipe
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1476, 1061)
+        Me.Panel4.Size = New System.Drawing.Size(772, 1061)
         Me.Panel4.TabIndex = 3
         '
         'Guna2TabControl1
@@ -409,7 +409,7 @@ Partial Class Recipe
         Me.Guna2TabControl1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2TabControl1.Name = "Guna2TabControl1"
         Me.Guna2TabControl1.SelectedIndex = 0
-        Me.Guna2TabControl1.Size = New System.Drawing.Size(1476, 1061)
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(772, 1061)
         Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
         Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
@@ -439,7 +439,7 @@ Partial Class Recipe
         Me.TabPage3.Location = New System.Drawing.Point(4, 4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1468, 1003)
+        Me.TabPage3.Size = New System.Drawing.Size(764, 953)
         Me.TabPage3.TabIndex = 10
         Me.TabPage3.Text = "RECIPE "
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -452,16 +452,16 @@ Partial Class Recipe
         Me.Panel8.Controls.Add(Me.Button4)
         Me.Panel8.Controls.Add(Me.btnclear)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel8.Location = New System.Drawing.Point(3, 944)
+        Me.Panel8.Location = New System.Drawing.Point(3, 894)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1462, 56)
+        Me.Panel8.Size = New System.Drawing.Size(758, 56)
         Me.Panel8.TabIndex = 4
         '
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(970, 0)
+        Me.Button2.Location = New System.Drawing.Point(266, 0)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(97, 56)
@@ -473,7 +473,7 @@ Partial Class Recipe
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1067, 0)
+        Me.Button1.Location = New System.Drawing.Point(363, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 56)
@@ -485,7 +485,7 @@ Partial Class Recipe
         '
         Me.btndelete.Dock = System.Windows.Forms.DockStyle.Right
         Me.btndelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndelete.Location = New System.Drawing.Point(1164, 0)
+        Me.btndelete.Location = New System.Drawing.Point(460, 0)
         Me.btndelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btndelete.Name = "btndelete"
         Me.btndelete.Size = New System.Drawing.Size(97, 56)
@@ -497,7 +497,7 @@ Partial Class Recipe
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(1261, 0)
+        Me.Button4.Location = New System.Drawing.Point(557, 0)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(104, 56)
@@ -509,7 +509,7 @@ Partial Class Recipe
         '
         Me.btnclear.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnclear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclear.Location = New System.Drawing.Point(1365, 0)
+        Me.btnclear.Location = New System.Drawing.Point(661, 0)
         Me.btnclear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnclear.Name = "btnclear"
         Me.btnclear.Size = New System.Drawing.Size(97, 56)
@@ -524,7 +524,7 @@ Partial Class Recipe
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(3, 76)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1462, 924)
+        Me.Panel7.Size = New System.Drawing.Size(758, 874)
         Me.Panel7.TabIndex = 3
         '
         'Guna2Panel2
@@ -533,7 +533,7 @@ Partial Class Recipe
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 235)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.Size = New System.Drawing.Size(1462, 689)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(758, 639)
         Me.Guna2Panel2.TabIndex = 10
         '
         'DATAGRID
@@ -561,7 +561,7 @@ Partial Class Recipe
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DATAGRID.RowTemplate.Height = 28
-        Me.DATAGRID.Size = New System.Drawing.Size(1462, 689)
+        Me.DATAGRID.Size = New System.Drawing.Size(758, 639)
         Me.DATAGRID.TabIndex = 8
         '
         'S_NO
@@ -661,7 +661,7 @@ Partial Class Recipe
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1462, 235)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(758, 235)
         Me.Guna2Panel1.TabIndex = 9
         '
         'txt_Mark_Id
@@ -688,7 +688,7 @@ Partial Class Recipe
         '
         Me.UD_C_pitch.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_C_pitch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_C_pitch.Location = New System.Drawing.Point(793, 169)
+        Me.UD_C_pitch.Location = New System.Drawing.Point(441, 169)
         Me.UD_C_pitch.Name = "UD_C_pitch"
         Me.UD_C_pitch.Size = New System.Drawing.Size(136, 22)
         Me.UD_C_pitch.TabIndex = 61
@@ -697,7 +697,7 @@ Partial Class Recipe
         '
         Me.UD_C_count.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_C_count.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_C_count.Location = New System.Drawing.Point(793, 132)
+        Me.UD_C_count.Location = New System.Drawing.Point(441, 132)
         Me.UD_C_count.Name = "UD_C_count"
         Me.UD_C_count.Size = New System.Drawing.Size(136, 22)
         Me.UD_C_count.TabIndex = 60
@@ -706,7 +706,7 @@ Partial Class Recipe
         '
         Me.UD_R_pitch.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_R_pitch.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_R_pitch.Location = New System.Drawing.Point(793, 95)
+        Me.UD_R_pitch.Location = New System.Drawing.Point(441, 95)
         Me.UD_R_pitch.Name = "UD_R_pitch"
         Me.UD_R_pitch.Size = New System.Drawing.Size(136, 22)
         Me.UD_R_pitch.TabIndex = 59
@@ -715,7 +715,7 @@ Partial Class Recipe
         '
         Me.UD_R_count.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UD_R_count.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UD_R_count.Location = New System.Drawing.Point(793, 58)
+        Me.UD_R_count.Location = New System.Drawing.Point(441, 58)
         Me.UD_R_count.Name = "UD_R_count"
         Me.UD_R_count.Size = New System.Drawing.Size(136, 22)
         Me.UD_R_count.TabIndex = 58
@@ -726,7 +726,7 @@ Partial Class Recipe
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.Black
-        Me.Label28.Location = New System.Drawing.Point(673, 61)
+        Me.Label28.Location = New System.Drawing.Point(321, 61)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(94, 16)
         Me.Label28.TabIndex = 54
@@ -739,7 +739,7 @@ Partial Class Recipe
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.Black
-        Me.Label25.Location = New System.Drawing.Point(673, 172)
+        Me.Label25.Location = New System.Drawing.Point(321, 172)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(107, 16)
         Me.Label25.TabIndex = 57
@@ -752,7 +752,7 @@ Partial Class Recipe
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.Black
-        Me.Label27.Location = New System.Drawing.Point(673, 98)
+        Me.Label27.Location = New System.Drawing.Point(321, 98)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(83, 16)
         Me.Label27.TabIndex = 55
@@ -765,7 +765,7 @@ Partial Class Recipe
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.ForeColor = System.Drawing.Color.Black
-        Me.Label26.Location = New System.Drawing.Point(673, 135)
+        Me.Label26.Location = New System.Drawing.Point(321, 135)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(115, 16)
         Me.Label26.TabIndex = 56
@@ -776,7 +776,7 @@ Partial Class Recipe
         '
         Me.txt_p_weight.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_weight.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_weight.Location = New System.Drawing.Point(505, 169)
+        Me.txt_p_weight.Location = New System.Drawing.Point(153, 169)
         Me.txt_p_weight.Name = "txt_p_weight"
         Me.txt_p_weight.Size = New System.Drawing.Size(136, 22)
         Me.txt_p_weight.TabIndex = 53
@@ -787,7 +787,7 @@ Partial Class Recipe
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.Black
-        Me.Label24.Location = New System.Drawing.Point(370, 61)
+        Me.Label24.Location = New System.Drawing.Point(18, 61)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(111, 16)
         Me.Label24.TabIndex = 46
@@ -800,7 +800,7 @@ Partial Class Recipe
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.Black
-        Me.Label21.Location = New System.Drawing.Point(370, 172)
+        Me.Label21.Location = New System.Drawing.Point(18, 172)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(107, 16)
         Me.Label21.TabIndex = 50
@@ -811,7 +811,7 @@ Partial Class Recipe
         '
         Me.thk.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.thk.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.thk.Location = New System.Drawing.Point(505, 132)
+        Me.thk.Location = New System.Drawing.Point(153, 132)
         Me.thk.Name = "thk"
         Me.thk.Size = New System.Drawing.Size(136, 22)
         Me.thk.TabIndex = 52
@@ -820,7 +820,7 @@ Partial Class Recipe
         '
         Me.txt_p_len.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_len.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_len.Location = New System.Drawing.Point(505, 58)
+        Me.txt_p_len.Location = New System.Drawing.Point(153, 58)
         Me.txt_p_len.Name = "txt_p_len"
         Me.txt_p_len.Size = New System.Drawing.Size(136, 22)
         Me.txt_p_len.TabIndex = 47
@@ -829,7 +829,7 @@ Partial Class Recipe
         '
         Me.txt_p_wed.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.txt_p_wed.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_p_wed.Location = New System.Drawing.Point(505, 95)
+        Me.txt_p_wed.Location = New System.Drawing.Point(153, 95)
         Me.txt_p_wed.Name = "txt_p_wed"
         Me.txt_p_wed.Size = New System.Drawing.Size(136, 22)
         Me.txt_p_wed.TabIndex = 51
@@ -840,7 +840,7 @@ Partial Class Recipe
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(370, 135)
+        Me.Label22.Location = New System.Drawing.Point(18, 135)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(83, 16)
         Me.Label22.TabIndex = 49
@@ -853,7 +853,7 @@ Partial Class Recipe
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(370, 98)
+        Me.Label23.Location = New System.Drawing.Point(18, 98)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(101, 16)
         Me.Label23.TabIndex = 48
@@ -866,7 +866,7 @@ Partial Class Recipe
         Me.Panel15.Controls.Add(Me.btn_Trackmov)
         Me.Panel15.Controls.Add(Me.btn_Widthadj)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel15.Location = New System.Drawing.Point(1319, 0)
+        Me.Panel15.Location = New System.Drawing.Point(615, 0)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(143, 235)
         Me.Panel15.TabIndex = 45
@@ -931,7 +931,7 @@ Partial Class Recipe
         Me.lbLoc.AutoSize = True
         Me.lbLoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbLoc.ForeColor = System.Drawing.Color.Black
-        Me.lbLoc.Location = New System.Drawing.Point(586, 16)
+        Me.lbLoc.Location = New System.Drawing.Point(234, 16)
         Me.lbLoc.Name = "lbLoc"
         Me.lbLoc.Size = New System.Drawing.Size(74, 16)
         Me.lbLoc.TabIndex = 27
@@ -962,7 +962,7 @@ Partial Class Recipe
         Me.lbSide.AutoSize = True
         Me.lbSide.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbSide.ForeColor = System.Drawing.Color.Black
-        Me.lbSide.Location = New System.Drawing.Point(361, 16)
+        Me.lbSide.Location = New System.Drawing.Point(9, 16)
         Me.lbSide.Name = "lbSide"
         Me.lbSide.Size = New System.Drawing.Size(38, 16)
         Me.lbSide.TabIndex = 25
@@ -978,7 +978,7 @@ Partial Class Recipe
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(3, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1462, 73)
+        Me.Panel3.Size = New System.Drawing.Size(758, 73)
         Me.Panel3.TabIndex = 2
         '
         'DE
@@ -1029,7 +1029,7 @@ Partial Class Recipe
         Me.TabPage1.Controls.Add(Me.Panel59)
         Me.TabPage1.Location = New System.Drawing.Point(4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1468, 799)
+        Me.TabPage1.Size = New System.Drawing.Size(1468, 1003)
         Me.TabPage1.TabIndex = 9
         Me.TabPage1.Text = "CONVEYOR"
         '
@@ -1870,7 +1870,7 @@ Partial Class Recipe
         Me.TabPage6.ForeColor = System.Drawing.Color.White
         Me.TabPage6.Location = New System.Drawing.Point(4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1468, 799)
+        Me.TabPage6.Size = New System.Drawing.Size(764, 953)
         Me.TabPage6.TabIndex = 8
         Me.TabPage6.Text = "FIDUCIAL"
         '
@@ -1881,7 +1881,7 @@ Partial Class Recipe
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel11.Location = New System.Drawing.Point(0, 0)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(1468, 799)
+        Me.Panel11.Size = New System.Drawing.Size(764, 953)
         Me.Panel11.TabIndex = 1
         '
         'Guna2Panel3
@@ -1909,7 +1909,7 @@ Partial Class Recipe
         Me.Guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1468, 799)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(764, 953)
         Me.Guna2Panel3.TabIndex = 0
         '
         'datagrdFid
@@ -2746,7 +2746,7 @@ Partial Class Recipe
         Me.Panel19.Location = New System.Drawing.Point(0, 54)
         Me.Panel19.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(1468, 207)
+        Me.Panel19.Size = New System.Drawing.Size(764, 207)
         Me.Panel19.TabIndex = 7
         '
         'PictureBox9
@@ -2780,7 +2780,7 @@ Partial Class Recipe
         Me.PictureBox6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox6.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(1088, 207)
+        Me.PictureBox6.Size = New System.Drawing.Size(384, 207)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 18
         Me.PictureBox6.TabStop = False
@@ -2802,7 +2802,7 @@ Partial Class Recipe
         Me.Panel20.Controls.Add(Me.TextBox2)
         Me.Panel20.Controls.Add(Me.GroupBoxGrabImage)
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(1088, 0)
+        Me.Panel20.Location = New System.Drawing.Point(384, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(380, 207)
         Me.Panel20.TabIndex = 17
@@ -3121,7 +3121,7 @@ Partial Class Recipe
         Me.Panel17.Location = New System.Drawing.Point(0, 0)
         Me.Panel17.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(1468, 54)
+        Me.Panel17.Size = New System.Drawing.Size(764, 54)
         Me.Panel17.TabIndex = 5
         '
         'GroupBox2
@@ -3308,7 +3308,7 @@ Partial Class Recipe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1476, 1061)
+        Me.ClientSize = New System.Drawing.Size(772, 1061)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.Name = "Recipe"
