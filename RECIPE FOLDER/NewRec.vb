@@ -3,6 +3,7 @@ Imports System.IO
 Imports System.Xml
 Imports ActUtlTypeLib
 Imports System.Web.UI.Design
+Imports System.Diagnostics.Eventing.Reader
 
 Public Class NewRec
     Private currentMark As Integer = 1
@@ -334,6 +335,17 @@ Public Class NewRec
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim floatValueCW As Single
+        If Single.TryParse(WidthTextbox.Text, floatValueCW) Then
+            ' Convert the float value to two 16-bit integers
+            Dim words() As Integer = ConvertFloatToWord(floatValueCW)
+
+            ' Write the integers to the PLC registers
+            plc.SetDevice("D320", words(0))
+            plc.SetDevice("D321", words(1))
+        Else
+            ' If parsing fails, you can handle the invalid input here
+        End If
         StartTimer()
     End Sub
     '
@@ -356,40 +368,45 @@ Public Class NewRec
         ' Read the state of M224
         plc.GetDevice("M224", currentState)
 
-        ' Detect rising edge: M224 goes from 0 -> 1
-        If currentState = 1 AndAlso Not previousState Then
-            ' Send the current value from the list
-            If currentIndex < Module2.time Then
-                ' Send X and Y values to the PLC
-                SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
-                SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
+            ' Detect rising edge: M224 goes from 0 -> 1
+            If currentState = 1 AndAlso Not previousState Then
+                ' Send the current value from the list
+                If currentIndex < Module2.time Then
+                    ' Send X and Y values to the PLC
+                    SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
+                    SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
 
-                ' Send pattern ID to D390
-                plc.SetDevice("D390", Module2.IDValues(currentIndex))
+                    ' Send pattern ID to D390
+                    plc.SetDevice("D390", Module2.IDValues(currentIndex))
 
-                ' Send Side value to D391 (0 = top, 1 = bottom)
-                plc.SetDevice("D391", Module2.SideValues(currentIndex))
+                    ' Send Side value to D391 (0 = top, 1 = bottom)
+                    plc.SetDevice("D391", Module2.SideValues(currentIndex))
 
-                ' Move to the next index
-                currentIndex += 1
-                boardexit += 1
-                plc.SetDevice("M300", 1)
+                    ' Move to the next index
+                    currentIndex += 1
+                    boardexit += 1
+                    plc.SetDevice("M300", 1)
+                End If
+                If (boardexit = Module2.time) Then
+                    plc.SetDevice("M301", 1)
+                    boardexit = 0
+                End If
+
+
+
+                ' If the end of the list is reached, reset the index to start over
+                If currentIndex >= Module2.XValues.Count Then
+                    currentIndex = 0
+                End If
             End If
-            If (boardexit = Module2.time) Then
-                plc.SetDevice("M301", 1)
-                boardexit = 0
-            End If
+
+            ' Update the previous state for the next tick
+            previousState = (currentState = 1)
 
 
 
-            ' If the end of the list is reached, reset the index to start over
-            If currentIndex >= Module2.XValues.Count Then
-                currentIndex = 0
-            End If
-        End If
 
-        ' Update the previous state for the next tick
-        previousState = (currentState = 1)
+
     End Function
 
     ' Helper function to send float values to two consecutive PLC addresses
@@ -629,7 +646,21 @@ Public Class NewRec
         plc.SetDevice("M240", 0)
     End Sub
 
+    Private messageBoxShown As Boolean = False
     Private Async Function Timer1_Tick(sender As Object, e As EventArgs) As Task Handles Timer1.Tick
+        plc.GetDevice("M220", AUTORUN)
+
+        If AUTORUN = False AndAlso Not messageBoxShown Then
+            messageBoxShown = True
+            MessageBox.Show("MACHINE NOT READY")
+        End If
+
+        ' Reset the flag if AUTORUN is on
+        If AUTORUN Then
+            messageBoxShown = False
+        End If
+
+
         Dim Xval(1) As Integer
         plc.GetDevice("D342", Xval(0))
         plc.GetDevice("D343", Xval(1))
@@ -646,6 +677,18 @@ Public Class NewRec
         Dim CWnum As Single = ConvertWordToFloat(CWval)
         CW.Text = xnum.ToString("F4")
     End Function
+
+    Private Sub Button3_MouseEnter(sender As Object, e As EventArgs) Handles Button3.MouseEnter
+
+    End Sub
+
+    Private Sub Button3_MouseDown(sender As Object, e As MouseEventArgs) Handles Button3.MouseDown
+        plc.SetDevice("M202", 1)
+    End Sub
+
+    Private Sub Button3_MouseUp(sender As Object, e As MouseEventArgs) Handles Button3.MouseUp
+        plc.SetDevice("M202", 0)
+    End Sub
 
 
 
