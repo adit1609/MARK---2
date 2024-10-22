@@ -704,6 +704,30 @@ Public Class NewRec
             plc.SetDevice("M247", 0)
         End If
     End Sub
+    'rotate Fliper
+    Private Async Function Button38_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button38.MouseDown
+        plc.SetDevice("M253", 1)
+    End Function
+
+    Private Async Function Button38_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles Button38.MouseUp
+        plc.SetDevice("M253", 0)
+    End Function
+    ' flip<-
+    Private Async Function Button37_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button37.MouseDown
+        plc.SetDevice("M226", 1)
+    End Function
+
+    Private Async Function Button37_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles Button37.MouseUp
+        plc.SetDevice("M226", 0)
+    End Function
+
+    Private Sub Button54_MouseDown(sender As Object, e As MouseEventArgs) Handles Button54.MouseDown
+        plc.SetDevice("M225", 1)
+    End Sub
+    'flip->
+    Private Sub Button54_MouseUp(sender As Object, e As MouseEventArgs) Handles Button54.MouseUp
+        plc.SetDevice("M225", 0)
+    End Sub
 
 
 
