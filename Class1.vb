@@ -9,7 +9,7 @@
         Me.Name = alarmName
     End Sub
 
-    ' Method to populate the list with alarms
+    ' Method to populate the list with alarm
     Public Shared Sub InitializeAlarms()
         Alarms.Add(New Alarm(1, "EMERGENCY PRESSED"))
         Alarms.Add(New Alarm(2, "X AXIS SERVO ALARM"))
