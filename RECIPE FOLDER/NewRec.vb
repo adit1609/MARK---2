@@ -335,6 +335,7 @@ Public Class NewRec
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        plc.SetDevice("D324", LengthTextbox.Text)
         Dim floatValueCW As Single
         If Single.TryParse(WidthTextbox.Text, floatValueCW) Then
             ' Convert the float value to two 16-bit integers
@@ -368,42 +369,50 @@ Public Class NewRec
         ' Read the state of M224
         plc.GetDevice("M224", currentState)
 
-            ' Detect rising edge: M224 goes from 0 -> 1
-            If currentState = 1 AndAlso Not previousState Then
-                ' Send the current value from the list
-                If currentIndex < Module2.time Then
-                    ' Send X and Y values to the PLC
-                    SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
-                    SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
-
-                ' Send pattern ID to D390
-                plc.SetDevice("D374", Module2.IDValues(currentIndex))
-
-                ' Send Side value to D391 (0 = top, 1 = bottom)
-                plc.SetDevice("D375", Module2.SideValues(currentIndex))
-
-                ' Move to the next index
-                currentIndex += 1
-                    boardexit += 1
-                    plc.SetDevice("M300", 1)
-                End If
-                If (boardexit = Module2.time) Then
-                    plc.SetDevice("M301", 1)
+        ' Detect rising edge: M224 goes from 0 -> 1
+        If currentState = 1 AndAlso Not previousState Then
+            If (boardexit = Module2.time) Then
+                plc.SetDevice("M301", 1)
 
                 currentIndex = 0
                 boardexit = 0
+
+                ' Send the current value from the list
+            Else
+                ' Send X and Y values to the PLC
+                SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
+                SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
+
+            ' Send pattern ID to D390
+            plc.SetDevice("D374", Module2.IDValues(currentIndex))
+
+            ' Send Side value to D391 (0 = top, 1 = bottom)
+            plc.SetDevice("D375", Module2.SideValues(currentIndex))
+
+            ' Move to the next index
+            currentIndex += 1
+            boardexit += 1
+            plc.SetDevice("M300", 1)
+        End If
+
+
+
+
+
+
+
+
+
+
+            ' If the end of the list is reached, reset the index to start over
+            If currentIndex >= Module2.XValues.Count Then
+                currentIndex = 0
             End If
 
+        End If
 
-
-                ' If the end of the list is reached, reset the index to start over
-                If currentIndex >= Module2.XValues.Count Then
-                    currentIndex = 0
-                End If
-            End If
-
-            ' Update the previous state for the next tick
-            previousState = (currentState = 1)
+        ' Update the previous state for the next tick
+        previousState = (currentState = 1)
 
 
 
@@ -639,14 +648,7 @@ Public Class NewRec
         End If
     End Function
 
-    Private Sub WidthTextbox_MouseDown(sender As Object, e As MouseEventArgs) Handles WidthTextbox.MouseDown
-        plc.SetDevice("M240", 1)
 
-    End Sub
-
-    Private Sub WidthTextbox_MouseUp(sender As Object, e As MouseEventArgs) Handles WidthTextbox.MouseUp
-        plc.SetDevice("M240", 0)
-    End Sub
 
     Private messageBoxShown As Boolean = False
     Private Async Function Timer1_Tick(sender As Object, e As EventArgs) As Task Handles Timer1.Tick
@@ -728,6 +730,19 @@ Public Class NewRec
     Private Sub Button54_MouseUp(sender As Object, e As MouseEventArgs) Handles Button54.MouseUp
         plc.SetDevice("M225", 0)
     End Sub
+
+    Private Sub Button9_MouseDown_1(sender As Object, e As MouseEventArgs) Handles Button9.MouseDown
+        plc.SetDevice("M240", 1)
+    End Sub
+
+    Private Sub Button9_MouseUp(sender As Object, e As MouseEventArgs) Handles Button9.MouseUp
+        plc.SetDevice("M240", 0)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
+
 
 
 
