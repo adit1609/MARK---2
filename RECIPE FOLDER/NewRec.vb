@@ -383,17 +383,17 @@ Public Class NewRec
                 SendFloatValues(Module2.XValues(currentIndex), "D370", "D371")
                 SendFloatValues(Module2.YValues(currentIndex), "D372", "D373")
 
-            ' Send pattern ID to D390
-            plc.SetDevice("D374", Module2.IDValues(currentIndex))
+                ' Send pattern ID to D390
+                plc.SetDevice("D374", Module2.IDValues(currentIndex))
 
-            ' Send Side value to D391 (0 = top, 1 = bottom)
-            plc.SetDevice("D375", Module2.SideValues(currentIndex))
+                ' Send Side value to D391 (0 = top, 1 = bottom)
+                plc.SetDevice("D375", Module2.SideValues(currentIndex))
 
-            ' Move to the next index
-            currentIndex += 1
-            boardexit += 1
-            plc.SetDevice("M300", 1)
-        End If
+                ' Move to the next index
+                currentIndex += 1
+                boardexit += 1
+                plc.SetDevice("M300", 1)
+            End If
 
 
 
