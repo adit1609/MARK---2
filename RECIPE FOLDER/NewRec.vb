@@ -351,7 +351,6 @@ Public Class NewRec
         Module2.width = pcbwidth
         SendFloatValues(Module2.width, "D320", "D321")
         plc.SetDevice("D324", Module2.length)
-
     End Function
 
 
@@ -677,21 +676,8 @@ Public Class NewRec
     End Sub
 
     Private Async Function Button9_Click(sender As Object, e As EventArgs) As Task Handles Button9.Click
-        Dim floatValueCW As Single
-        If Single.TryParse(WidthTextbox.Text, floatValueCW) Then
-            ' Convert the float value to two 16-bit integers
-            Dim words() As Integer = ConvertFloatToWord(floatValueCW)
-
-            ' Write the integers to the PLC registers
-            plc.SetDevice("D320", words(0))
-            plc.SetDevice("D321", words(1))
-        Else
-            ' If parsing fails, you can handle the invalid input here
-        End If
+        SendFloatValues(WidthTextbox.Text, "D320", "D321")
     End Function
-
-
-
     Private messageBoxShown As Boolean = False
     Private Async Function Timer1_Tick(sender As Object, e As EventArgs) As Task Handles Timer1.Tick
         plc.GetDevice("M220", AUTORUN)
