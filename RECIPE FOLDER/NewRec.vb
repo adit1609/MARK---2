@@ -603,7 +603,14 @@ Public Class NewRec
     End Sub
 
     Private Sub Button6_MouseDown(sender As Object, e As MouseEventArgs) Handles Button6.MouseDown
-        plc.SetDevice("M252", 1)
+        Dim lengthInt As Integer
+        If Integer.TryParse(LengthTextbox.Text, lengthInt) AndAlso lengthInt < 525 AndAlso WidthTextbox.Text < 510 Then
+            plc.SetDevice("M252", 1)
+        Else
+            MessageBox.Show("Values are not in ")
+        End If
+
+
     End Sub
 
     Private Sub Button6_MouseUp(sender As Object, e As MouseEventArgs) Handles Button6.MouseUp
@@ -754,10 +761,6 @@ Public Class NewRec
         plc.SetDevice("M240", 0)
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
-    End Sub
-
     Private Sub SAVEE_Click(sender As Object, e As EventArgs) Handles SAVE.Click
 
     End Sub
@@ -785,6 +788,10 @@ Public Class NewRec
             ' Handle invalid input case if needed
         End If
     End Function
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
 
 
 
