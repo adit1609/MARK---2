@@ -545,15 +545,6 @@ Public Class NewRec
     Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
 
     End Sub
-
-    Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
-        Design()
-        LoadRecipeAsync()
-        plccon()
-        plc.SetDevice("M224", 0)
-
-    End Function
-
     Private Sub Button9_MouseDown(sender As Object, e As MouseEventArgs) Handles PLOAD.MouseDown
         plc.SetDevice("M234", 1)
     End Sub
@@ -675,9 +666,7 @@ Public Class NewRec
         plc.SetDevice("M250", 0)
     End Sub
 
-    Private Async Function Button9_Click(sender As Object, e As EventArgs) As Task Handles Button9.Click
-        SendFloatValues(WidthTextbox.Text, "D320", "D321")
-    End Function
+
     Private messageBoxShown As Boolean = False
     Private Async Function Timer1_Tick(sender As Object, e As EventArgs) As Task Handles Timer1.Tick
         plc.GetDevice("M220", AUTORUN)
@@ -759,9 +748,7 @@ Public Class NewRec
         plc.SetDevice("M225", 0)
     End Sub
 
-    Private Sub Button9_MouseDown_1(sender As Object, e As MouseEventArgs) Handles Button9.MouseDown
-        plc.SetDevice("M240", 1)
-    End Sub
+
 
     Private Sub Button9_MouseUp(sender As Object, e As MouseEventArgs) Handles Button9.MouseUp
         plc.SetDevice("M240", 0)
@@ -775,6 +762,29 @@ Public Class NewRec
 
     End Sub
 
+    Private Async Function WidthTextbox_TextChanged(sender As Object, e As EventArgs) As Task Handles WidthTextbox.TextChanged
+        SendFloatValues(WidthTextbox.Text, "D320", "D321")
+    End Function
+
+    Private Sub Button9_MouseDown_1(sender As Object, e As MouseEventArgs) Handles Button9.MouseDown
+        plc.SetDevice("M240", 1)
+    End Sub
+
+    Private Async Function NewRec_Load(sender As Object, e As EventArgs) As Task Handles MyBase.Load
+        Design()
+        LoadRecipeAsync()
+        plccon()
+        plc.SetDevice("M224", 0)
+    End Function
+
+    Private Async Function LengthTextbox_TextChanged(sender As Object, e As EventArgs) As Task Handles LengthTextbox.TextChanged
+        Dim lengthInt As Integer
+        If Integer.TryParse(LengthTextbox.Text, lengthInt) Then
+            plc.SetDevice("D324", lengthInt)
+        Else
+            ' Handle invalid input case if needed
+        End If
+    End Function
 
 
 

@@ -58,7 +58,7 @@ Public Class Home_Page
 
     Private Sub Home_Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         plc.ActLogicalStationNumber = 1
-        Timer2.Interval = 1000 ' Set Timer2 interval to 1 second
+        ' Set Timer2 interval to 1 second
         Timer2.Stop()
         Home_Page(New userlogin2)
         Label2.Text = DateTime.Now.ToString("dd MMM HH:mm:ss")
