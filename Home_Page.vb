@@ -459,6 +459,7 @@ Public Class Home_Page
         normalColor = Button1.BackColor ' Store the normal color of the button
         blinking = True
         Timer2.Start()
+        Timer4.Start()
 
     End Sub
 
@@ -471,7 +472,7 @@ Public Class Home_Page
         plc.SetDevice("M219", 1)
     End Sub
 
-    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+    Private Async Function Timer2_Tick(sender As Object, e As EventArgs) As Task Handles Timer2.Tick
 
 
         Dim m222Value As Integer
@@ -479,6 +480,8 @@ Public Class Home_Page
 
         If result = 0 AndAlso m222Value = 1 Then
             Timer2.Stop() ' Stop the timer to prevent further checking
+            Timer4.Stop()
+            plc.SetDevice("M238", 0)
             blinking = False
             Button1.BackColor = normalColor ' Revert to the normal color
             btReturn.PerformClick()
@@ -492,7 +495,7 @@ Public Class Home_Page
                 End If
             End If
         End If
-    End Sub
+    End Function
 
     Private Sub Button1_MouseUp(sender As Object, e As MouseEventArgs) Handles Button1.MouseUp
         plc.SetDevice("M219", 0)
@@ -805,4 +808,16 @@ Public Class Home_Page
     Private Sub Home_Page_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         btReturn.PerformClick()
     End Sub
+    Private isBlinking As Boolean = False
+    Private Async Function Timer4_Tick(sender As Object, e As EventArgs) As Task Handles Timer4.Tick
+        ' Toggle blinking state between True and False
+        isBlinking = Not isBlinking
+
+        ' Use the blinking state to set the PLC device values
+        If isBlinking Then
+            plc.SetDevice("M238", 1) ' Turn ON
+        Else
+            plc.SetDevice("M238", 0) ' Turn OFF
+        End If
+    End Function
 End Class
