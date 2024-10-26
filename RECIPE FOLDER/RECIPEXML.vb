@@ -5,6 +5,34 @@ Public Class RECIPEXML
     Private Const defaultPath As String = "C:\Logs\Default\"
 
     ' Method to create an XML file with three elements
+    Public Sub UpdateRecipeXML(filePath As String, newLength As String, newWidth As String)
+        ' Load the existing XML document
+        Dim xmlDocument As New XmlDocument()
+        xmlDocument.Load(filePath)
+
+        ' Get the root element (RecipeDetails)
+        Dim rootElement As XmlElement = xmlDocument.DocumentElement
+
+        ' Find the Length and Width elements and update their values
+        Dim lengthElement As XmlElement = rootElement.SelectSingleNode("Length")
+        Dim widthElement As XmlElement = rootElement.SelectSingleNode("Width")
+
+        ' Check if elements exist before updating
+        If lengthElement IsNot Nothing Then
+            lengthElement.InnerText = newLength
+        End If
+
+        If widthElement IsNot Nothing Then
+            widthElement.InnerText = newWidth
+        End If
+
+        ' Save the updated XML document
+        xmlDocument.Save(filePath)
+
+        MessageBox.Show("Length and Width have been updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+
     Public Sub CreateRecipeXML(recipeName As String, length As String, width As String)
         ' Ensure the directory exists
         If Not Directory.Exists(defaultPath) Then

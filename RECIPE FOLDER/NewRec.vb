@@ -30,38 +30,47 @@ Public Class NewRec
 
     End Sub
     Private Sub LoadMarkingPositionsToTreeView(recipeName As String)
-
         Dim filePath As String = $"C:\Logs\Default\{recipeName}.xml"
 
         Try
-
             Debug.WriteLine($"Loading XML from: {filePath}")
 
             Dim xmlDoc As New XmlDocument()
             xmlDoc.Load(filePath) ' Load the XML file
-            TreeView1.Nodes.Clear()
 
+            ' Retrieve Length and Width nodes
+            Dim lengthNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Length")
+            Dim widthNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Width")
+
+            ' Check if the nodes exist and retrieve values
+            Dim lengthValue As String = If(lengthNode IsNot Nothing, lengthNode.InnerText.Trim(), "-")
+            Dim widthValue As String = If(widthNode IsNot Nothing, widthNode.InnerText.Trim(), "-")
+
+            ' Convert to zero if the value is "-"
+            pcblenth = If(lengthValue = "-", 0, Convert.ToDecimal(lengthValue))
+            pcbwidth = If(widthValue = "-", 0, Convert.ToDecimal(widthValue))
+
+            ' Update TextBoxes
+            LengthTextbox.Text = pcblenth.ToString()
+            WidthTextbox.Text = pcbwidth.ToString()
+
+            ' Clear previous nodes in the TreeView
+            TreeView1.Nodes.Clear()
 
             Dim markingPositionsNode As XmlNode = xmlDoc.SelectSingleNode("/RecipeDetails/Marking_Positions")
 
             ' Log the found node for debugging
-            'ye node ko save kar dega 
             If markingPositionsNode IsNot Nothing Then
                 Debug.WriteLine("Marking_Positions node found.")
-
             Else
                 Debug.WriteLine("Marking_Positions node NOT found.")
-
             End If
 
             If markingPositionsNode IsNot Nothing Then
-
                 Dim parentNode As TreeNode = New TreeNode("Marking Positions")
-
 
                 For Each markNode As XmlNode In markingPositionsNode.ChildNodes
                     Dim markTreeNode As TreeNode = New TreeNode(markNode.Name)
-
 
                     For Each childNode As XmlNode In markNode.ChildNodes
                         Dim childTreeNode As TreeNode = New TreeNode($"{childNode.Name}_{childNode.InnerText.Trim()}")
@@ -73,14 +82,13 @@ Public Class NewRec
 
                 TreeView1.Nodes.Add(parentNode)
                 TreeView1.ExpandAll()
-            Else
-                'MessageBox.Show("No marking positions found for the selected recipe.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
         Catch ex As Exception
             MessageBox.Show($"Error loading marking positions: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
 
     Public Async Function LoadRecipeAsync() As Task
@@ -197,26 +205,23 @@ Public Class NewRec
     End Sub
 
     Private Async Function Button4_Click(sender As Object, e As EventArgs) As Task Handles Button4.Click
+        LengthTextbox.Clear()
+        WidthTextbox.Clear()
         Dim recipeName As String = InputBox("Enter the recipe name:", "Add Recipe")
         If String.IsNullOrWhiteSpace(recipeName) Then
             MessageBox.Show("Please enter a valid recipe name.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
-        Dim length As String = LengthTextbox.Text
-        Dim width As String = WidthTextbox.Text
-        If String.IsNullOrWhiteSpace(length) OrElse String.IsNullOrWhiteSpace(width) Then
-            MessageBox.Show("Please enter valid Length and Width values.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
+
         Dim recipeXml As New RECIPEXML()
         'yaha pe ye load karne ke kaam mei aayega 
-        recipeXml.CreateRecipeXML(recipeName, length, width)
+        recipeXml.CreateRecipeXML(recipeName, "-", "-")
         DataGridView1.Rows.Clear()
         _loadedFiles.Clear()
         LoadRecipeAsync()
     End Function
 
-    Private Async Function SAVEE_Click(sender As Object, e As EventArgs) As Task Handles SAVE.Click
+    Private Async Function SAVE_Click(sender As Object, e As EventArgs) As Task Handles SAVE.Click
         If DataGridView1.SelectedRows.Count = 0 Then
             MessageBox.Show("Please select a recipe to save the marking position.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
@@ -255,6 +260,8 @@ Public Class NewRec
         End If
     End Sub
     Public totalXCount As Integer
+    Public pcblenth As Integer
+    Public pcbwidth As String
     Private Sub SaveTreeViewDataToLists()
         ' Clear all lists before saving new data
         currentIndex = 0
@@ -305,10 +312,15 @@ Public Class NewRec
         totalXCount = Module2.XValues.Count
         Module2.time = totalXCount
 
+
+
+
+
         ' Confirm success
         MessageBox.Show("TreeView data saved to lists successfully!",
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
 
 
 
@@ -332,21 +344,20 @@ Public Class NewRec
     Private Async Function btnclear_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles btnclear.MouseUp
         plc.SetDevice("M232", 0)
     End Function
+    Private Async Function lenthWid() As Task
+        currentIndex = 0
+        boardexit = 0
+        Module2.length = pcblenth
+        Module2.width = pcbwidth
+        SendFloatValues(Module2.width, "D320", "D321")
+        plc.SetDevice("D324", Module2.length)
+
+    End Function
+
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        plc.SetDevice("D324", LengthTextbox.Text)
-        Dim floatValueCW As Single
-        If Single.TryParse(WidthTextbox.Text, floatValueCW) Then
-            ' Convert the float value to two 16-bit integers
-            Dim words() As Integer = ConvertFloatToWord(floatValueCW)
-
-            ' Write the integers to the PLC registers
-            plc.SetDevice("D320", words(0))
-            plc.SetDevice("D321", words(1))
-        Else
-            ' If parsing fails, you can handle the invalid input here
-        End If
+        lenthWid()
         StartTimer()
     End Sub
     '
@@ -452,13 +463,44 @@ Public Class NewRec
 
         Return BitConverter.ToSingle(bytes, 0)
     End Function
-    Private Sub SAVE_Click(sender As Object, e As EventArgs) Handles SAVE.Click
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim lengthInt As Integer
 
+        ' Check if LengthTextbox.Text is a valid integer and WidthTextbox.Text is greater than 510
+        If Integer.TryParse(LengthTextbox.Text, lengthInt) AndAlso lengthInt < 525 AndAlso WidthTextbox.Text < 510 Then
+            Dim length As String = LengthTextbox.Text
+            Dim width As String = WidthTextbox.Text
+
+            ' Ensure a recipe is selected
+            If DataGridView1.SelectedRows.Count = 0 Then
+                MessageBox.Show("Please select a recipe to save the marking position.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
+
+            ' Get the recipe name from the 2nd column (e.g., "mm")
+            Dim recipeName As String = DataGridView1.SelectedRows(0).Cells(1).Value.ToString()
+
+            ' Define the base path and XML file path
+            Dim basePath As String = "C:\Logs\Default\"
+            Dim filePath As String = Path.Combine(basePath, $"{recipeName}.xml")
+
+            ' Check if the XML file exists
+            If Not File.Exists(filePath) Then
+                MessageBox.Show($"The recipe '{recipeName}' does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return
+            End If
+
+            Dim recipeXml As New RECIPEXML()
+            ' Append length and width to the XML file
+            recipeXml.UpdateRecipeXML(filePath, length, width)
+        Else
+            MessageBox.Show("Input value limits: Length must be less than 525 and width greater than 510.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
+
+
 
     Private Async Function Button37_Click(sender As Object, e As EventArgs) As Task Handles TEACH.Click
         Dim xValue As String = X.Text.Trim()
@@ -740,6 +782,10 @@ Public Class NewRec
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
+
+    Private Sub SAVEE_Click(sender As Object, e As EventArgs) Handles SAVE.Click
 
     End Sub
 

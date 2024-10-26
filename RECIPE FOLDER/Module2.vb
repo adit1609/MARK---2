@@ -5,6 +5,8 @@
     Public IDValues As New List(Of String)()
     Public SideValues As New List(Of Integer)() ' 0 = Top, 1 = Bottom
     Public time As Integer
+    Public length As Integer
+    Public width As Single
 
     ' Array of lists to group them together
     Public AllValues As List(Of List(Of Object)) = New List(Of List(Of Object)) From {
