@@ -55,4 +55,8 @@ Public Class Alarms
         plc.SetDevice("M215", 0)
         Me.Close()
     End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
 End Class

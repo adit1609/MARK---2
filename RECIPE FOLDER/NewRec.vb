@@ -731,17 +731,17 @@ Public Class NewRec
         End If
     End Sub
     'rotate Fliper
-    Private Async Function Button38_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button38.MouseDown
-        plc.SetDevice("M253", 1)
-    End Function
+    'Private Async Function Button38_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button38.MouseDown
+    '    plc.SetDevice("M253", 1)
+    'End Function
 
     Private Async Function Button38_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles Button38.MouseUp
         plc.SetDevice("M253", 0)
     End Function
     ' flip<-
-    Private Async Function Button37_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button37.MouseDown
-        plc.SetDevice("M226", 1)
-    End Function
+    'Private Async Function Button37_MouseDown(sender As Object, e As MouseEventArgs) As Task Handles Button37.MouseDown
+    '    plc.SetDevice("M226", 1)
+    'End Function
 
     Private Async Function Button37_MouseUp(sender As Object, e As MouseEventArgs) As Task Handles Button37.MouseUp
         plc.SetDevice("M226", 0)
@@ -765,9 +765,7 @@ Public Class NewRec
 
     End Sub
 
-    Private Async Function WidthTextbox_TextChanged(sender As Object, e As EventArgs) As Task Handles WidthTextbox.TextChanged
-        SendFloatValues(WidthTextbox.Text, "D320", "D321")
-    End Function
+
 
     Private Sub Button9_MouseDown_1(sender As Object, e As MouseEventArgs) Handles Button9.MouseDown
         plc.SetDevice("M240", 1)
@@ -790,6 +788,18 @@ Public Class NewRec
     End Function
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+
+    End Sub
+
+    Private Sub Button37_MouseDown(sender As Object, e As MouseEventArgs) Handles Button37.MouseDown
+
+    End Sub
+
+    Private Sub Button38_MouseDown(sender As Object, e As MouseEventArgs) Handles Button38.MouseDown
 
     End Sub
 

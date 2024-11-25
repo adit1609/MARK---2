@@ -14,9 +14,9 @@ Imports OfficeOpenXml
 
 
 Public Class Home_Page
-    Dim dval As Integer
-    Dim prevDval As Integer = 0
-    Public Checkagain As Integer = 0
+    Dim dval As String
+    Dim prevDval As String = "000"
+    Public Checkagain As String = "000"
     Private alarmForm As Alarms = Nothing
     Dim plc As New ActUtlType
     Dim check As Integer
@@ -66,7 +66,7 @@ Public Class Home_Page
 
         check = plc.Open()
         btReturn.Hide()
-        Timer3.Start()
+
         plc.SetDevice("M247", 1)
         'FidCamConnect()
         'LiveCamConnect()
@@ -79,7 +79,7 @@ Public Class Home_Page
         plc.SetDevice("M246", 0)
         plc.SetDevice("M247", 0)
 
-
+        Timer5.Start()
 
 
 
@@ -412,18 +412,45 @@ Public Class Home_Page
     End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label2.Text = DateTime.Now.ToString("dd MMM HH:mm:ss")
-        plc.GetDevice("D205", dval)
+        Dim startRegister As Integer = 204
+        Dim endRegister As Integer = 205
+        Dim numRegisters As Integer = endRegister - startRegister + 1
+
+
+        Dim words(numRegisters - 1) As Integer
+
+
+        For i As Integer = 0 To numRegisters - 1
+            plc.GetDevice("D" & (startRegister + i).ToString(), words(i))
+        Next
+
+        ' Create a byte array to hold the combined byte values
+        Dim bytes(numRegisters * 2 - 1) As Byte
+
+        ' Convert the 16-bit integers to a byte array
+        For i As Integer = 0 To words.Length - 1
+            Dim wordBytes() As Byte = BitConverter.GetBytes(words(i))
+            bytes(i * 2) = wordBytes(0)
+            bytes(i * 2 + 1) = wordBytes(1)
+        Next
+
+        ' Convert the byte array to a string
+        Dim strValue As String = System.Text.Encoding.ASCII.GetString(bytes)
+
+        ' Display the string in the RichTextBox
+        RichTextBox1.Text = strValue.TrimEnd(Chr(0))
+        dval = strValue.TrimEnd(Chr(0))
 
         ' Check if dval has changed from the previous value
         If dval <> prevDval Then
             prevDval = dval ' Update the previous value
-            If dval <> 0 Then
+            If dval <> "000" Then
                 ' Start asynchronous processing
                 DisplayAlarmAsync(dval)
             End If
-        ElseIf dval = prevDval AndAlso Checkagain = 0 Then
+        ElseIf dval = prevDval AndAlso Checkagain = "000" Then
             ' If dval is the same as before and Checkagain is 0, display the alarm again
-            If dval <> 0 Then
+            If dval <> "000" Then
                 DisplayAlarmAsync(dval)
             End If
         End If
@@ -509,98 +536,7 @@ Public Class Home_Page
         Me.Close()
     End Sub
 
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
 
-        'Dim stFrameOut As CCamera.MV_FRAME_OUT = New CCamera.MV_FRAME_OUT()
-        'Dim stDisplayInfo As CCamera.MV_DISPLAY_FRAME_INFO = New CCamera.MV_DISPLAY_FRAME_INFO()
-        'Dim nRet1 = FidCam1.GetImageBuffer(stFrameOut, 1000)
-        'If CCamera.MV_OK = nRet1 Then
-
-
-
-
-
-
-
-        '    '    If stFrameOut.stFrameInfo.nFrameLen > m_nBufSizeForDriver1 Then
-        '    '        m_nBufSizeForDriver1 = stFrameOut.stFrameInfo.nFrameLen
-        '    '        ReDim m_pBufForDriver1(m_nBufSizeForDriver1)
-        '    '    End If
-
-        '    'm_stFrameInfoEx = stFrameOut.stFrameInfo
-        '    'Marshal.Copy(stFrameOut.pBufAddr, m_pBufForDriver, 0, stFrameOut.stFrameInfo.nFrameLen)
-        '    'stDisplayInfo.hWnd = fidpic.Handle
-        '    'stDisplayInfo.pData = stFrameOut.pBufAddr
-        '    'stDisplayInfo.nDataLen = stFrameOut.stFrameInfo.nFrameLen
-        '    'stDisplayInfo.nWidth = stFrameOut.stFrameInfo.nWidth
-        '    'stDisplayInfo.nHeight = stFrameOut.stFrameInfo.nHeight
-        '    'stDisplayInfo.enPixelType = stFrameOut.stFrameInfo.enPixelType
-        '    'Home_Page.FidCam1.DisplayOneFrame(stDisplayInfo)
-
-        '    'Home_Page.FidCam1.FreeImageBuffer(stFrameOut)
-        '    'PictureBox9.Hide()
-
-        '    If stFrameOut.stFrameInfo.nFrameLen > m_nBufSizeForDriver1 Then
-        '        m_nBufSizeForDriver1 = stFrameOut.stFrameInfo.nFrameLen
-        '        ReDim m_pBufForDriver1(m_nBufSizeForDriver1)
-        '    End If
-
-        '    m_stFrameInfoEx = stFrameOut.stFrameInfo
-        '    Marshal.Copy(stFrameOut.pBufAddr, m_pBufForDriver1, 0, stFrameOut.stFrameInfo.nFrameLen)
-
-        '    Dim stSaveImageParam As CCamera.MV_SAVE_IMG_TO_FILE_PARAM = New CCamera.MV_SAVE_IMG_TO_FILE_PARAM()
-        '    Dim pData As IntPtr = Marshal.UnsafeAddrOfPinnedArrayElement(m_pBufForDriver1, 0)
-        '    stSaveImageParam.pData = pData
-        '    stSaveImageParam.nDataLen = m_stFrameInfoEx.nFrameLen
-        '    stSaveImageParam.enPixelType = m_stFrameInfoEx.enPixelType
-        '    stSaveImageParam.nWidth = m_stFrameInfoEx.nWidth
-        '    stSaveImageParam.nHeight = m_stFrameInfoEx.nHeight
-        '    stSaveImageParam.enImageType = CCamera.MV_SAVE_IAMGE_TYPE.MV_Image_Png
-        '    stSaveImageParam.iMethodValue = 1
-        '    stSaveImageParam.nQuality = 90
-        '    stSaveImageParam.pImagePath = "C:\Manage Files\Load\" & "123" & ".Png"
-
-
-
-
-        '    Thread.Sleep(30)
-
-
-        '    'File.Delete("D:\Logs\fidimage")
-        '    nRet1 = FidCam1.SaveImageToFile(stSaveImageParam)
-
-
-        '    If (CCamera.MV_OK <> nRet1) Then
-        '        'MsgBox("Save Image fail!")
-        '    Else
-
-        '        ' PictureBox7.Load("D:\Logs\fidimage\Image_w" & ".jpg")
-
-
-
-        '    End If
-        '    FidCam1.DisplayOneFrame(stDisplayInfo)
-
-        '    FidCam1.FreeImageBuffer(stFrameOut)
-        'Else
-        '    'plc.SetDevice("M247", 0)  ''''''''''' RED LIGHT
-        '    Thread.Sleep(100)
-        'End If
-
-
-        ''  PictureBox7.Image = PictureBox9.Handle
-
-
-
-
-        ''Else
-        ''    If RadioButtonTriggerOn.Checked Then
-        ''        Threading.Thread.Sleep(5)
-        ''    End If
-        ''End If
-        '' PictureBox7.Invalidate()
-
-    End Sub
     Private Sub Home_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
         FidCam1.CloseDevice()
@@ -773,7 +709,7 @@ Public Class Home_Page
     '        package.Save()
     '    End Using
     'End Sub
-    Private Async Sub DisplayAlarmAsync(currentDval As Integer)
+    Private Async Sub DisplayAlarmAsync(currentDval As String)
         ' Ensure that the alarm form is not already open
         If alarmForm Is Nothing OrElse alarmForm.IsDisposed Then
             ' Run the background processing on a different thread
@@ -809,15 +745,30 @@ Public Class Home_Page
         btReturn.PerformClick()
     End Sub
     Private isBlinking As Boolean = False
-    Private Async Function Timer4_Tick(sender As Object, e As EventArgs) As Task Handles Timer4.Tick
-        ' Toggle blinking state between True and False
-        isBlinking = Not isBlinking
+    'Private Async Function Timer4_Tick(sender As Object, e As EventArgs) As Task Handles Timer4.Tick
+    '    ' Toggle blinking state between True and False
+    '    isBlinking = Not isBlinking
 
-        ' Use the blinking state to set the PLC device values
-        If isBlinking Then
-            plc.SetDevice("M238", 1) ' Turn ON
-        Else
-            plc.SetDevice("M238", 0) ' Turn OFF
-        End If
-    End Function
+    '    ' Use the blinking state to set the PLC device values
+    '    If isBlinking Then
+    '        plc.SetDevice("M238", 1) ' Turn ON
+    '    Else
+    '        plc.SetDevice("M238", 0) ' Turn OFF
+    '    End If
+    'End Function
+
+    Private Sub Timer4_Tick(sender As Object, e As EventArgs) Handles Timer4.Tick
+
+    End Sub
+
+    Private Sub Timer5_Tick(sender As Object, e As EventArgs) Handles Timer5.Tick
+
+
+
+
+
+    End Sub
+
+
+
 End Class

@@ -374,7 +374,7 @@ Partial Class NewRec
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1031, 1055)
+        Me.Panel1.Size = New System.Drawing.Size(1038, 1152)
         Me.Panel1.TabIndex = 2
         '
         'Panel2
@@ -384,7 +384,7 @@ Partial Class NewRec
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1031, 1055)
+        Me.Panel2.Size = New System.Drawing.Size(1038, 1152)
         Me.Panel2.TabIndex = 6
         '
         'Panel5
@@ -394,7 +394,7 @@ Partial Class NewRec
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1031, 1055)
+        Me.Panel5.Size = New System.Drawing.Size(1038, 1152)
         Me.Panel5.TabIndex = 5
         '
         'Panel9
@@ -404,7 +404,7 @@ Partial Class NewRec
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1031, 1055)
+        Me.Panel9.Size = New System.Drawing.Size(1038, 1152)
         Me.Panel9.TabIndex = 1
         '
         'Panel4
@@ -414,7 +414,7 @@ Partial Class NewRec
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1031, 1055)
+        Me.Panel4.Size = New System.Drawing.Size(1038, 1152)
         Me.Panel4.TabIndex = 3
         '
         'TabControl1
@@ -430,7 +430,7 @@ Partial Class NewRec
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.Padding = New System.Drawing.Point(30, 20)
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1031, 1055)
+        Me.TabControl1.Size = New System.Drawing.Size(1038, 1152)
         Me.TabControl1.TabIndex = 11
         '
         'TabPage2
@@ -443,7 +443,7 @@ Partial Class NewRec
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(5)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Size = New System.Drawing.Size(1023, 992)
+        Me.TabPage2.Size = New System.Drawing.Size(1030, 1089)
         Me.TabPage2.TabIndex = 0
         Me.TabPage2.Text = "PANEL INFO"
         '
@@ -458,14 +458,14 @@ Partial Class NewRec
         Me.Panel6.Location = New System.Drawing.Point(4, 4)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1015, 121)
+        Me.Panel6.Size = New System.Drawing.Size(1022, 121)
         Me.Panel6.TabIndex = 0
         '
         'Button2
         '
         Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(619, 65)
+        Me.Button2.Location = New System.Drawing.Point(623, 65)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(144, 44)
@@ -525,7 +525,7 @@ Partial Class NewRec
         Me.Panel3.Location = New System.Drawing.Point(4, 4)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1015, 984)
+        Me.Panel3.Size = New System.Drawing.Size(1022, 1081)
         Me.Panel3.TabIndex = 14
         '
         'Panel40
@@ -614,7 +614,7 @@ Partial Class NewRec
         Me.Panel12.Location = New System.Drawing.Point(0, 668)
         Me.Panel12.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(1015, 162)
+        Me.Panel12.Size = New System.Drawing.Size(1022, 162)
         Me.Panel12.TabIndex = 20
         '
         'GroupBox3
@@ -828,7 +828,7 @@ Partial Class NewRec
         Me.Panel8.Location = New System.Drawing.Point(0, 451)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1015, 217)
+        Me.Panel8.Size = New System.Drawing.Size(1022, 217)
         Me.Panel8.TabIndex = 11
         '
         'Panel11
@@ -983,14 +983,14 @@ Partial Class NewRec
         Me.Panel7.Location = New System.Drawing.Point(0, 393)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1015, 58)
+        Me.Panel7.Size = New System.Drawing.Size(1022, 58)
         Me.Panel7.TabIndex = 10
         '
         'Button3
         '
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(360, 0)
+        Me.Button3.Location = New System.Drawing.Point(367, 0)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(129, 58)
@@ -1002,7 +1002,7 @@ Partial Class NewRec
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(489, 0)
+        Me.Button1.Location = New System.Drawing.Point(496, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(129, 58)
@@ -1014,7 +1014,7 @@ Partial Class NewRec
         '
         Me.btndelete.Dock = System.Windows.Forms.DockStyle.Right
         Me.btndelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndelete.Location = New System.Drawing.Point(618, 0)
+        Me.btndelete.Location = New System.Drawing.Point(625, 0)
         Me.btndelete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndelete.Name = "btndelete"
         Me.btndelete.Size = New System.Drawing.Size(129, 58)
@@ -1026,7 +1026,7 @@ Partial Class NewRec
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(747, 0)
+        Me.Button4.Location = New System.Drawing.Point(754, 0)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(139, 58)
@@ -1038,7 +1038,7 @@ Partial Class NewRec
         '
         Me.btnclear.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnclear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclear.Location = New System.Drawing.Point(886, 0)
+        Me.btnclear.Location = New System.Drawing.Point(893, 0)
         Me.btnclear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnclear.Name = "btnclear"
         Me.btnclear.Size = New System.Drawing.Size(129, 58)
@@ -1071,7 +1071,7 @@ Partial Class NewRec
         DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DATAGRID.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.DATAGRID.RowTemplate.Height = 28
-        Me.DATAGRID.Size = New System.Drawing.Size(1015, 393)
+        Me.DATAGRID.Size = New System.Drawing.Size(1022, 393)
         Me.DATAGRID.TabIndex = 9
         '
         'S_NO
@@ -1132,7 +1132,7 @@ Partial Class NewRec
         Me.TabPage7.Location = New System.Drawing.Point(4, 4)
         Me.TabPage7.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Size = New System.Drawing.Size(1023, 992)
+        Me.TabPage7.Size = New System.Drawing.Size(1030, 992)
         Me.TabPage7.TabIndex = 2
         Me.TabPage7.Text = "CONVEYOR"
         '
@@ -1639,7 +1639,7 @@ Partial Class NewRec
         Me.Panel14.Location = New System.Drawing.Point(0, 63)
         Me.Panel14.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(1023, 282)
+        Me.Panel14.Size = New System.Drawing.Size(1030, 282)
         Me.Panel14.TabIndex = 1
         '
         'Panel13
@@ -1650,7 +1650,7 @@ Partial Class NewRec
         Me.Panel13.Location = New System.Drawing.Point(0, 0)
         Me.Panel13.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(1023, 63)
+        Me.Panel13.Size = New System.Drawing.Size(1030, 63)
         Me.Panel13.TabIndex = 0
         '
         'Label16
@@ -1684,7 +1684,7 @@ Partial Class NewRec
         Me.TabPage8.Location = New System.Drawing.Point(4, 4)
         Me.TabPage8.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Size = New System.Drawing.Size(1023, 992)
+        Me.TabPage8.Size = New System.Drawing.Size(1030, 992)
         Me.TabPage8.TabIndex = 3
         Me.TabPage8.Text = "FIDUCIAL"
         '
@@ -1696,7 +1696,7 @@ Partial Class NewRec
         Me.Panel22.Location = New System.Drawing.Point(0, 565)
         Me.Panel22.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(1023, 532)
+        Me.Panel22.Size = New System.Drawing.Size(1030, 532)
         Me.Panel22.TabIndex = 35
         '
         'Panel25
@@ -1718,7 +1718,7 @@ Partial Class NewRec
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(342, 508)
+        Me.Panel25.Size = New System.Drawing.Size(349, 508)
         Me.Panel25.TabIndex = 47
         '
         'Button23
@@ -1887,7 +1887,7 @@ Partial Class NewRec
         Me.Panel24.Controls.Add(Me.TextBox2)
         Me.Panel24.Controls.Add(Me.PictureBox7)
         Me.Panel24.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel24.Location = New System.Drawing.Point(342, 0)
+        Me.Panel24.Location = New System.Drawing.Point(349, 0)
         Me.Panel24.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel24.Name = "Panel24"
         Me.Panel24.Size = New System.Drawing.Size(681, 532)
@@ -2051,7 +2051,7 @@ Partial Class NewRec
         Me.Panel21.Location = New System.Drawing.Point(0, 353)
         Me.Panel21.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(1023, 212)
+        Me.Panel21.Size = New System.Drawing.Size(1030, 212)
         Me.Panel21.TabIndex = 34
         '
         'GroupBox7
@@ -2442,7 +2442,7 @@ Partial Class NewRec
         Me.Panel20.Location = New System.Drawing.Point(0, 271)
         Me.Panel20.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(1023, 82)
+        Me.Panel20.Size = New System.Drawing.Size(1030, 82)
         Me.Panel20.TabIndex = 33
         '
         'Panel23
@@ -2593,7 +2593,7 @@ Partial Class NewRec
         Me.Panel19.Location = New System.Drawing.Point(0, 63)
         Me.Panel19.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(1023, 208)
+        Me.Panel19.Size = New System.Drawing.Size(1030, 208)
         Me.Panel19.TabIndex = 2
         '
         'datagrdFid
@@ -2802,7 +2802,7 @@ Partial Class NewRec
         Me.Panel18.Location = New System.Drawing.Point(0, 0)
         Me.Panel18.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(1023, 63)
+        Me.Panel18.Size = New System.Drawing.Size(1030, 63)
         Me.Panel18.TabIndex = 1
         '
         'Label33
@@ -2827,6 +2827,7 @@ Partial Class NewRec
         '
         'TabPage9
         '
+        Me.TabPage9.AutoScroll = True
         Me.TabPage9.BackColor = System.Drawing.Color.DimGray
         Me.TabPage9.Controls.Add(Me.Panel35)
         Me.TabPage9.Controls.Add(Me.Panel34)
@@ -2838,7 +2839,7 @@ Partial Class NewRec
         Me.TabPage9.Location = New System.Drawing.Point(4, 4)
         Me.TabPage9.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Size = New System.Drawing.Size(1023, 992)
+        Me.TabPage9.Size = New System.Drawing.Size(1030, 992)
         Me.TabPage9.TabIndex = 4
         Me.TabPage9.Text = "POSITION"
         '
@@ -2888,7 +2889,7 @@ Partial Class NewRec
         Me.Panel37.Location = New System.Drawing.Point(548, 7)
         Me.Panel37.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(459, 357)
+        Me.Panel37.Size = New System.Drawing.Size(474, 357)
         Me.Panel37.TabIndex = 9
         '
         'Label54
@@ -3101,7 +3102,7 @@ Partial Class NewRec
         Me.Label56.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label56.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label56.ForeColor = System.Drawing.Color.Black
-        Me.Label56.Location = New System.Drawing.Point(275, 14)
+        Me.Label56.Location = New System.Drawing.Point(344, 11)
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(132, 25)
         Me.Label56.TabIndex = 128
@@ -3113,7 +3114,7 @@ Partial Class NewRec
         Me.Label55.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label55.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label55.ForeColor = System.Drawing.Color.Black
-        Me.Label55.Location = New System.Drawing.Point(19, 14)
+        Me.Label55.Location = New System.Drawing.Point(24, 11)
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(92, 25)
         Me.Label55.TabIndex = 126
@@ -3125,10 +3126,10 @@ Partial Class NewRec
         Me.Button43.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button43.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button43.ForeColor = System.Drawing.Color.Black
-        Me.Button43.Location = New System.Drawing.Point(592, 0)
+        Me.Button43.Location = New System.Drawing.Point(487, 0)
         Me.Button43.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button43.Name = "Button43"
-        Me.Button43.Size = New System.Drawing.Size(139, 55)
+        Me.Button43.Size = New System.Drawing.Size(174, 55)
         Me.Button43.TabIndex = 35
         Me.Button43.Text = "POINTER ON"
         Me.Button43.UseVisualStyleBackColor = True
@@ -3138,10 +3139,10 @@ Partial Class NewRec
         Me.Button42.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button42.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button42.ForeColor = System.Drawing.Color.Black
-        Me.Button42.Location = New System.Drawing.Point(731, 0)
+        Me.Button42.Location = New System.Drawing.Point(661, 0)
         Me.Button42.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button42.Name = "Button42"
-        Me.Button42.Size = New System.Drawing.Size(139, 55)
+        Me.Button42.Size = New System.Drawing.Size(174, 55)
         Me.Button42.TabIndex = 34
         Me.Button42.Text = "MARK ON"
         Me.Button42.UseVisualStyleBackColor = True
@@ -3151,10 +3152,10 @@ Partial Class NewRec
         Me.Button41.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button41.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button41.ForeColor = System.Drawing.Color.Black
-        Me.Button41.Location = New System.Drawing.Point(870, 0)
+        Me.Button41.Location = New System.Drawing.Point(835, 0)
         Me.Button41.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button41.Name = "Button41"
-        Me.Button41.Size = New System.Drawing.Size(139, 55)
+        Me.Button41.Size = New System.Drawing.Size(174, 55)
         Me.Button41.TabIndex = 33
         Me.Button41.Text = "MARKING"
         Me.Button41.UseVisualStyleBackColor = True
@@ -3439,7 +3440,7 @@ Partial Class NewRec
         Me.Panel30.Location = New System.Drawing.Point(0, 401)
         Me.Panel30.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel30.Name = "Panel30"
-        Me.Panel30.Size = New System.Drawing.Size(1023, 64)
+        Me.Panel30.Size = New System.Drawing.Size(1022, 64)
         Me.Panel30.TabIndex = 4
         '
         'Button51
@@ -3447,10 +3448,10 @@ Partial Class NewRec
         Me.Button51.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button51.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button51.ForeColor = System.Drawing.Color.Black
-        Me.Button51.Location = New System.Drawing.Point(430, 0)
+        Me.Button51.Location = New System.Drawing.Point(281, 0)
         Me.Button51.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button51.Name = "Button51"
-        Me.Button51.Size = New System.Drawing.Size(121, 64)
+        Me.Button51.Size = New System.Drawing.Size(151, 64)
         Me.Button51.TabIndex = 33
         Me.Button51.Text = "ARRAY"
         Me.Button51.UseVisualStyleBackColor = True
@@ -3460,10 +3461,10 @@ Partial Class NewRec
         Me.Button40.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button40.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button40.ForeColor = System.Drawing.Color.Black
-        Me.Button40.Location = New System.Drawing.Point(551, 0)
+        Me.Button40.Location = New System.Drawing.Point(432, 0)
         Me.Button40.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button40.Name = "Button40"
-        Me.Button40.Size = New System.Drawing.Size(121, 64)
+        Me.Button40.Size = New System.Drawing.Size(151, 64)
         Me.Button40.TabIndex = 32
         Me.Button40.Text = "UPDATE"
         Me.Button40.UseVisualStyleBackColor = True
@@ -3473,10 +3474,10 @@ Partial Class NewRec
         Me.TEACH.Dock = System.Windows.Forms.DockStyle.Right
         Me.TEACH.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TEACH.ForeColor = System.Drawing.Color.Black
-        Me.TEACH.Location = New System.Drawing.Point(672, 0)
+        Me.TEACH.Location = New System.Drawing.Point(583, 0)
         Me.TEACH.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TEACH.Name = "TEACH"
-        Me.TEACH.Size = New System.Drawing.Size(121, 64)
+        Me.TEACH.Size = New System.Drawing.Size(151, 64)
         Me.TEACH.TabIndex = 31
         Me.TEACH.Text = "TEACH"
         Me.TEACH.UseVisualStyleBackColor = True
@@ -3486,10 +3487,10 @@ Partial Class NewRec
         Me.SAVE.Dock = System.Windows.Forms.DockStyle.Right
         Me.SAVE.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SAVE.ForeColor = System.Drawing.Color.Black
-        Me.SAVE.Location = New System.Drawing.Point(793, 0)
+        Me.SAVE.Location = New System.Drawing.Point(734, 0)
         Me.SAVE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.SAVE.Name = "SAVE"
-        Me.SAVE.Size = New System.Drawing.Size(115, 64)
+        Me.SAVE.Size = New System.Drawing.Size(144, 64)
         Me.SAVE.TabIndex = 30
         Me.SAVE.Text = "SAVE"
         Me.SAVE.UseVisualStyleBackColor = True
@@ -3499,10 +3500,10 @@ Partial Class NewRec
         Me.Button39.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button39.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button39.ForeColor = System.Drawing.Color.Black
-        Me.Button39.Location = New System.Drawing.Point(908, 0)
+        Me.Button39.Location = New System.Drawing.Point(878, 0)
         Me.Button39.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button39.Name = "Button39"
-        Me.Button39.Size = New System.Drawing.Size(115, 64)
+        Me.Button39.Size = New System.Drawing.Size(144, 64)
         Me.Button39.TabIndex = 29
         Me.Button39.Text = "DELETE"
         Me.Button39.UseVisualStyleBackColor = True
@@ -3516,7 +3517,7 @@ Partial Class NewRec
         Me.Panel29.Location = New System.Drawing.Point(0, 63)
         Me.Panel29.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(1023, 338)
+        Me.Panel29.Size = New System.Drawing.Size(1022, 338)
         Me.Panel29.TabIndex = 3
         '
         'GroupBox9
@@ -3524,7 +3525,7 @@ Partial Class NewRec
         Me.GroupBox9.Controls.Add(Me.Button54)
         Me.GroupBox9.Controls.Add(Me.Button38)
         Me.GroupBox9.Controls.Add(Me.Button37)
-        Me.GroupBox9.Location = New System.Drawing.Point(564, 128)
+        Me.GroupBox9.Location = New System.Drawing.Point(693, 124)
         Me.GroupBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -3575,10 +3576,10 @@ Partial Class NewRec
         Me.Panel39.AutoScroll = True
         Me.Panel39.Controls.Add(Me.TreeView1)
         Me.Panel39.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel39.Location = New System.Drawing.Point(0, 81)
+        Me.Panel39.Location = New System.Drawing.Point(0, 101)
         Me.Panel39.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(536, 257)
+        Me.Panel39.Size = New System.Drawing.Size(670, 237)
         Me.Panel39.TabIndex = 2
         '
         'TreeView1
@@ -3592,7 +3593,7 @@ Partial Class NewRec
         TreeNode1.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         TreeNode1.Text = "MARK PATTERN "
         Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
-        Me.TreeView1.Size = New System.Drawing.Size(536, 257)
+        Me.TreeView1.Size = New System.Drawing.Size(670, 237)
         Me.TreeView1.TabIndex = 0
         '
         'GroupBox8
@@ -3613,7 +3614,7 @@ Partial Class NewRec
         Me.GroupBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox8.Size = New System.Drawing.Size(1023, 81)
+        Me.GroupBox8.Size = New System.Drawing.Size(1022, 101)
         Me.GroupBox8.TabIndex = 1
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "CURRENT POSITION"
@@ -3623,7 +3624,7 @@ Partial Class NewRec
         Me.Label66.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label66.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label66.Location = New System.Drawing.Point(837, 31)
+        Me.Label66.Location = New System.Drawing.Point(837, 41)
         Me.Label66.Name = "Label66"
         Me.Label66.Size = New System.Drawing.Size(60, 25)
         Me.Label66.TabIndex = 56
@@ -3657,7 +3658,7 @@ Partial Class NewRec
         Me.Label60.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label60.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label60.Location = New System.Drawing.Point(492, 36)
+        Me.Label60.Location = New System.Drawing.Point(492, 46)
         Me.Label60.Name = "Label60"
         Me.Label60.Size = New System.Drawing.Size(131, 25)
         Me.Label60.TabIndex = 53
@@ -3669,7 +3670,7 @@ Partial Class NewRec
         Me.Label62.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label62.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label62.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label62.Location = New System.Drawing.Point(441, 34)
+        Me.Label62.Location = New System.Drawing.Point(441, 44)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(47, 25)
         Me.Label62.TabIndex = 52
@@ -3681,7 +3682,7 @@ Partial Class NewRec
         Me.Label63.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label63.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label63.Location = New System.Drawing.Point(267, 34)
+        Me.Label63.Location = New System.Drawing.Point(267, 44)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(36, 25)
         Me.Label63.TabIndex = 51
@@ -3704,7 +3705,7 @@ Partial Class NewRec
         Me.Label64.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label64.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label64.Location = New System.Drawing.Point(212, 34)
+        Me.Label64.Location = New System.Drawing.Point(212, 44)
         Me.Label64.Name = "Label64"
         Me.Label64.Size = New System.Drawing.Size(47, 25)
         Me.Label64.TabIndex = 49
@@ -3716,7 +3717,7 @@ Partial Class NewRec
         Me.Label65.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label65.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.Label65.Location = New System.Drawing.Point(39, 34)
+        Me.Label65.Location = New System.Drawing.Point(39, 44)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(36, 25)
         Me.Label65.TabIndex = 48
@@ -3745,7 +3746,7 @@ Partial Class NewRec
         Me.Panel28.Location = New System.Drawing.Point(0, 0)
         Me.Panel28.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(1023, 63)
+        Me.Panel28.Size = New System.Drawing.Size(1022, 63)
         Me.Panel28.TabIndex = 2
         '
         'Label61
@@ -3805,7 +3806,7 @@ Partial Class NewRec
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1031, 1055)
+        Me.ClientSize = New System.Drawing.Size(1038, 1152)
         Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "NewRec"

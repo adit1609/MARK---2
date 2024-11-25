@@ -27,6 +27,7 @@ Partial Class Home_Page
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnDock = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -42,8 +43,8 @@ Partial Class Home_Page
         Me.btUser = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -57,7 +58,7 @@ Partial Class Home_Page
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(960, 1042)
         Me.Panel1.TabIndex = 1
@@ -67,7 +68,7 @@ Partial Class Home_Page
         Me.pnDock.BackColor = System.Drawing.Color.IndianRed
         Me.pnDock.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnDock.Location = New System.Drawing.Point(0, 111)
-        Me.pnDock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnDock.Margin = New System.Windows.Forms.Padding(4)
         Me.pnDock.Name = "pnDock"
         Me.pnDock.Size = New System.Drawing.Size(960, 856)
         Me.pnDock.TabIndex = 2
@@ -75,14 +76,23 @@ Partial Class Home_Page
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Panel3.Controls.Add(Me.RichTextBox1)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(960, 111)
         Me.Panel3.TabIndex = 1
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(387, 42)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(98, 47)
+        Me.RichTextBox1.TabIndex = 11
+        Me.RichTextBox1.Text = ""
         '
         'Label2
         '
@@ -102,7 +112,7 @@ Partial Class Home_Page
         Me.Panel4.Controls.Add(Me.Button9)
         Me.Panel4.Controls.Add(Me.Button8)
         Me.Panel4.Location = New System.Drawing.Point(505, 57)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(449, 50)
         Me.Panel4.TabIndex = 0
@@ -165,7 +175,7 @@ Partial Class Home_Page
         Me.Panel2.Controls.Add(Me.btUser)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 967)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(960, 75)
         Me.Panel2.TabIndex = 0
@@ -266,10 +276,10 @@ Partial Class Home_Page
         'Timer2
         '
         '
-        'Timer3
-        '
-        '
         'Timer4
+        '
+        '
+        'Timer5
         '
         '
         'Home_Page
@@ -279,7 +289,7 @@ Partial Class Home_Page
         Me.ClientSize = New System.Drawing.Size(960, 1042)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Home_Page"
         Me.Text = "LASER MARKING MACHINE"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -307,7 +317,8 @@ Partial Class Home_Page
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents Timer3 As Timer
     Friend WithEvents Button2 As Button
     Friend WithEvents Timer4 As Timer
+    Friend WithEvents Timer5 As Timer
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class
